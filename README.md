@@ -153,6 +153,15 @@ git tag zhuque-fangsong-v0.212      # 格式固定为 <slug>-v<version>
 git push origin zhuque-fangsong-v0.212
 ```
 
+> **一次只推一个 tag。** 把多个 tag 合并进同一条 `git push`，GitHub 只会为其中一个创建 workflow run，其余的**静默丢失**——不报错、不重试、Actions 页面什么都看不到。批量发版必须逐条推送。
+>
+> 已经推错了的补救办法是删掉远端 tag 再单独重推，本地 tag 不用动：
+>
+> ```bash
+> git push origin :refs/tags/<tag>   # 只删远端
+> git push origin <tag>              # 单独重推，触发工作流
+> ```
+
 工作流会先重跑 `typecheck` 与 `validate`（合规校验不通过的字体发不出去），再从 `sourceUrl` 下载官方产物、校验 `sha256`，最后创建 Release。
 
 产物是官方压缩包的**逐字节镜像**——不解包、不重打包、不做子集化。这既满足部分授权的附加条款（如霞鹜文楷禁止把改制版本作为可安装桌面字体发布），也让镜像不构成衍生作品。
