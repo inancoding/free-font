@@ -11,7 +11,7 @@
   "scripts": {
     "validate": "tsx scripts/validate.ts",
     "build:readme": "tsx scripts/build-readme.ts",
-    "release": "tsx scripts/release.ts",
+    "fetch-artifact": "tsx scripts/fetch-artifact.ts",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run validate"
   },

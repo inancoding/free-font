@@ -124,9 +124,12 @@ src/schema.ts             元数据结构定义
 src/policy.ts             合规策略校验
 scripts/validate.ts       校验入口
 scripts/build-readme.ts   由 fonts/*.json 生成上方索引表
+scripts/fetch-artifact.ts 下载官方产物并校验 SHA-256
+src/tags.ts               Release tag 与产物命名规则
+.github/workflows/        ci.yml（校验）/ release.yml（tag 触发发版）
 ```
 
-字体二进制文件**不进 Git**（见 `.gitignore`），只作为 Release 附件分发。
+字体二进制文件**不进 Git**（见 `.gitignore`）。它们只在 CI 的 `build/` 目录里短暂存在：下载 → 校验摘要 → 上传到 Release → 丢弃，本地仓库中始终不会有字体文件。
 
 ## 贡献
 
@@ -134,9 +137,25 @@ scripts/build-readme.ts   由 fonts/*.json 生成上方索引表
 
 1. 在 `src/licenses.ts` 确认该字体的授权已注册。若没有，先补注册，并**务必核对官方授权原文**后才把 `verified` 设为 `true`
 2. 新建 `fonts/<slug>.json`，文件名必须与 `slug` 字段一致
-3. 若要镜像（`mirror: true`），把授权原文放进 `licenses/<slug>/`，并填写 `sourceUrl` 记录二进制来源
+3. 若要镜像（`mirror: true`），还需要三样东西：
+   - 把授权原文放进 `licenses/<slug>/`
+   - 填 `sourceUrl`，指向官方发布的具体产物文件（不是发布页）
+   - 填 `sha256`，即该产物的摘要：`curl -sL <sourceUrl> | sha256sum`
 4. 本地跑 `npm run validate`，确认无错误
 5. 跑 `npm run build:readme` 更新索引表，一并提交
+
+### 发版
+
+`mirror: true` 的字体通过打 tag 触发 GitHub Actions 自动发版，不需要在本地上传二进制：
+
+```bash
+git tag zhuque-fangsong-v0.212      # 格式固定为 <slug>-v<version>
+git push origin zhuque-fangsong-v0.212
+```
+
+工作流会先重跑 `typecheck` 与 `validate`（合规校验不通过的字体发不出去），再从 `sourceUrl` 下载官方产物、校验 `sha256`，最后创建 Release。
+
+产物是官方压缩包的**逐字节镜像**——不解包、不重打包、不做子集化。这既满足部分授权的附加条款（如霞鹜文楷禁止把改制版本作为可安装桌面字体发布），也让镜像不构成衍生作品。
 
 ### 侵权投诉
 

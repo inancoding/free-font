@@ -55,6 +55,14 @@ export const fontSchema = z.object({
   officialUrl: z.url(),
   /** 可直接下载字体文件的地址，用于死链检查 */
   sourceUrl: z.url().optional(),
+  /**
+   * sourceUrl 产物的 SHA-256 摘要。mirror=true 时必填，
+   * CI 下载后据此校验字节一致性 —— 上游替换或传输损坏都会在此暴露。
+   */
+  sha256: z
+    .string()
+    .regex(/^[a-f0-9]{64}$/, 'sha256 必须是 64 位十六进制字符串')
+    .optional(),
 
   /**
    * 是否把字体二进制镜像到本仓库 Release。

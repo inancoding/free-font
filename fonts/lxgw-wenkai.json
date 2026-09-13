@@ -9,6 +9,7 @@
   "weights": ["Light", "Regular", "Medium"],
   "officialUrl": "https://github.com/lxgw/LxgwWenKai",
   "sourceUrl": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/lxgw-wenkai-v1.522.zip",
+  "sha256": "3b596205423d838ccd0965bfa2c7e8b6ebcb9d9284e1809e234ad1d5f441adef",
   "mirror": true,
   "tags": ["楷体", "手写风格", "正文", "多语言"],
   "constraints": [

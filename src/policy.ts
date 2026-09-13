@@ -92,6 +92,13 @@ export async function checkPolicies(fonts: LoadedFont[]): Promise<ValidationErro
         );
       }
 
+      if (!font.sha256) {
+        push(
+          'sha256',
+          'mirror=true 时必须提供 sourceUrl 产物的 SHA-256，否则 CI 无法验证下载到的字节就是核实过的那一份',
+        );
+      }
+
       if (license.requiresLicenseText && !(await hasLicenseText(font.slug))) {
         push(
           'license',
