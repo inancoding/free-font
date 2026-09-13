@@ -1,0 +1,20 @@
+{
+  "slug": "smiley-sans",
+  "name": { "zh": "得意黑", "en": "Smiley Sans" },
+  "vendor": "锚定工坊 Atelier Anchor",
+  "version": "2.0.1",
+  "license": "OFL-1.1",
+  "languages": ["zh-Hans", "ja", "latin", "cyrillic", "greek"],
+  "formats": ["otf", "ttf", "woff2"],
+  "weights": ["Oblique"],
+  "officialUrl": "https://github.com/atelier-anchor/smiley-sans",
+  "sourceUrl": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip",
+  "mirror": true,
+  "tags": ["黑体", "无衬线", "窄斜", "标题字体"],
+  "constraints": [
+    "保留字体名为「Smiley」与「得意黑」，衍生版本不得沿用",
+    "仅单一字重（Oblique），无正体、无多字重可选"
+  ],
+  "addedAt": "2026-09-13",
+  "notes": "字汇已对照官方 Release 压缩包核实：汉字 8335 字（GB/T 2312 全 6763 + 通用规范汉字表全 8105）、拉丁 415、西里尔 80、希腊 71、日文假名 174。无繁体中文完整覆盖，无韩文。压缩包 5.5 MB。"
+}

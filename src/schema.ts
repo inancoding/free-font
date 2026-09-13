@@ -31,10 +31,15 @@ export const isoDateSchema = z
  */
 export const fontSchema = z.object({
   slug: slugSchema,
-  name: z.object({
-    zh: z.string().min(1),
-    en: z.string().min(1).optional(),
-  }),
+  // 西文字体（如 Inter、JetBrains Mono）没有中文名，因此 zh/en 至少给一个即可
+  name: z
+    .object({
+      zh: z.string().min(1).optional(),
+      en: z.string().min(1).optional(),
+    })
+    .refine((name) => name.zh !== undefined || name.en !== undefined, {
+      message: 'name 必须至少提供 zh 或 en 其中之一',
+    }),
   vendor: z.string().min(1),
   version: z.string().min(1),
 
@@ -58,6 +63,11 @@ export const fontSchema = z.object({
   mirror: z.boolean(),
 
   tags: z.array(z.string().min(1)).default([]),
+  /**
+   * 该字体特有的再分发限制，超出所用授权通用条款的部分。
+   * 例如霞鹜文楷的 OFL 附加许可、朱雀仿宋对 Alegreya 的双重署名要求。
+   */
+  constraints: z.array(z.string().min(1)).default([]),
   /** preview/<file> 的相对路径 */
   preview: z.string().min(1).optional(),
   addedAt: isoDateSchema,

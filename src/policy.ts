@@ -65,6 +65,15 @@ export async function checkPolicies(fonts: LoadedFont[]): Promise<ValidationErro
       continue;
     }
 
+    // 缺少溯源信息的 "verified" 标记不可信，会架空整个 fail-safe 设计
+    if (license.verified && (!license.verifiedFrom || !license.verifiedAt)) {
+      push(
+        'license',
+        `授权 ${license.id} 标记为 verified 但缺少 verifiedFrom / verifiedAt，` +
+          `请在 src/licenses.ts 补全一手来源 URL 与核实日期`,
+      );
+    }
+
     if (font.mirror) {
       if (!isMirrorAllowed(license)) {
         const reason = !license.verified

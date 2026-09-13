@@ -1,0 +1,22 @@
+{
+  "slug": "zhuque-fangsong",
+  "name": { "zh": "朱雀仿宋", "en": "Zhuque Fangsong" },
+  "vendor": "璇玑造字 Triones Type",
+  "version": "0.212",
+  "license": "OFL-1.1",
+  "languages": ["zh-Hans", "latin"],
+  "formats": ["ttf"],
+  "weights": ["Regular"],
+  "officialUrl": "https://github.com/TrionesType/zhuque",
+  "sourceUrl": "https://github.com/TrionesType/zhuque/releases/download/v0.212/ZhuqueFangsong-v0.212.zip",
+  "mirror": true,
+  "tags": ["仿宋", "衬线", "正文", "开源中文字体"],
+  "constraints": [
+    "西文与符号部分采用 Alegreya（Juan Pablo del Peral / Huerta Tipográfica，同为 OFL-1.1），分发时须双重署名",
+    "不得单独销售原始版本或修改版本",
+    "作者请求（非授权条款）：正式版发布前不要大量传播非官方修改版",
+    "版本仍为 0.x，官方仓库持续迭代中，预期存在破坏性变更"
+  ],
+  "addedAt": "2026-09-13",
+  "notes": "授权条款取自官方 README「许可证」一节，原文明示允许免费商用与「复制与再分发本字体」。已对照 Release 压缩包核实：仅 ZhuqueFangsong-Regular.ttf 单一文件，5.5 MB。国内另有 AtomGit 镜像仓库。"
+}

@@ -8,20 +8,99 @@
 
 <!-- FONTS:START -->
 
-共收录 **0** 款字体：0 款提供镜像下载，0 款仅提供官方外链。
+共收录 **9** 款字体：5 款提供镜像下载，4 款仅提供官方外链。
 
 ## 镜像下载
 
 以下字体的授权已核实允许再分发，二进制文件托管在本仓库的 GitHub Releases，授权原文存档于 `licenses/`。
 
-_暂无_
+| 字体 | 厂商 | 授权 | 字重 | 语言 | 获取 |
+| --- | --- | --- | --- | --- | --- |
+| Inter  | Rasmus Andersson | `OFL-1.1` | 9 种 | latin, greek, cyrillic | [Release](https://github.com/inancoding/free-font/releases/tag/inter-v4.1) · [官方](https://github.com/rsms/inter) |
+| JetBrains Mono  | JetBrains | `OFL-1.1` | 8 种 | latin, greek, cyrillic | [Release](https://github.com/inancoding/free-font/releases/tag/jetbrains-mono-v2.304) · [官方](https://github.com/JetBrains/JetBrainsMono) |
+| 霞鹜文楷 / LXGW WenKai  | LXGW | `OFL-1.1` | 3 种 | zh-Hans, zh-Hant, ja, ko, latin | [Release](https://github.com/inancoding/free-font/releases/tag/lxgw-wenkai-v1.522) · [官方](https://github.com/lxgw/LxgwWenKai) |
+| 得意黑 / Smiley Sans  | 锚定工坊 Atelier Anchor | `OFL-1.1` | 1 种 | zh-Hans, ja, latin, cyrillic, greek | [Release](https://github.com/inancoding/free-font/releases/tag/smiley-sans-v2.0.1) · [官方](https://github.com/atelier-anchor/smiley-sans) |
+| 朱雀仿宋 / Zhuque Fangsong  | 璇玑造字 Triones Type | `OFL-1.1` | 1 种 | zh-Hans, latin | [Release](https://github.com/inancoding/free-font/releases/tag/zhuque-fangsong-v0.212) · [官方](https://github.com/TrionesType/zhuque) |
 
 ## 仅官方外链
 
-以下字体允许免费商用，但授权不允许第三方再分发，或条款尚未核实完成。请点击官方链接自行下载。
+以下字体均可免费商用，但本仓库不托管其二进制文件，原因分两类：授权不允许第三方再分发（或条款尚未核实完成），或字族全量体积过大不适合整体镜像。请点击官方链接自行下载，具体原因见各条目的 `notes` 字段。
 
-_暂无_
+| 字体 | 厂商 | 授权 | 字重 | 语言 | 获取 |
+| --- | --- | --- | --- | --- | --- |
+| 思源黑体（Noto 版） / Noto Sans CJK  | Google | `OFL-1.1` | 7 种 | zh-Hans, zh-Hant, ja, ko, latin | [官方](https://github.com/notofonts/noto-cjk) |
+| 思源宋体（Noto 版） / Noto Serif CJK  | Google | `OFL-1.1` | 7 种 | zh-Hans, zh-Hant, ja, ko, latin | [官方](https://github.com/notofonts/noto-cjk) |
+| 思源黑体 / Source Han Sans  | Adobe / Google | `OFL-1.1` | 7 种 | zh-Hans, zh-Hant, ja, ko, latin | [官方](https://github.com/adobe-fonts/source-han-sans) |
+| 思源宋体 / Source Han Serif  | Adobe / Google | `OFL-1.1` | 7 种 | zh-Hans, zh-Hant, ja, ko, latin | [官方](https://github.com/adobe-fonts/source-han-serif) |
 
+## 分发与使用限制
+
+以下字体在所用授权的通用条款之外还有额外限制。**再分发、嵌入软件或自制子集前请务必确认。**
+
+<details>
+<summary><strong>Inter</strong></summary>
+
+- 不含 CJK 字符，需与中文字体搭配使用
+
+</details>
+<details>
+<summary><strong>JetBrains Mono</strong></summary>
+
+- 不含 CJK 字符，需与中文字体搭配使用
+
+</details>
+<details>
+<summary><strong>霞鹜文楷 / LXGW WenKai</strong></summary>
+
+- 带 OFL 保留字体名（RFN）与附加许可：保留名「霞鹜」「霞鶩」「落霞孤鹜」「落霞孤鶩」「LXGW」仅可用于未修改源码的重编译版，或仅用于网页投递的子集化／转格式版
+- 上述子集化／转格式版本不得作为可安装桌面字体发布；主流平台（如 Google Fonts）明确被点名禁止，其他网页字体平台须联系作者 @lxgw 确认
+- 本仓库仅逐字节镜像官方 Release 的 TTF 原件，不做二次子集化
+- 基于 Klee（Fontworks）开发，授权文本含其版权声明，须一并保留
+
+</details>
+<details>
+<summary><strong>思源黑体（Noto 版） / Noto Sans CJK</strong></summary>
+
+- 与 Adobe 的 Source Han Sans 同源，字形一致但打包方式与版本号体系不同
+- Google Fonts 上的 Noto Sans SC 是另一套可变 TTF 产物，与本仓库的分语言 zip 不是同一批文件
+
+</details>
+<details>
+<summary><strong>思源宋体（Noto 版） / Noto Serif CJK</strong></summary>
+
+- 与 Adobe 的 Source Han Serif 同源，字形一致但打包方式与版本号体系不同
+- Google Fonts 上的 Noto Serif SC 是另一套可变 TTF 产物，与本仓库的分语言 zip 不是同一批文件
+
+</details>
+<details>
+<summary><strong>得意黑 / Smiley Sans</strong></summary>
+
+- 保留字体名为「Smiley」与「得意黑」，衍生版本不得沿用
+- 仅单一字重（Oblique），无正体、无多字重可选
+
+</details>
+<details>
+<summary><strong>思源黑体 / Source Han Sans</strong></summary>
+
+- Adobe 版与 Google 版 Noto Sans CJK 同源但发布渠道与打包方式不同
+- 官方另提供 HW 竖排变体与 Subset OTF，按需取用
+
+</details>
+<details>
+<summary><strong>思源宋体 / Source Han Serif</strong></summary>
+
+- CFF2 格式的可变字体在 Windows 上存在已知渲染问题，官方建议改用 TTF 可变字体版本
+
+</details>
+<details>
+<summary><strong>朱雀仿宋 / Zhuque Fangsong</strong></summary>
+
+- 西文与符号部分采用 Alegreya（Juan Pablo del Peral / Huerta Tipográfica，同为 OFL-1.1），分发时须双重署名
+- 不得单独销售原始版本或修改版本
+- 作者请求（非授权条款）：正式版发布前不要大量传播非官方修改版
+- 版本仍为 0.x，官方仓库持续迭代中，预期存在破坏性变更
+
+</details>
 <!-- FONTS:END -->
 
 ## 收录标准

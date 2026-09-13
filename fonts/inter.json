@@ -1,0 +1,27 @@
+{
+  "slug": "inter",
+  "name": { "en": "Inter" },
+  "vendor": "Rasmus Andersson",
+  "version": "4.1",
+  "license": "OFL-1.1",
+  "languages": ["latin", "greek", "cyrillic"],
+  "formats": ["otf", "ttf", "woff2"],
+  "weights": [
+    "Thin",
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "ExtraBold",
+    "Black"
+  ],
+  "officialUrl": "https://github.com/rsms/inter",
+  "sourceUrl": "https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip",
+  "mirror": true,
+  "tags": ["无衬线", "屏幕显示", "UI", "西文"],
+  "constraints": ["不含 CJK 字符，需与中文字体搭配使用"],
+  "addedAt": "2026-09-13",
+  "notes": "已对照官方 Release 压缩包核实：9 个字重 × 正体／斜体共 18 种样式，每种提供 otf、ttf、woff2 三份；压缩包内含 extras/ 与 web/ 两个目录，32.1 MB。西里尔部分含乌德穆尔特语、哈卡斯语等扩展。"
+}

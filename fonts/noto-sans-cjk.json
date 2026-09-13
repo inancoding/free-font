@@ -1,0 +1,20 @@
+{
+  "slug": "noto-sans-cjk",
+  "name": { "zh": "思源黑体（Noto 版）", "en": "Noto Sans CJK" },
+  "vendor": "Google",
+  "version": "2.004",
+  "license": "OFL-1.1",
+  "languages": ["zh-Hans", "zh-Hant", "ja", "ko", "latin"],
+  "formats": ["otf", "ttc", "variable-otf", "variable-ttf"],
+  "weights": ["Thin", "Light", "DemiLight", "Regular", "Medium", "Bold", "Black"],
+  "officialUrl": "https://github.com/notofonts/noto-cjk",
+  "sourceUrl": "https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004",
+  "mirror": false,
+  "tags": ["黑体", "无衬线", "CJK", "多语言", "等宽变体"],
+  "constraints": [
+    "与 Adobe 的 Source Han Sans 同源，字形一致但打包方式与版本号体系不同",
+    "Google Fonts 上的 Noto Sans SC 是另一套可变 TTF 产物，与本仓库的分语言 zip 不是同一批文件"
+  ],
+  "addedAt": "2026-09-13",
+  "notes": "暂不镜像：全量约 21 个分包，合计体积过大。官方 Release 已按语言／用途拆好（00_NotoSansCJK.ttc.zip、06~10 分语言包、11~15 NotoSansMonoCJK 等宽系列、16~20 单一地区包），后续可按需镜像单个分包，如 18_NotoSansSC.zip。Release tag 为 Sans2.004。字重清单未逐一对照二进制核实。"
+}

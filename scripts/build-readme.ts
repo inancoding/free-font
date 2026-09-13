@@ -16,7 +16,8 @@ function cell(value: string): string {
 }
 
 function row(font: Font): string {
-  const name = font.name.en ? `${font.name.zh} / ${font.name.en}` : font.name.zh;
+  const { zh, en } = font.name;
+  const name = zh && en ? `${zh} / ${en}` : (zh ?? en ?? '');
   const download = font.mirror
     ? `[Release](${releaseUrlFor(font)}) · [官方](${font.officialUrl})`
     : `[官方](${font.officialUrl})`;
@@ -38,6 +39,27 @@ function table(fonts: Font[]): string {
   return [header.join(' | '), divider, ...fonts.map(row)].join('\n') + '\n';
 }
 
+function constraintsSection(fonts: Font[]): string {
+  const listed = fonts.filter((font) => font.constraints.length > 0);
+  if (listed.length === 0) return '';
+
+  const blocks = listed.map((font) => {
+    const { zh, en } = font.name;
+    const title = zh && en ? `${zh} / ${en}` : (zh ?? en ?? font.slug);
+    const items = font.constraints.map((item) => `- ${item}`).join('\n');
+    // <details> 内的 Markdown 需要空行包裹，否则 GitHub 不会渲染列表
+    return `<details>\n<summary><strong>${cell(title)}</strong></summary>\n\n${items}\n\n</details>`;
+  });
+
+  return [
+    '## 分发与使用限制',
+    '',
+    '以下字体在所用授权的通用条款之外还有额外限制。**再分发、嵌入软件或自制子集前请务必确认。**',
+    '',
+    ...blocks,
+  ].join('\n');
+}
+
 function build(fonts: Font[]): string {
   const mirrored = fonts.filter((font) => font.mirror);
   const linked = fonts.filter((font) => !font.mirror);
@@ -52,9 +74,10 @@ function build(fonts: Font[]): string {
     table(mirrored),
     '## 仅官方外链',
     '',
-    '以下字体允许免费商用，但授权不允许第三方再分发，或条款尚未核实完成。请点击官方链接自行下载。',
+    '以下字体均可免费商用，但本仓库不托管其二进制文件，原因分两类：授权不允许第三方再分发（或条款尚未核实完成），或字族全量体积过大不适合整体镜像。请点击官方链接自行下载，具体原因见各条目的 `notes` 字段。',
     '',
     table(linked),
+    constraintsSection(fonts),
   ].join('\n');
 }
 

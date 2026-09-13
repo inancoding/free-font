@@ -1,0 +1,20 @@
+{
+  "slug": "source-han-sans",
+  "name": { "zh": "思源黑体", "en": "Source Han Sans" },
+  "vendor": "Adobe / Google",
+  "version": "2.005",
+  "license": "OFL-1.1",
+  "languages": ["zh-Hans", "zh-Hant", "ja", "ko", "latin"],
+  "formats": ["otf", "ttc", "variable-otf"],
+  "weights": ["ExtraLight", "Light", "Normal", "Regular", "Medium", "Bold", "Heavy"],
+  "officialUrl": "https://github.com/adobe-fonts/source-han-sans",
+  "sourceUrl": "https://github.com/adobe-fonts/source-han-sans/releases/tag/2.005",
+  "mirror": false,
+  "tags": ["黑体", "无衬线", "CJK", "多语言", "可变字体"],
+  "constraints": [
+    "Adobe 版与 Google 版 Noto Sans CJK 同源但发布渠道与打包方式不同",
+    "官方另提供 HW 竖排变体与 Subset OTF，按需取用"
+  ],
+  "addedAt": "2026-09-13",
+  "notes": "暂不镜像：该 Release 只挂了源码压缩包（2.005.zip / 2.005.tar.gz），成品字体存放在仓库树内，全量约 2.89 GB，不适合整体镜像。后续可考虑按语言分包镜像（简体中文静态 OTF 包约 90.8 MB）。字重清单未逐一对照二进制核实，请以官方仓库为准。"
+}

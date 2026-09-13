@@ -1,0 +1,22 @@
+{
+  "slug": "lxgw-wenkai",
+  "name": { "zh": "霞鹜文楷", "en": "LXGW WenKai" },
+  "vendor": "LXGW",
+  "version": "1.522",
+  "license": "OFL-1.1",
+  "languages": ["zh-Hans", "zh-Hant", "ja", "ko", "latin"],
+  "formats": ["ttf"],
+  "weights": ["Light", "Regular", "Medium"],
+  "officialUrl": "https://github.com/lxgw/LxgwWenKai",
+  "sourceUrl": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/lxgw-wenkai-v1.522.zip",
+  "mirror": true,
+  "tags": ["楷体", "手写风格", "正文", "多语言"],
+  "constraints": [
+    "带 OFL 保留字体名（RFN）与附加许可：保留名「霞鹜」「霞鶩」「落霞孤鹜」「落霞孤鶩」「LXGW」仅可用于未修改源码的重编译版，或仅用于网页投递的子集化／转格式版",
+    "上述子集化／转格式版本不得作为可安装桌面字体发布；主流平台（如 Google Fonts）明确被点名禁止，其他网页字体平台须联系作者 @lxgw 确认",
+    "本仓库仅逐字节镜像官方 Release 的 TTF 原件，不做二次子集化",
+    "基于 Klee（Fontworks）开发，授权文本含其版权声明，须一并保留"
+  ],
+  "addedAt": "2026-09-13",
+  "notes": "字重清单取自官方 Release 资源列表：LXGWWenKai-{Light,Regular,Medium}.ttf 及对应的 Mono 等宽变体共 6 个 TTF，无 Bold。字汇覆盖 CJK 基本区 + 扩展 A 区，谚文音节全补。完整压缩包约 76.9 MB。"
+}
