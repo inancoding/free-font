@@ -1,0 +1,9 @@
+# 仓库内统一存 LF，检出时也用 LF。
+# CI 跑在 Linux，贡献者可能在 Windows，行尾不一致会让
+# 大量 JSON 数据文件的 diff 充满无意义的整行变更。
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.webp binary
+*.woff2 binary

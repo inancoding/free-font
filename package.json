@@ -1,0 +1,24 @@
+{
+  "name": "free-font",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "开源免费字体索引库 —— 元数据入库，字体文件通过 GitHub Releases 分发",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "build:readme": "tsx scripts/build-readme.ts",
+    "release": "tsx scripts/release.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run validate"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.12"
+  }
+}

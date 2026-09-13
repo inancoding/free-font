@@ -1,0 +1,52 @@
+name: 侵权投诉
+description: 版权方主张本仓库的收录或镜像超出授权范围
+title: '[侵权投诉] '
+labels: [takedown]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本表单供**字体版权方或其授权代理人**使用。
+
+        我们会在核实后第一时间删除相关字体条目与 Release 附件。
+        请勿用此表单提交收录申请或普通问题。
+
+  - type: input
+    id: slug
+    attributes:
+      label: 涉及的字体
+      description: 请填写本仓库中的字体名称或 slug（见 fonts/ 目录下的文件名）
+    validations:
+      required: true
+
+  - type: input
+    id: claimant
+    attributes:
+      label: 你的身份
+      description: 版权方本人 / 授权代理人（请注明所代表的主体）
+    validations:
+      required: true
+
+  - type: textarea
+    id: basis
+    attributes:
+      label: 授权条款依据
+      description: 请具体指出本仓库的哪项行为违反了哪一条授权条款
+    validations:
+      required: true
+
+  - type: textarea
+    id: proof
+    attributes:
+      label: 版权归属证明
+      description: 可粘贴证明材料的链接，或说明将通过邮件提供
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: 联系方式
+      description: 便于我们就核实结果与你确认
+    validations:
+      required: true

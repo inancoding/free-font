@@ -1,0 +1,21 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 字体二进制不入库，仅本地打包时暂存
+build/
+tmp/
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.ttc
+*.zip
+
+# 发版凭证
+.env
+.env.*
+
+.DS_Store
+Thumbs.db
+*.log

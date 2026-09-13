@@ -1,0 +1,78 @@
+name: 收录申请
+description: 申请收录一款新的免费字体
+title: '[收录] '
+labels: [font-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢贡献。提交前请先阅读 [README 的收录标准](../../README.md#收录标准)：
+        只有**同时**满足「允许免费商用」和「允许第三方再分发」的字体才会被收录。
+
+  - type: input
+    id: name
+    attributes:
+      label: 字体名称
+      placeholder: 如 思源黑体 / Source Han Sans
+    validations:
+      required: true
+
+  - type: input
+    id: vendor
+    attributes:
+      label: 字体作者或厂商
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: 授权协议
+      description: 如 SIL OFL 1.1、Apache 2.0，或厂商自定义授权名称
+    validations:
+      required: true
+
+  - type: input
+    id: license-url
+    attributes:
+      label: 授权原文地址
+      description: 官方公布的授权条款页面 URL
+    validations:
+      required: true
+
+  - type: dropdown
+    id: commercial
+    attributes:
+      label: 是否允许免费商用
+      options:
+        - 是，授权原文明确写明
+        - 是，但需署名或附带授权文本
+        - 不确定
+        - 否
+    validations:
+      required: true
+
+  - type: dropdown
+    id: redistribute
+    attributes:
+      label: 是否允许第三方再分发字体文件
+      description: 注意「允许免费商用」和「允许再分发」是两件独立的事，请核对授权原文
+      options:
+        - 是，授权原文明确允许
+        - 不确定
+        - 否，仅限从官方渠道获取
+    validations:
+      required: true
+
+  - type: input
+    id: official-url
+    attributes:
+      label: 官方仓库或下载页
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明
+      description: 字重数量、覆盖语言、体积，或任何授权上的特殊情况
