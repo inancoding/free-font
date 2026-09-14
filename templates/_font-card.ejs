@@ -5,8 +5,8 @@
   var catLabels = { 'sans-serif': '无衬线', 'serif': '衬线', 'monospace': '等宽', 'display': '展示', 'handwriting': '手写' };
 %>
 <a class="font-card" href="fonts/<%= font.slug %>.html">
-  <% if (font.preview) { %>
-    <img class="preview-img" src="images/<%= font.preview %>" alt="<%= name %>">
+  <% if (font.cover) { %>
+    <img class="preview-img" src="images/<%= font.cover %>" alt="<%= name %>">
   <% } else { %>
     <div class="preview-placeholder"><%= (font.name.zh || font.name.en || '?').charAt(0) %></div>
   <% } %>

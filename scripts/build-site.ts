@@ -40,7 +40,7 @@ function loadPreviewManifest(): Manifest | null {
   }
 }
 
-function findPreviewForFont(manifest: Manifest | null, font: Font): string | undefined {
+function findPreviewForFont(manifest: Manifest | null, font: Font, size: number): string | undefined {
   if (!manifest) return undefined;
   const fontNameEn = font.name.en?.toLowerCase();
   const fontNameZh = font.name.zh?.toLowerCase();
@@ -54,7 +54,7 @@ function findPreviewForFont(manifest: Manifest | null, font: Font): string | und
     const exactEn = fontNameEn && mfEn && fontNameEn === mfEn;
     const exactZh = fontNameZh && mfZh && fontNameZh === mfZh;
     if (exactEn || exactZh) {
-      const img = mf.images.find((i) => i.size === 192);
+      const img = mf.images.find((i) => i.size === size);
       if (img) return img.path;
     }
 
@@ -62,7 +62,7 @@ function findPreviewForFont(manifest: Manifest | null, font: Font): string | und
       const startsEn = fontNameEn && mfEn && mfEn.startsWith(fontNameEn);
       const startsZh = fontNameZh && mfZh && mfZh.startsWith(fontNameZh);
       if (startsEn || startsZh) {
-        const img = mf.images.find((i) => i.size === 192);
+        const img = mf.images.find((i) => i.size === size);
         if (img) prefixMatch = img.path;
       }
     }
@@ -99,7 +99,8 @@ function toFontData(font: Font, manifest: Manifest | null) {
     downloadUrl: font.downloadUrl,
     tags: font.tags,
     constraints: font.constraints,
-    preview: findPreviewForFont(manifest, font),
+    cover: findPreviewForFont(manifest, font, 400),
+    preview: findPreviewForFont(manifest, font, 192),
     addedAt: font.addedAt,
     notes: font.notes,
     mirrored,
@@ -117,7 +118,8 @@ function buildDataJson(fonts: Font[], manifest: Manifest | null): string {
     category: font.category,
     tags: font.tags,
     description: font.description,
-    preview: findPreviewForFont(manifest, font),
+    cover: findPreviewForFont(manifest, font, 400),
+    preview: findPreviewForFont(manifest, font, 192),
     officialUrl: font.officialUrl,
     downloadUrl: font.downloadUrl,
     mirrored: isMirrored(font),
@@ -148,6 +150,7 @@ async function main(): Promise<number> {
   const dataFonts = fonts.map((f) => toFontData(f, manifest));
   const mirroredCount = dataFonts.filter((f) => f.mirrored).length;
   const previewCount = dataFonts.filter((f) => f.preview).length;
+  const coverCount = dataFonts.filter((f) => f.cover).length;
 
   if (existsSync(DOCS_DIR)) {
     rmSync(DOCS_DIR, { recursive: true });
@@ -187,7 +190,7 @@ async function main(): Promise<number> {
   cpSync(PUBLIC_DIR, DOCS_DIR, { recursive: true });
   console.log('复制 public/ 静态资源到 docs/');
 
-  console.log(`\n构建完成：${fonts.length} 款字体（镜像 ${mirroredCount} / 外链 ${fonts.length - mirroredCount} / 预览图 ${previewCount}）`);
+  console.log(`\n构建完成：${fonts.length} 款字体（镜像 ${mirroredCount} / 外链 ${fonts.length - mirroredCount} / 封面 ${coverCount} / 预览 ${previewCount}）`);
   return 0;
 }
 

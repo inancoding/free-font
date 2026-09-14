@@ -80,8 +80,8 @@
       ? font.name.zh + ' / ' + font.name.en
       : (font.name.zh || font.name.en || font.slug);
 
-    var preview = font.preview
-      ? '<img class="preview-img" src="images/' + font.preview + '" alt="' + esc(name) + '">'
+    var preview = font.cover
+      ? '<img class="preview-img" src="images/' + font.cover + '" alt="' + esc(name) + '">'
       : '<div class="preview-placeholder">' + esc((font.name.zh || font.name.en || '?').charAt(0)) + '</div>';
 
     var badges = '<span class="badge badge-license">' + esc(font.license) + '</span>';
