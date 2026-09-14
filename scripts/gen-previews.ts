@@ -7,7 +7,7 @@
  *   npm run preview:all -- --force         # 忽略增量缓存
  *
  * 前提：字体文件需预先放入 fonts/binary/ 目录（可从 Release 下载或手动放置）。
- * 产物输出到 docs/images/，附带 manifest.json。
+ * 产物输出到 public/images/，附带 manifest.json。
  */
 
 import { spawnSync } from 'node:child_process';
@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const DEFAULT_IN = path.join(ROOT, 'fonts', 'binary');
-const OUT = path.join(ROOT, 'docs', 'images');
+const OUT = path.join(ROOT, 'public', 'images');
 
 // 解析 CLI 参数
 const args = process.argv.slice(2);
@@ -48,8 +48,8 @@ console.log('---');
 // 构建 font2image CLI 参数
 const cliArgs = [
   'font2image/src/cli/index.ts',
-  '--in', inDir,
-  '--out', OUT,
+  '--in', `"${inDir}"`,
+  '--out', `"${OUT}"`,
   '--format', 'webp',
   '--sizes', '192',
 ];
@@ -59,10 +59,11 @@ if (force) {
 }
 
 // 调用 font2image CLI
-const result = spawnSync('tsx', cliArgs, {
+const result = spawnSync('npx', ['tsx', ...cliArgs], {
   cwd: ROOT,
   stdio: 'inherit',
   env: { ...process.env },
+  shell: true,
 });
 
 if (result.error) {

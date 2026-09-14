@@ -1,0 +1,5696 @@
+{
+  "version": 1,
+  "tool": "font2image",
+  "generatedAt": "2026-09-14T13:34:26.559Z",
+  "fonts": [
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\Inter.ttc",
+      "fileHash": "sha256:ea4e3d9970b9b6b566110a1b0e13635fe235280b83dd2443dcb3faca1e2456ef",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1098,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:05.348Z"
+        },
+        {
+          "path": "Inter-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:05.491Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\InterVariable-Italic.ttf",
+      "fileHash": "sha256:d6f1f6a172d9e588438db9f986fd5cfad7b30f644374080a8a9d4d91e344586f",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Variable"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterVariable-Italic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1055,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:05.762Z"
+        },
+        {
+          "path": "InterVariable-Italic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Variable",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:05.934Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\InterVariable.ttf",
+      "fileHash": "sha256:4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Variable"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterVariable-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1057,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:06.196Z"
+        },
+        {
+          "path": "InterVariable-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Variable",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:06.374Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\SmileySans-Oblique.otf",
+      "fileHash": "sha256:139b5dcbe70d6d52de85a62d148784c6af4bd161e38fdb62ba0c1e7e5065fca6",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Smiley Sans Oblique",
+        "zh": "得意黑"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+      "detected": "hans",
+      "scripts": [
+        "hans",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 0.0064516129032258064,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.98,
+        "gbk": 0.37333333333333335,
+        "big5": 0.44666666666666666,
+        "glyphCount": 9497,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "SmileySans-Oblique-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1134,
+          "height": 1120,
+          "generatedAt": "2026-09-14T13:33:07.019Z"
+        },
+        {
+          "path": "SmileySans-Oblique-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "得意黑",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:07.308Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\SmileySans-Oblique.ttf",
+      "fileHash": "sha256:b447d7e781f08bc95c4c9f23ba71ed2b8ebb639aa7184485c71c4ca5afcd25c4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Smiley Sans Oblique",
+        "zh": "得意黑"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.",
+      "detected": "hans",
+      "scripts": [
+        "hans",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 0.0064516129032258064,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.98,
+        "gbk": 0.37333333333333335,
+        "big5": 0.44666666666666666,
+        "glyphCount": 9497,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "SmileySans-Oblique-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1134,
+          "height": 1120,
+          "generatedAt": "2026-09-14T13:33:07.812Z"
+        },
+        {
+          "path": "SmileySans-Oblique-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "得意黑",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:08.109Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\ZhuqueFangsong-Regular.ttf",
+      "fileHash": "sha256:558c62730844fe54ba220146ed62f859d4e2880188d92d985f8921c6e3743bc4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Zhuque Fangsong (technical preview)",
+        "zh": "朱雀仿宋（预览测试版）"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "both",
+      "scripts": [
+        "hans",
+        "hant",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 1,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.96,
+        "gbk": 0.5,
+        "big5": 0.6033333333333334,
+        "glyphCount": 13805,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "ZhuqueFangsong-Regular-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n床前明月光，疑是地上霜。\n舉頭望明月，低頭思故鄉。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1388,
+          "height": 1416,
+          "generatedAt": "2026-09-14T13:33:09.397Z"
+        },
+        {
+          "path": "ZhuqueFangsong-Regular-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "朱雀仿宋（预览测试版）",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:10.710Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-Black.otf",
+      "fileHash": "sha256:da79284ab25b9630e62d967d84fe1c3a1766fa2d7eb39314849ceb3b0759c362",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Black"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Black-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1161,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:10.969Z"
+        },
+        {
+          "path": "Inter-Black-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:11.094Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-BlackItalic.otf",
+      "fileHash": "sha256:54302c38cf020111ea06deaa137ba0c17b703d0f8acf0a5cd37f054c09f11c51",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Black"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-BlackItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1160,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:11.299Z"
+        },
+        {
+          "path": "Inter-BlackItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:11.409Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-Bold.otf",
+      "fileHash": "sha256:9fc6261e817d0b1b2bf1953d8799bb1c837d11aeebbf83ae352e7b4d6de6425d",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Bold",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Bold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1132,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:11.611Z"
+        },
+        {
+          "path": "Inter-Bold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:11.728Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-BoldItalic.otf",
+      "fileHash": "sha256:84e07cd77951a855c668f71e63af261f42d019dc80e963326b4c560b1fca8dcd",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Bold Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-BoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1131,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:11.958Z"
+        },
+        {
+          "path": "Inter-BoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:12.048Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-ExtraBold.otf",
+      "fileHash": "sha256:db2643a54b9c2492e99cd70f73702906d1677aedde969f63bffd4cbc3789ad6d",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1146,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:12.213Z"
+        },
+        {
+          "path": "Inter-ExtraBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:12.417Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-ExtraBoldItalic.otf",
+      "fileHash": "sha256:8ca47cd667caebb133732d7f4d50022385d9d27c23a272b9520afc841ae75c70",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1145,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:12.628Z"
+        },
+        {
+          "path": "Inter-ExtraBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:12.869Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-ExtraLight.otf",
+      "fileHash": "sha256:09c80155d69174316313b9b81eabacea453aa76817f8fd4be9c3c263034b67f9",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraLight"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraLight-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1070,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:13.077Z"
+        },
+        {
+          "path": "Inter-ExtraLight-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:13.251Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-ExtraLightItalic.otf",
+      "fileHash": "sha256:192a8080af58199aa5954ccf254ed44ffd8b09944807d8f2010b9b36f4343818",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraLight"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraLightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1070,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:13.425Z"
+        },
+        {
+          "path": "Inter-ExtraLightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:13.622Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-Italic.otf",
+      "fileHash": "sha256:3bdf49f72ad2f2959a2619ceef700784504f6d17f502e2e2bc6edce5d43ca631",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Italic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1098,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:13.806Z"
+        },
+        {
+          "path": "Inter-Italic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:13.903Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-Light.otf",
+      "fileHash": "sha256:0817fd071377740a8e1cba673baf2c726ef5e5c4e6e0962c6e5bdc096329586d",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Light-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1084,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:14.112Z"
+        },
+        {
+          "path": "Inter-Light-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:14.213Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-LightItalic.otf",
+      "fileHash": "sha256:8a82ddbbea502c53257e021de334990f3db64b4d78b03abbb713e405603188d0",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Light"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-LightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1084,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:14.381Z"
+        },
+        {
+          "path": "Inter-LightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:14.492Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-Medium.otf",
+      "fileHash": "sha256:6c222ed2c3660524dd0c14fb745e00fee65c5361ab28f60fba6730bf4e648763",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Medium-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1109,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:14.679Z"
+        },
+        {
+          "path": "Inter-Medium-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:14.824Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-MediumItalic.otf",
+      "fileHash": "sha256:e19606d43736c84eae63cd4934d9d877e36bc615a8e0bcfc98d87fb037b9826f",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Medium"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-MediumItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1109,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:15.012Z"
+        },
+        {
+          "path": "Inter-MediumItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:15.210Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-Regular.otf",
+      "fileHash": "sha256:d4f2b9e148059a15f014cb0f0b8fea8cd11bfa447dd483bedf1b0adc0e2ba799",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Regular-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1098,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:15.427Z"
+        },
+        {
+          "path": "Inter-Regular-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:15.525Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-SemiBold.otf",
+      "fileHash": "sha256:0a4d30778fa2dc239368d90fd854b88b27e7ede737450da72686a90eca66f02c",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter SemiBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-SemiBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1120,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:15.710Z"
+        },
+        {
+          "path": "Inter-SemiBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:15.913Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-SemiBoldItalic.otf",
+      "fileHash": "sha256:a350102650a86612efa66e0291315dba24be43e1f3716359c17d365376bea11e",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter SemiBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-SemiBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1120,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:16.084Z"
+        },
+        {
+          "path": "Inter-SemiBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:16.321Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-Thin.otf",
+      "fileHash": "sha256:cac20f7a0c98f45770b098f3eea4bbf5ca020f91602ae119342198dfca14107c",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Thin"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Thin-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1057,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:16.511Z"
+        },
+        {
+          "path": "Inter-Thin-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:16.598Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\Inter-ThinItalic.otf",
+      "fileHash": "sha256:d33dd9cdf84781e35accad58086a13b494cfac33f35d2eca697579a11a86b6f5",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Thin"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ThinItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1057,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:16.779Z"
+        },
+        {
+          "path": "Inter-ThinItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:16.874Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-Black.otf",
+      "fileHash": "sha256:84ca5a51b3303c01b48cdd271637d3d20c263e09d00ec0ff2a945f122492a4d0",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Black"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Black-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1122,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:17.046Z"
+        },
+        {
+          "path": "InterDisplay-Black-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:17.425Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-BlackItalic.otf",
+      "fileHash": "sha256:23567c0b610fc7a7687cadf0becd0826798fedfadfc9e1667917d62d19efbef4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Black"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-BlackItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1125,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:17.660Z"
+        },
+        {
+          "path": "InterDisplay-BlackItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:18.043Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-Bold.otf",
+      "fileHash": "sha256:d7a7394984bbb3bc3c3e507a6618d34e006c94f27c7105d0ef4376667aeaf4ee",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Bold",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Bold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1092,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:18.212Z"
+        },
+        {
+          "path": "InterDisplay-Bold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:18.317Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-BoldItalic.otf",
+      "fileHash": "sha256:095f2bd9b95275826bd361f80ce40b3619b4cb586c7bc4f64d5210cedb29fd89",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Bold Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-BoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1092,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:18.518Z"
+        },
+        {
+          "path": "InterDisplay-BoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:18.624Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-ExtraBold.otf",
+      "fileHash": "sha256:0c69ed0a858246e986f4205947fdb631cf0e0eda00bee13e3665e0745d47786b",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1106,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:18.796Z"
+        },
+        {
+          "path": "InterDisplay-ExtraBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:19.223Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-ExtraBoldItalic.otf",
+      "fileHash": "sha256:fe8ecdf422116dbd380707fdde10377aa6c23883b5f6bf5b024ca8ddbf001598",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1108,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:19.415Z"
+        },
+        {
+          "path": "InterDisplay-ExtraBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:19.974Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-ExtraLight.otf",
+      "fileHash": "sha256:ce77d43ea6954950cdf0b72525a06555a2570e24c030a7ce28142aaf360b6f0b",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraLight"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraLight-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1012,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:20.157Z"
+        },
+        {
+          "path": "InterDisplay-ExtraLight-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:20.566Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-ExtraLightItalic.otf",
+      "fileHash": "sha256:95803132d2f383a629ec49f3b090f1520a8afec281936c4bd6f520271856c7ff",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraLight"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraLightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1008,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:20.740Z"
+        },
+        {
+          "path": "InterDisplay-ExtraLightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:21.207Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-Italic.otf",
+      "fileHash": "sha256:1aebd4cf46aadb7c59eca4007f41c6725cafc082876833b4c92543f5444f2cdb",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Italic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1055,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:21.397Z"
+        },
+        {
+          "path": "InterDisplay-Italic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:21.524Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-Light.otf",
+      "fileHash": "sha256:86038978bb5204bce49cd306586d88dd325010bac065099b8588f8bbe8a94391",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Light-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1034,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:21.694Z"
+        },
+        {
+          "path": "InterDisplay-Light-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:21.975Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-LightItalic.otf",
+      "fileHash": "sha256:5a84fbda0aa0b5c77dcf98eae361c4af1791ee952d443195b8947e11b2fc2225",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Light"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-LightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1031,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:22.177Z"
+        },
+        {
+          "path": "InterDisplay-LightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:22.574Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-Medium.otf",
+      "fileHash": "sha256:9a17712bbd6da13b7ce9beb056d19fe15648799a11d5c35f8086a1270a0d13b2",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Medium-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1068,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:22.760Z"
+        },
+        {
+          "path": "InterDisplay-Medium-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:23.133Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-MediumItalic.otf",
+      "fileHash": "sha256:50dc3f67a6b9c73e4174538c908d3970b6cff847258ab00deaffd75eaa67348d",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Medium"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-MediumItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1067,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:23.315Z"
+        },
+        {
+          "path": "InterDisplay-MediumItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:23.763Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-Regular.otf",
+      "fileHash": "sha256:35c1f7437dd6d63f4e60a49144df4b4e4edc190e13ffc1e54b86083747fe3acf",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Regular-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1057,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:23.932Z"
+        },
+        {
+          "path": "InterDisplay-Regular-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:24.040Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-SemiBold.otf",
+      "fileHash": "sha256:991234562ac06b47aefa2ca4d4ff74360a164a5653ec05357816fc4ffe3ca8a2",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display SemiBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-SemiBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1080,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:24.217Z"
+        },
+        {
+          "path": "InterDisplay-SemiBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:24.826Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-SemiBoldItalic.otf",
+      "fileHash": "sha256:fabf4d338bcd65d9d4d9b051ec40d787aa4b9bff526af954c0ab90189d4ee8d4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display SemiBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-SemiBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1080,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:25.013Z"
+        },
+        {
+          "path": "InterDisplay-SemiBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:25.540Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-Thin.otf",
+      "fileHash": "sha256:19603bb14a8639d7ed6bbaaa93dc0769cacd37a0aa42be8683b8fc10fc71863c",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Thin"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Thin-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 990,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:25.690Z"
+        },
+        {
+          "path": "InterDisplay-Thin-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:25.897Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\otf\\InterDisplay-ThinItalic.otf",
+      "fileHash": "sha256:8077baefe0ac4bd21391421eda7b592c46e0dde3b098dbec96f941f1142774a2",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Thin"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ThinItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 985,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:26.077Z"
+        },
+        {
+          "path": "InterDisplay-ThinItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:26.293Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-Black.ttf",
+      "fileHash": "sha256:6342d3ea6dc088b43867f615e807d898adf100c93edb978b8e52c5eb71a264da",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Black"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Black-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1161,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:26.451Z"
+        },
+        {
+          "path": "Inter-Black-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:26.535Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-BlackItalic.ttf",
+      "fileHash": "sha256:1737f7d5b391520e9adcc3ea8c730a0854fe6fdd9b9c93c4100c89beb215a931",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Black"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-BlackItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1160,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:26.684Z"
+        },
+        {
+          "path": "Inter-BlackItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:26.771Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-Bold.ttf",
+      "fileHash": "sha256:288316099b1e0a47a4716d159098005eef7c0066921f34e3200393dbdb01947f",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Bold",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Bold-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1132,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:26.930Z"
+        },
+        {
+          "path": "Inter-Bold-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:27.015Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-BoldItalic.ttf",
+      "fileHash": "sha256:948405a16cdc62701da5f4005ed068ca5f4d27061d98f7974ccfc37831d9581d",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Bold Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-BoldItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1131,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:27.215Z"
+        },
+        {
+          "path": "Inter-BoldItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:27.325Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-ExtraBold.ttf",
+      "fileHash": "sha256:e6756ad5690b77606aa62249a7b420d9902d45cae4b0048a24911fd4324b0a22",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraBold-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1146,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:27.562Z"
+        },
+        {
+          "path": "Inter-ExtraBold-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:27.780Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-ExtraBoldItalic.ttf",
+      "fileHash": "sha256:31b58a00cb9e8d00cb936057285282310e81d2f834461264c543c96983af64a6",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraBoldItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1145,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:27.973Z"
+        },
+        {
+          "path": "Inter-ExtraBoldItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:28.142Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-ExtraLight.ttf",
+      "fileHash": "sha256:f3c7079d9eb4a799251a844acea9eb55f99094479306e2ac1bee875dd9f7ae80",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraLight"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraLight-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1070,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:28.294Z"
+        },
+        {
+          "path": "Inter-ExtraLight-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:28.433Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-ExtraLightItalic.ttf",
+      "fileHash": "sha256:22fca887d9a9336e8a29601b19683947a57b53911c74e251c3657ee798635275",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter ExtraLight"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ExtraLightItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1070,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:28.591Z"
+        },
+        {
+          "path": "Inter-ExtraLightItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:28.742Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-Italic.ttf",
+      "fileHash": "sha256:bbc051dd204b5019a1aa0bc0ae2aa8a05ab13e7a3f979fa357631dc7feb6833a",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Italic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1098,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:28.929Z"
+        },
+        {
+          "path": "Inter-Italic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:29.010Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-Light.ttf",
+      "fileHash": "sha256:164414f0aacbe98a7e64addc43f7b3bfd2e32f7b90e101feeab227f14c371bda",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Light-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1084,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:29.151Z"
+        },
+        {
+          "path": "Inter-Light-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:29.240Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-LightItalic.ttf",
+      "fileHash": "sha256:c3f9efa776957eefaeac8a2991a990fd1bba6cb928dbaeab7abd0655f3a7693c",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Light"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-LightItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1084,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:29.395Z"
+        },
+        {
+          "path": "Inter-LightItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:29.477Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-Medium.ttf",
+      "fileHash": "sha256:97ad806f526e41546d46365bb3a393145f75b7b1568913db74549ad8b8dba872",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Medium-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1109,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:29.629Z"
+        },
+        {
+          "path": "Inter-Medium-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:29.742Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-MediumItalic.ttf",
+      "fileHash": "sha256:51c2c8d7c36f7c26e6e2678b5c3069b329bde9a081154553b0f5bc2d4fc14075",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Medium"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-MediumItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1109,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:29.944Z"
+        },
+        {
+          "path": "Inter-MediumItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:30.115Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-Regular.ttf",
+      "fileHash": "sha256:40d692fce188e4471e2b3cba937be967878f631ad3ebbbdcd587687c7ebe0c82",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Regular-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1098,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:30.268Z"
+        },
+        {
+          "path": "Inter-Regular-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:30.348Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-SemiBold.ttf",
+      "fileHash": "sha256:78a843fade9d4612a5567302fb595b56976eb5fcebf4fea5a5912d638bafcde3",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter SemiBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-SemiBold-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1120,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:30.515Z"
+        },
+        {
+          "path": "Inter-SemiBold-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:30.669Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-SemiBoldItalic.ttf",
+      "fileHash": "sha256:eff2930c3d3b35d3fcf5f76252b6baef4c3e907d9d2fde1d16cf5d417f8deef4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter SemiBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-SemiBoldItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1120,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:30.831Z"
+        },
+        {
+          "path": "Inter-SemiBoldItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:31.007Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-Thin.ttf",
+      "fileHash": "sha256:22453f995345e5618d539315a8501f4c74ca41d1898ce44e7d1b8206f0d097d4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Thin"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-Thin-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1057,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:31.188Z"
+        },
+        {
+          "path": "Inter-Thin-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:31.266Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\Inter-ThinItalic.ttf",
+      "fileHash": "sha256:d89ffb2849ef91246283de40a929f671b6e0c8ad1c235701f9362fb0406b4cce",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Thin"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "Inter-ThinItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1057,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:31.423Z"
+        },
+        {
+          "path": "Inter-ThinItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:31.509Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-Black.ttf",
+      "fileHash": "sha256:25460b0d5b3afd9764d63cf838f94145af624f8d4c9d20e0f74116be42878b32",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Black"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Black-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1122,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:31.660Z"
+        },
+        {
+          "path": "InterDisplay-Black-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:31.923Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-BlackItalic.ttf",
+      "fileHash": "sha256:d4f3426d62f37f4960352201d109b07f4d50e689e321938770af1ca2d4729c67",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Black"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-BlackItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1125,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:32.094Z"
+        },
+        {
+          "path": "InterDisplay-BlackItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Black",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:32.438Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-Bold.ttf",
+      "fileHash": "sha256:b74c8e0dd744b3347faca4c96bc7b2e32f7d6f62300a79b1d1a99331e44a5bc4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Bold",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Bold-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1092,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:32.611Z"
+        },
+        {
+          "path": "InterDisplay-Bold-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:32.699Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-BoldItalic.ttf",
+      "fileHash": "sha256:71e7d3709238b1c21b107ba6433d3a87c6377041a507afd9cf7de3c36ab585f2",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Bold Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-BoldItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1092,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:32.848Z"
+        },
+        {
+          "path": "InterDisplay-BoldItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:32.939Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-ExtraBold.ttf",
+      "fileHash": "sha256:776d88313defcd42d33bc43bddcba6fc1e93ee3eaeca1c1ded2eacf2baec9d24",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraBold-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1106,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:33.094Z"
+        },
+        {
+          "path": "InterDisplay-ExtraBold-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:33.412Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-ExtraBoldItalic.ttf",
+      "fileHash": "sha256:857cf06880d9fe99f9d588a64386b875c2d7001c43624e086d0b8424b55bf415",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraBoldItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1108,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:33.581Z"
+        },
+        {
+          "path": "InterDisplay-ExtraBoldItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:33.928Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-ExtraLight.ttf",
+      "fileHash": "sha256:0d6606f81e4e5e98255e5194138229056380a74fcdebd779d4616d9ebc2819ed",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraLight"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraLight-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1012,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:34.090Z"
+        },
+        {
+          "path": "InterDisplay-ExtraLight-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:34.379Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-ExtraLightItalic.ttf",
+      "fileHash": "sha256:9d055889c083f1f8869a2a9ea1440da9168e996f589ae43a36415a27c857a37b",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display ExtraLight"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ExtraLightItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1008,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:34.544Z"
+        },
+        {
+          "path": "InterDisplay-ExtraLightItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:34.925Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-Italic.ttf",
+      "fileHash": "sha256:20cf47556669f80d12966d2f5eac5054b7486ce5d076feb744dbe24842e2593b",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Italic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1055,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:35.076Z"
+        },
+        {
+          "path": "InterDisplay-Italic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:35.159Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-Light.ttf",
+      "fileHash": "sha256:1d6072bc7807fa7bf08a6d273368f04ac68e77438258f32975057a61c8772811",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Light-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1034,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:35.302Z"
+        },
+        {
+          "path": "InterDisplay-Light-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:35.496Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-LightItalic.ttf",
+      "fileHash": "sha256:07d4f953666f6e60022fc2fd6e62c48fe616bff7f2bf7eeaaeebc8febd01bfc9",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Light"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-LightItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1031,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:35.660Z"
+        },
+        {
+          "path": "InterDisplay-LightItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:35.872Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-Medium.ttf",
+      "fileHash": "sha256:99665c256585aeaab2d06950c2d7715cca8fd7883c2d0e7a421b8b287e1f17de",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Medium-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1068,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:36.024Z"
+        },
+        {
+          "path": "InterDisplay-Medium-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:36.299Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-MediumItalic.ttf",
+      "fileHash": "sha256:443cfbc6d8013dd0c6f4f2a3952ee02a3b84a1ba44fd1456419b7e4f96f8c2a2",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Medium"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-MediumItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1067,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:36.476Z"
+        },
+        {
+          "path": "InterDisplay-MediumItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:36.791Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-Regular.ttf",
+      "fileHash": "sha256:99614bda7ff423aaf470990692dd93613a5971ab4446e4a6d5a83b3d74865074",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Regular-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1057,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:36.944Z"
+        },
+        {
+          "path": "InterDisplay-Regular-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:37.040Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-SemiBold.ttf",
+      "fileHash": "sha256:0310d7a325896129730c6c8cf9a6e0f81ee258bedf77b1ff059b2a7b75f74e02",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display SemiBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-SemiBold-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1080,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:37.243Z"
+        },
+        {
+          "path": "InterDisplay-SemiBold-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:37.609Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-SemiBoldItalic.ttf",
+      "fileHash": "sha256:7ff566a2fb8e811f6c846050444c3638b7d370fa3aabd08758fb8a0a2012b1ee",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display SemiBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-SemiBoldItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1080,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:37.761Z"
+        },
+        {
+          "path": "InterDisplay-SemiBoldItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:38.123Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-Thin.ttf",
+      "fileHash": "sha256:52762c933467ae114fd5b862c8cffdc289c8f93ef4073782fec1238d3d4a66df",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Thin"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2937,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-Thin-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 990,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:38.262Z"
+        },
+        {
+          "path": "InterDisplay-Thin-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:38.424Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\extras\\ttf\\InterDisplay-ThinItalic.ttf",
+      "fileHash": "sha256:c3fc28a382edd767041e5ce3cf669cf8b09a150cffbe2086f798e8c5097fd257",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "Inter Display Thin"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.01,
+        "big5": 0.01,
+        "glyphCount": 2901,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "InterDisplay-ThinItalic-2-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 985,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:38.566Z"
+        },
+        {
+          "path": "InterDisplay-ThinItalic-2-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "Inter Display Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:38.741Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-Bold.ttf",
+      "fileHash": "sha256:5590990c82e097397517f275f430af4546e1c45cff408bde4255dad142479dcb",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono"
+      },
+      "style": "Bold",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-Bold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:38.893Z"
+        },
+        {
+          "path": "JetBrainsMono-Bold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:39.081Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-BoldItalic.ttf",
+      "fileHash": "sha256:4039d5ce0ed225bf9c8b2c8c6436290ae2f356b7e90d70fa666227238324aa3b",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono"
+      },
+      "style": "Bold Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-BoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:39.211Z"
+        },
+        {
+          "path": "JetBrainsMono-BoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:39.445Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-ExtraBold.ttf",
+      "fileHash": "sha256:8e501d3a6a883e83ea4f7852804fb0894cebdd67751bb1006b37a476cef34cd6",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono ExtraBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-ExtraBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:39.627Z"
+        },
+        {
+          "path": "JetBrainsMono-ExtraBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:39.967Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-ExtraBoldItalic.ttf",
+      "fileHash": "sha256:ec3a860fa87d0a3b1451277d1c2f3072f5ba19d2367aec54f7169d5710872610",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono ExtraBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-ExtraBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:40.092Z"
+        },
+        {
+          "path": "JetBrainsMono-ExtraBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:40.443Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-ExtraLight.ttf",
+      "fileHash": "sha256:8391e7ec13e8ba758c1838f56bccd973228ccf4dc74aa5bffe9525b9147b12f8",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono ExtraLight"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-ExtraLight-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:40.562Z"
+        },
+        {
+          "path": "JetBrainsMono-ExtraLight-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:40.898Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-ExtraLightItalic.ttf",
+      "fileHash": "sha256:3c7fee57538f18b61cc5f0784a8133fe5ee95feb41f633e8f6f7ef609e6207ec",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono ExtraLight"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-ExtraLightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:41.035Z"
+        },
+        {
+          "path": "JetBrainsMono-ExtraLightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:41.425Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-Italic.ttf",
+      "fileHash": "sha256:9d0a1f7a708e6af183f1193b7e81d40da294f5c67682c085d8401c60aac8ded4",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-Italic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:41.558Z"
+        },
+        {
+          "path": "JetBrainsMono-Italic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:41.795Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-Light.ttf",
+      "fileHash": "sha256:60c18d7dd58d81b3bbd12e8ce32744a8771bfe2b5280574082b0eaed46c60d24",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-Light-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:42.011Z"
+        },
+        {
+          "path": "JetBrainsMono-Light-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:42.325Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-LightItalic.ttf",
+      "fileHash": "sha256:18ffadb91fa711b45feae027ddfd561e7f97ace805ec4baf9905046cf450befb",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono Light"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-LightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:42.444Z"
+        },
+        {
+          "path": "JetBrainsMono-LightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:42.776Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-Medium.ttf",
+      "fileHash": "sha256:31c92d01a8a08528b718a43addf0ad3df0af2ca4b7b3290a452f70f358e14d3d",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-Medium-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:42.892Z"
+        },
+        {
+          "path": "JetBrainsMono-Medium-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:43.198Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-MediumItalic.ttf",
+      "fileHash": "sha256:4477fda6bd472ef96b11bc1083370f7fc3ff427bdc807e682ced5819e3dee9df",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono Medium"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-MediumItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:43.326Z"
+        },
+        {
+          "path": "JetBrainsMono-MediumItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:43.673Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-Regular.ttf",
+      "fileHash": "sha256:a0bf60ef0f83c5ed4d7a75d45838548b1f6873372dfac88f71804491898d138f",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-Regular-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:43.813Z"
+        },
+        {
+          "path": "JetBrainsMono-Regular-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:44.032Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-SemiBold.ttf",
+      "fileHash": "sha256:1b3bfa1ed5665a4ce3f9feb68d2d4e40e70bf8b4b7d9a3edd418f321b4e166a0",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono SemiBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-SemiBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:44.195Z"
+        },
+        {
+          "path": "JetBrainsMono-SemiBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:44.658Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-SemiBoldItalic.ttf",
+      "fileHash": "sha256:3b3000507a7285872395ddbb4e53a28f07910dbf494fb0d5e1421dd60b5d8436",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono SemiBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-SemiBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:44.794Z"
+        },
+        {
+          "path": "JetBrainsMono-SemiBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:45.183Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-Thin.ttf",
+      "fileHash": "sha256:0756e8e8cf1d65fa7519776764479b3973efb15af4f419d5d7274dc27ae1b702",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono Thin"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-Thin-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:45.342Z"
+        },
+        {
+          "path": "JetBrainsMono-Thin-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:45.609Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMono-ThinItalic.ttf",
+      "fileHash": "sha256:ebcdd13119b6beb7457e2f76b31094cb8cf1108e567030f8402b24dde018e76a",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono Thin"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-ThinItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:45.740Z"
+        },
+        {
+          "path": "JetBrainsMono-ThinItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:46.043Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-Bold.ttf",
+      "fileHash": "sha256:0198e841824025f8876e5c297f0b9b497ee8d6eb9969710a3328e1303f996ec3",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL"
+      },
+      "style": "Bold",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-Bold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:46.157Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-Bold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:46.398Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-BoldItalic.ttf",
+      "fileHash": "sha256:6c2716f2e85101f4109a8c16916061eb38176b3b10342834858d6221ec2fda1b",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL"
+      },
+      "style": "Bold Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-BoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:46.526Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-BoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:46.827Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-ExtraBold.ttf",
+      "fileHash": "sha256:673f0209e5428e5f73a159df85806f8a5bf7f83316bb9554427a3eb877ee0cb7",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL ExtraBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-ExtraBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:46.991Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-ExtraBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:47.343Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-ExtraBoldItalic.ttf",
+      "fileHash": "sha256:0f386a0bd99bb2d41079fe438725b471b49a48e355b8d57399b7a6e8e1c63da6",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL ExtraBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-ExtraBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:47.467Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-ExtraBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL ExtraBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:47.890Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-ExtraLight.ttf",
+      "fileHash": "sha256:4ffddcd8bbebbdd8c066bd66ea32aa7995fdb7bc626777b1a8948074c85a2e9f",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL ExtraLight"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-ExtraLight-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:48.010Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-ExtraLight-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:48.366Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-ExtraLightItalic.ttf",
+      "fileHash": "sha256:7d5c8b4d42d7a4c268398c066f71b606f7f071864e73740c99a58838c55efde5",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL ExtraLight"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-ExtraLightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:48.494Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-ExtraLightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL ExtraLight",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:48.943Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-Italic.ttf",
+      "fileHash": "sha256:c7392a134293e1af1d36fbf04940dd844f632afbf97f8325d1591d3af5096cb8",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-Italic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:49.078Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-Italic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:49.449Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-Light.ttf",
+      "fileHash": "sha256:8bf1b1733d0a32c4ada2451deb1bd36e6945be3bf2bf2ba80c2be7c95e57f230",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-Light-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:49.594Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-Light-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:49.925Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-LightItalic.ttf",
+      "fileHash": "sha256:edbf41bed6eea37ae5d6ccd4353158d5bef140f1d078408ea20e4e599622b895",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL Light"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-LightItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:50.045Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-LightItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:50.428Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-Medium.ttf",
+      "fileHash": "sha256:44099e1efefba55637e0abbbf8dd3f526e59523345888a257bb01d39df4af74c",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-Medium-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:50.578Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-Medium-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:50.932Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-MediumItalic.ttf",
+      "fileHash": "sha256:2a5c56075d7bec1d54fa9761d5eeef7d4267e134d86962011425503b27e61ddd",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL Medium"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-MediumItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:51.063Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-MediumItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:51.478Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-Regular.ttf",
+      "fileHash": "sha256:fb3b2575d7b0657359707993288f12a7360344d39387bb26050e276d61f6bd2a",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-Regular-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:51.613Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-Regular-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:51.932Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-SemiBold.ttf",
+      "fileHash": "sha256:2c5dc6725fdbb0dccf65adceb38fdcd95e5fc8a5b74d5c150e38a5faa02a8945",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL SemiBold"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-SemiBold-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:52.090Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-SemiBold-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:52.591Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-SemiBoldItalic.ttf",
+      "fileHash": "sha256:f813544badbdab235b1f2f9933bb978be0a87cbde0133aaa05b80a84a7d94c22",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL SemiBold"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-SemiBoldItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:52.715Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-SemiBoldItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL SemiBold",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:53.178Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-Thin.ttf",
+      "fileHash": "sha256:1acb532f18726155022a1e8b717bf7bde3eb30e9e064ccc6d17b3d91e95204b0",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL Thin"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1590,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-Thin-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:53.340Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-Thin-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:53.642Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\ttf\\JetBrainsMonoNL-ThinItalic.ttf",
+      "fileHash": "sha256:58812240c633523eb930ac6ce86f392f4e2b5ad920549278d1758d70af972ad7",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono NL Thin"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1577,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMonoNL-ThinItalic-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:53.761Z"
+        },
+        {
+          "path": "JetBrainsMonoNL-ThinItalic-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono NL Thin",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:54.147Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\variable\\JetBrainsMono-Italic[wght].ttf",
+      "fileHash": "sha256:f115aaa12113718c02ce72864fe6823b87241bc23d3e44cf1220155f861063f2",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono"
+      },
+      "style": "Italic",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1730,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono-Italic[wght]-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:54.284Z"
+        },
+        {
+          "path": "JetBrainsMono-Italic[wght]-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:54.474Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\fonts\\variable\\JetBrainsMono[wght].ttf",
+      "fileHash": "sha256:662a196d58f1183bf2d77428b6d5283fe3f45161ab021bea4036bc98e5cac016",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "JetBrains Mono"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",
+      "detected": "latin",
+      "scripts": [
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 0,
+        "hant": 0,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 0.03666666666666667,
+        "gbk": 0.016666666666666666,
+        "big5": 0.013333333333333334,
+        "glyphCount": 1743,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "JetBrainsMono[wght]-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "ABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 943,
+          "height": 824,
+          "generatedAt": "2026-09-14T13:33:54.602Z"
+        },
+        {
+          "path": "JetBrainsMono[wght]-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "JetBrains Mono",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:33:54.780Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\lxgw-wenkai-v1.522\\LXGWWenKai-Light.ttf",
+      "fileHash": "sha256:526ec70cbb0118e871d481f8179e03ff045f0e4d72d080dcca87950c4ab27cca",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "LXGW WenKai Light",
+        "zh": "霞鹜文楷 Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+      "detected": "both",
+      "scripts": [
+        "hans",
+        "hant",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 1,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 1,
+        "gbk": 1,
+        "big5": 1,
+        "glyphCount": 46865,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "LXGWWenKai-Light-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n床前明月光，疑是地上霜。\n舉頭望明月，低頭思故鄉。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1388,
+          "height": 1416,
+          "generatedAt": "2026-09-14T13:33:57.879Z"
+        },
+        {
+          "path": "LXGWWenKai-Light-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "霞鹜文楷 Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:34:00.395Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\lxgw-wenkai-v1.522\\LXGWWenKai-Medium.ttf",
+      "fileHash": "sha256:d4bdeb38a39151d74d084cba5090f8cb7d20bf83eedb78c35939ae70b9f4e3f6",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "LXGW WenKai Medium",
+        "zh": "霞鹜文楷 Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+      "detected": "both",
+      "scripts": [
+        "hans",
+        "hant",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 1,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 1,
+        "gbk": 1,
+        "big5": 1,
+        "glyphCount": 46867,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "LXGWWenKai-Medium-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n床前明月光，疑是地上霜。\n舉頭望明月，低頭思故鄉。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1388,
+          "height": 1416,
+          "generatedAt": "2026-09-14T13:34:03.130Z"
+        },
+        {
+          "path": "LXGWWenKai-Medium-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "霞鹜文楷 Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:34:05.374Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\lxgw-wenkai-v1.522\\LXGWWenKai-Regular.ttf",
+      "fileHash": "sha256:39ad71264b588165b469e35e6afb162a378dacd1f95348160240ba9038ac3009",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "LXGW WenKai",
+        "zh": "霞鹜文楷"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+      "detected": "both",
+      "scripts": [
+        "hans",
+        "hant",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 1,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 1,
+        "gbk": 1,
+        "big5": 1,
+        "glyphCount": 46867,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "LXGWWenKai-Regular-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n床前明月光，疑是地上霜。\n舉頭望明月，低頭思故鄉。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1388,
+          "height": 1416,
+          "generatedAt": "2026-09-14T13:34:08.083Z"
+        },
+        {
+          "path": "LXGWWenKai-Regular-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "霞鹜文楷",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:34:10.291Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\lxgw-wenkai-v1.522\\LXGWWenKaiMono-Light.ttf",
+      "fileHash": "sha256:e4d22716a148d4ee820b9a4f63886a1d52dd68b4fa5826cc5e2dec55977f7930",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "LXGW WenKai Mono Light",
+        "zh": "霞鹜文楷等宽 Light"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+      "detected": "both",
+      "scripts": [
+        "hans",
+        "hant",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 1,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 1,
+        "gbk": 1,
+        "big5": 1,
+        "glyphCount": 46886,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "LXGWWenKaiMono-Light-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n床前明月光，疑是地上霜。\n舉頭望明月，低頭思故鄉。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1388,
+          "height": 1416,
+          "generatedAt": "2026-09-14T13:34:13.446Z"
+        },
+        {
+          "path": "LXGWWenKaiMono-Light-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "霞鹜文楷等宽 Light",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:34:16.295Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\lxgw-wenkai-v1.522\\LXGWWenKaiMono-Medium.ttf",
+      "fileHash": "sha256:7a674f448b15a1b3df781c3498973d77f71d270788f7f921080c1344e9d739e1",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "LXGW WenKai Mono Medium",
+        "zh": "霞鹜文楷等宽 Medium"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+      "detected": "both",
+      "scripts": [
+        "hans",
+        "hant",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 1,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 1,
+        "gbk": 1,
+        "big5": 1,
+        "glyphCount": 46888,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "LXGWWenKaiMono-Medium-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n床前明月光，疑是地上霜。\n舉頭望明月，低頭思故鄉。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1388,
+          "height": 1416,
+          "generatedAt": "2026-09-14T13:34:18.903Z"
+        },
+        {
+          "path": "LXGWWenKaiMono-Medium-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "霞鹜文楷等宽 Medium",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:34:21.224Z"
+        }
+      ]
+    },
+    {
+      "file": "D:\\project\\Online Project\\free-font\\fonts\\binary\\lxgw-wenkai-v1.522\\LXGWWenKaiMono-Regular.ttf",
+      "fileHash": "sha256:bc068e4e395c396f2909ffdfac3a3751578b73ed3d64a79c9c31bfa84e43debe",
+      "configHash": "sha256:6c2ef5090b8e736908420e27213381573c2a0519f6d90a7f2ba7c475c5082065",
+      "family": {
+        "en": "LXGW WenKai Mono",
+        "zh": "霞鹜文楷等宽"
+      },
+      "style": "Regular",
+      "license": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+      "detected": "both",
+      "scripts": [
+        "hans",
+        "hant",
+        "letter",
+        "digit"
+      ],
+      "coverage": {
+        "hans": 1,
+        "hant": 1,
+        "letter": 1,
+        "digit": 1
+      },
+      "charset": {
+        "gb2312": 1,
+        "gbk": 1,
+        "big5": 1,
+        "glyphCount": 46888,
+        "probeVersion": 1
+      },
+      "images": [
+        {
+          "path": "LXGWWenKaiMono-Regular-192.webp",
+          "size": 192,
+          "format": "webp",
+          "specimen": "床前明月光，疑是地上霜。\n举头望明月，低头思故乡。\n床前明月光，疑是地上霜。\n舉頭望明月，低頭思故鄉。\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijklm\nnopqrstuvwxyz\n0123456789",
+          "width": 1388,
+          "height": 1416,
+          "generatedAt": "2026-09-14T13:34:23.759Z"
+        },
+        {
+          "path": "LXGWWenKaiMono-Regular-cover.webp",
+          "size": 400,
+          "format": "webp",
+          "specimen": "霞鹜文楷等宽",
+          "width": 1200,
+          "height": 400,
+          "generatedAt": "2026-09-14T13:34:25.911Z"
+        }
+      ]
+    }
+  ]
+}
