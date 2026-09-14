@@ -1,0 +1,43 @@
+<div class="hero">
+  <h1>开源免费字体聚合站</h1>
+  <p>收录授权明确允许免费使用的字体，提供预览与下载</p>
+  <div class="stats">
+    <span>共 <strong><%= fonts.length %></strong> 款字体</span>
+    <span>镜像 <strong><%= mirroredCount %></strong> 款</span>
+    <span>外链 <strong><%= fonts.length - mirroredCount %></strong> 款</span>
+  </div>
+</div>
+
+<div class="toolbar">
+  <input id="search-input" class="search-box" type="search" placeholder="搜索字体名称、厂商、标签…">
+</div>
+
+<div class="toolbar">
+  <div class="filter-group" id="category-filters">
+    <button class="filter-btn" data-value="">全部分类</button>
+    <button class="filter-btn" data-value="sans-serif">无衬线</button>
+    <button class="filter-btn" data-value="serif">衬线</button>
+    <button class="filter-btn" data-value="monospace">等宽</button>
+    <button class="filter-btn" data-value="display">展示</button>
+    <button class="filter-btn" data-value="handwriting">手写</button>
+  </div>
+</div>
+
+<div class="toolbar">
+  <div class="filter-group" id="lang-filters">
+    <button class="filter-btn" data-value="">全部语言</button>
+    <button class="filter-btn" data-value="zh-Hans">中文简体</button>
+    <button class="filter-btn" data-value="zh-Hant">中文繁体</button>
+    <button class="filter-btn" data-value="ja">日文</button>
+    <button class="filter-btn" data-value="ko">韩文</button>
+    <button class="filter-btn" data-value="latin">拉丁</button>
+  </div>
+</div>
+
+<div class="font-grid" id="font-grid">
+  <% fonts.forEach(function(font) { %>
+    <%- include('_font-card', { font: font }) %>
+  <% }); %>
+</div>
+
+<script src="scripts/search.js"></script>

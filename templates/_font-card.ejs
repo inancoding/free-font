@@ -1,0 +1,24 @@
+<%
+  var name = font.name.zh && font.name.en
+    ? font.name.zh + ' / ' + font.name.en
+    : (font.name.zh || font.name.en || font.slug);
+  var catLabels = { 'sans-serif': '无衬线', 'serif': '衬线', 'monospace': '等宽', 'display': '展示', 'handwriting': '手写' };
+%>
+<a class="font-card" href="fonts/<%= font.slug %>.html">
+  <% if (font.preview) { %>
+    <img class="preview-img" src="images/<%= font.preview %>" alt="<%= name %>">
+  <% } else { %>
+    <div class="preview-placeholder"><%= (font.name.zh || font.name.en || '?').charAt(0) %></div>
+  <% } %>
+  <div class="card-name"><%= name %></div>
+  <div class="card-vendor"><%= font.vendor %></div>
+  <div class="card-meta">
+    <span class="badge badge-license"><%= font.license %></span>
+    <% if (font.category) { %>
+      <span class="badge badge-category"><%= catLabels[font.category] || font.category %></span>
+    <% } %>
+    <% font.languages.slice(0, 3).forEach(function(l) { %>
+      <span class="badge badge-lang"><%= l %></span>
+    <% }); %>
+  </div>
+</a>

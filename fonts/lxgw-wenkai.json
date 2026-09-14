@@ -10,7 +10,7 @@
   "officialUrl": "https://github.com/lxgw/LxgwWenKai",
   "sourceUrl": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.522/lxgw-wenkai-v1.522.zip",
   "sha256": "3b596205423d838ccd0965bfa2c7e8b6ebcb9d9284e1809e234ad1d5f441adef",
-  "mirror": true,
+  "category": "handwriting",
   "tags": ["楷体", "手写风格", "正文", "多语言"],
   "constraints": [
     "带 OFL 保留字体名（RFN）与附加许可：保留名「霞鹜」「霞鶩」「落霞孤鹜」「落霞孤鶩」「LXGW」仅可用于未修改源码的重编译版，或仅用于网页投递的子集化／转格式版",

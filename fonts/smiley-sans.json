@@ -10,7 +10,7 @@
   "officialUrl": "https://github.com/atelier-anchor/smiley-sans",
   "sourceUrl": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip",
   "sha256": "299c0be6c960ae37361762eca76f7d0cd516615435bb96c0d4b98a1e70178a07",
-  "mirror": true,
+  "category": "display",
   "tags": ["黑体", "无衬线", "窄斜", "标题字体"],
   "constraints": [
     "保留字体名为「Smiley」与「得意黑」，衍生版本不得沿用",

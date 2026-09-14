@@ -9,7 +9,7 @@
   "weights": ["ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "Black"],
   "officialUrl": "https://github.com/notofonts/noto-cjk",
   "sourceUrl": "https://github.com/notofonts/noto-cjk/releases/tag/Serif2.003",
-  "mirror": false,
+  "category": "serif",
   "tags": ["宋体", "衬线", "CJK", "多语言"],
   "constraints": [
     "与 Adobe 的 Source Han Serif 同源，字形一致但打包方式与版本号体系不同",

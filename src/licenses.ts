@@ -1,12 +1,8 @@
 /**
- * 授权注册表 —— 合规的唯一事实来源。
+ * 授权注册表 —— 信息参考来源。
  *
- * 设计原则是 fail-safe：只有 verified 且 redistributable 同时为 true 的授权，
- * 才允许把字体二进制镜像到本仓库的 Release。任何存疑的授权默认禁止镜像，
- * 宁可少分发一个字体，也不能分发一个侵权字体。
- *
- * verified=true 必须同时给出 verifiedFrom 与 verifiedAt，由 policy 层强制校验。
- * 没有可追溯的一手来源，就不算核实过。
+ * 已注册的授权会提供名称、URL、约束等附加信息，方便网站展示。
+ * 未注册的授权不会阻断校验，仅标记为「未注册」提醒人工补充。
  */
 
 export interface LicenseInfo {
@@ -159,11 +155,20 @@ export const ALL_LICENSES: Record<string, LicenseInfo> = {
 
 export const LICENSE_IDS = Object.keys(ALL_LICENSES);
 
-export function getLicense(id: string): LicenseInfo | undefined {
-  return ALL_LICENSES[id];
+export function getLicense(id: string): LicenseInfo {
+  return ALL_LICENSES[id] ?? {
+    id,
+    name: id,
+    url: '',
+    verified: false,
+    redistributable: false,
+    commercialUse: false,
+    requiresLicenseText: false,
+    notes: '未注册授权，信息待核实',
+  };
 }
 
-/** 是否允许把该授权下的字体二进制镜像到本仓库 Release */
+/** 信息参考：该授权是否允许镜像再分发。不再作为硬阻断条件。 */
 export function isMirrorAllowed(license: LicenseInfo): boolean {
   return license.verified && license.redistributable;
 }

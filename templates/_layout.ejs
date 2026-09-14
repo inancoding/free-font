@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= pageTitle %> - 免费字体聚合站</title>
+  <meta name="description" content="开源免费字体聚合站，收录授权明确允许免费使用的字体，提供预览与下载。">
+  <link rel="stylesheet" href="<%= baseUrl %>styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="<%= baseUrl %>index.html">免费字体聚合站</a>
+      <nav class="site-nav">
+        <a href="<%= baseUrl %>index.html">首页</a>
+        <a href="<%= baseUrl %>about.html">关于</a>
+        <a href="https://github.com/inancoding/free-font" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <%- body %>
+  </main>
+  <footer class="site-footer">
+    <p>元数据与脚本采用 <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0-1.0</a> 释出。字体文件各自遵循其原有授权。</p>
+    <p><a href="<%= baseUrl %>about.html#disclaimer">免责声明</a> · <a href="https://github.com/inancoding/free-font" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+</body>
+</html>

@@ -4,7 +4,7 @@ import { checkPolicies } from '../src/policy.ts';
 import { loadFonts } from '../src/load-fonts.ts';
 import { REPO_ROOT } from '../src/paths.ts';
 import { releaseUrlFor } from '../src/tags.ts';
-import type { Font } from '../src/schema.ts';
+import { isMirrored, type Font } from '../src/schema.ts';
 
 const README_PATH = path.join(REPO_ROOT, 'README.md');
 const START = '<!-- FONTS:START -->';
@@ -18,7 +18,7 @@ function cell(value: string): string {
 function row(font: Font): string {
   const { zh, en } = font.name;
   const name = zh && en ? `${zh} / ${en}` : (zh ?? en ?? '');
-  const download = font.mirror
+  const download = isMirrored(font)
     ? `[Release](${releaseUrlFor(font)}) · [官方](${font.officialUrl})`
     : `[官方](${font.officialUrl})`;
 
@@ -61,8 +61,8 @@ function constraintsSection(fonts: Font[]): string {
 }
 
 function build(fonts: Font[]): string {
-  const mirrored = fonts.filter((font) => font.mirror);
-  const linked = fonts.filter((font) => !font.mirror);
+  const mirrored = fonts.filter((font) => isMirrored(font));
+  const linked = fonts.filter((font) => !isMirrored(font));
 
   return [
     `共收录 **${fonts.length}** 款字体：${mirrored.length} 款提供镜像下载，${linked.length} 款仅提供官方外链。`,

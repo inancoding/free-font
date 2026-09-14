@@ -1,0 +1,29 @@
+<div class="about-content">
+  <h1>关于本站</h1>
+
+  <p>免费字体聚合站收录授权明确允许免费使用的字体，提供元数据索引、预览图与下载链接。字体文件通过 GitHub Releases 分发或直接链接到官方来源。</p>
+
+  <h2>收录标准</h2>
+  <p>收录满足以下条件的字体：</p>
+  <ul>
+    <li>授权明确允许免费使用（含免费商用与个人免费）</li>
+    <li>元数据以 JSON 格式入库</li>
+  </ul>
+  <p>对于授权允许再分发的字体，二进制文件会镜像到 GitHub Releases；其余字体仅提供官方外链。</p>
+
+  <h2>贡献</h2>
+  <p>欢迎提交新字体。流程：</p>
+  <ul>
+    <li>在 <code>src/licenses.ts</code> 确认授权已注册（或补充注册）</li>
+    <li>新建 <code>fonts/&lt;slug&gt;.json</code> 填写元数据</li>
+    <li>运行 <code>npm run validate</code> 确认无错误</li>
+    <li>运行 <code>npm run build:site</code> 更新网站</li>
+  </ul>
+
+  <h2 id="disclaimer">免责声明</h2>
+  <p>本站提供的授权信息仅为整理与索引，不构成法律意见。字体版权均归原作者或厂商所有。使用字体前请自行核实授权条款的适用性与时效性。</p>
+  <p>如果你是版权方，认为本站的收录超出了授权范围，请提交标题以 <code>[侵权投诉]</code> 开头的 Issue。</p>
+
+  <h2>许可</h2>
+  <p>元数据、脚本与文档采用 <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0-1.0</a> 释出。字体文件各自遵循其原有授权。</p>
+</div>

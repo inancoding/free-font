@@ -1,21 +1,32 @@
 {
   "name": "free-font",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "开源免费字体索引库 —— 元数据入库，字体文件通过 GitHub Releases 分发",
+  "description": "开源免费字体聚合站 —— 字体预览图生成 + 静态网站 + GitHub Releases 分发",
   "license": "CC0-1.0",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "scripts": {
     "validate": "tsx scripts/validate.ts",
     "build:readme": "tsx scripts/build-readme.ts",
+    "build:site": "tsx scripts/build-site.ts",
+    "build": "tsx scripts/build-site.ts",
     "fetch-artifact": "tsx scripts/fetch-artifact.ts",
+    "preview": "tsx font2image/src/cli/index.ts",
+    "preview:all": "tsx scripts/gen-previews.ts",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run validate"
   },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ejs": "^6.0.1",
+    "opentype.js": "^1.3.4",
+    "playwright-core": "^1.45.0"
+  },
   "devDependencies": {
+    "@types/ejs": "^3.1.5",
     "@types/node": "^26.5.1",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",

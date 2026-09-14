@@ -9,7 +9,7 @@
   "weights": ["ExtraLight", "Light", "Normal", "Regular", "Medium", "Bold", "Heavy"],
   "officialUrl": "https://github.com/adobe-fonts/source-han-sans",
   "sourceUrl": "https://github.com/adobe-fonts/source-han-sans/releases/tag/2.005",
-  "mirror": false,
+  "category": "sans-serif",
   "tags": ["黑体", "无衬线", "CJK", "多语言", "可变字体"],
   "constraints": [
     "Adobe 版与 Google 版 Noto Sans CJK 同源但发布渠道与打包方式不同",

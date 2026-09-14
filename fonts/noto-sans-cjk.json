@@ -9,7 +9,7 @@
   "weights": ["Thin", "Light", "DemiLight", "Regular", "Medium", "Bold", "Black"],
   "officialUrl": "https://github.com/notofonts/noto-cjk",
   "sourceUrl": "https://github.com/notofonts/noto-cjk/releases/tag/Sans2.004",
-  "mirror": false,
+  "category": "sans-serif",
   "tags": ["黑体", "无衬线", "CJK", "多语言", "等宽变体"],
   "constraints": [
     "与 Adobe 的 Source Han Sans 同源，字形一致但打包方式与版本号体系不同",

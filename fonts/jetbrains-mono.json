@@ -19,7 +19,7 @@
   "officialUrl": "https://github.com/JetBrains/JetBrainsMono",
   "sourceUrl": "https://github.com/JetBrains/JetBrainsMono/releases/download/v2.304/JetBrainsMono-2.304.zip",
   "sha256": "6f6376c6ed2960ea8a963cd7387ec9d76e3f629125bc33d1fdcd7eb7012f7bbf",
-  "mirror": true,
+  "category": "monospace",
   "tags": ["等宽", "代码字体", "编程连字", "西文"],
   "constraints": ["不含 CJK 字符，需与中文字体搭配使用"],
   "addedAt": "2026-09-13",

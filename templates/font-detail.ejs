@@ -1,0 +1,94 @@
+<%
+  var name = font.name.zh && font.name.en
+    ? font.name.zh + ' / ' + font.name.en
+    : (font.name.zh || font.name.en || font.slug);
+  var catLabels = { 'sans-serif': '无衬线', 'serif': '衬线', 'monospace': '等宽', 'display': '展示', 'handwriting': '手写' };
+  var mirrored = font.sourceUrl && font.sha256;
+%>
+
+<div class="detail-header">
+  <h1><%= name %></h1>
+  <div class="vendor"><%= font.vendor %> · v<%= font.version %></div>
+</div>
+
+<div class="detail-grid">
+  <div class="detail-preview">
+    <% if (font.preview) { %>
+      <img src="../images/<%= font.preview %>" alt="<%= name %>">
+    <% } else { %>
+      <span style="font-size: 4rem; color: var(--text-secondary);"><%= (font.name.zh || font.name.en || '?').charAt(0) %></span>
+    <% } %>
+  </div>
+  <div class="detail-info">
+    <% if (font.description) { %>
+      <p><%= font.description %></p>
+    <% } %>
+    <dl>
+      <dt>授权</dt>
+      <dd>
+        <% if (licenseInfo.url) { %>
+          <a href="<%= licenseInfo.url %>" target="_blank" rel="noopener"><%= font.license %></a>
+        <% } else { %>
+          <%= font.license %>
+        <% } %>
+      </dd>
+      <dt>字重</dt>
+      <dd><%= font.weights.join('、') %></dd>
+      <dt>格式</dt>
+      <dd><%= font.formats.join('、') %></dd>
+      <dt>语言</dt>
+      <dd><%= font.languages.join('、') %></dd>
+      <% if (font.category) { %>
+        <dt>分类</dt>
+        <dd><%= catLabels[font.category] || font.category %></dd>
+      <% } %>
+      <dt>收录日期</dt>
+      <dd><%= font.addedAt %></dd>
+    </dl>
+  </div>
+</div>
+
+<div class="download-section">
+  <h2>下载</h2>
+  <div class="download-links">
+    <% if (mirrored) { %>
+      <a class="btn btn-primary" href="https://github.com/inancoding/free-font/releases/tag/<%= font.slug %>-v<%= font.version %>" target="_blank" rel="noopener">GitHub Release 下载</a>
+    <% } %>
+    <% if (font.downloadUrl) { %>
+      <a class="btn btn-primary" href="<%= font.downloadUrl %>" target="_blank" rel="noopener">直接下载</a>
+    <% } %>
+    <a class="btn btn-secondary" href="<%= font.officialUrl %>" target="_blank" rel="noopener">官方仓库</a>
+    <% if (font.sourceUrl && !mirrored) { %>
+      <a class="btn btn-secondary" href="<%= font.sourceUrl %>" target="_blank" rel="noopener">官方下载</a>
+    <% } %>
+  </div>
+</div>
+
+<% if (font.constraints.length > 0) { %>
+<div class="constraints-section">
+  <h2>分发与使用限制</h2>
+  <ul>
+    <% font.constraints.forEach(function(c) { %>
+      <li><%= c %></li>
+    <% }); %>
+  </ul>
+</div>
+<% } %>
+
+<% if (licenseInfo.constraints && licenseInfo.constraints.length > 0) { %>
+<div class="constraints-section">
+  <h2><%= font.license %> 通用条款</h2>
+  <ul>
+    <% licenseInfo.constraints.forEach(function(c) { %>
+      <li><%= c %></li>
+    <% }); %>
+  </ul>
+</div>
+<% } %>
+
+<% if (font.notes) { %>
+<div class="notes-section">
+  <h2>备注</h2>
+  <p><%= font.notes %></p>
+</div>
+<% } %>

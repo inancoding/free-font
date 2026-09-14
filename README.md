@@ -1,6 +1,6 @@
 # free-font
 
-开源免费字体索引库。收录授权明确允许免费商用的字体，元数据入库，字体文件通过 GitHub Releases 分发。
+开源免费字体聚合站——收录授权明确允许免费使用的字体，提供在线预览、元数据索引与 GitHub Releases 镜像分发。
 
 > **使用前请务必阅读** [免责声明](DISCLAIMER.md)。本仓库提供的授权信息仅为整理与索引，不构成法律意见；字体版权均归原作者或厂商所有。
 
@@ -105,48 +105,76 @@
 
 ## 收录标准
 
-只收录同时满足以下三条的字体：
+满足以下条件的字体即可收录：
 
-1. 授权明确允许**免费商用**
-2. 授权明确允许**第三方再分发**
-3. 授权原文已存档于 `licenses/<slug>/`
+1. 授权明确允许**免费使用**（含个人非商业用途）
+2. 授权原文已存档于 `licenses/<slug>/`（外链字体至少注明出处）
 
-任何一项存疑的字体，一律不镜像二进制文件，仅在索引中提供官方外链。这条规则由 `npm run validate` 在 CI 中强制执行，不靠人工自觉。
+是否镜像二进制文件是独立决定：授权允许再分发且体积可控的字体，我们会镜像到 GitHub Releases；其余字体仅提供官方外链。授权信息存疑的字体同样可以收录，但会在条目中标注「待核实」。
 
 ## 项目结构
 
 ```
 fonts/<slug>.json         字体元数据（唯一需要手工维护的数据）
+fonts/binary/             本地存放的字体二进制（不进 Git，用于预览图生成）
 licenses/<slug>/          授权原文副本
-preview/<slug>.webp       预览图
-src/licenses.ts           授权注册表 —— 合规白名单的唯一来源
+templates/                EJS 模板（首页、详情页、关于页）
+public/                   静态资源（CSS、JS，构建时复制到 docs/）
+docs/                     生成的静态网站（不进 Git）
+font2image/               预览图 / 封面图生成引擎（独立子项目）
+src/licenses.ts           授权注册表（信息参考，不再硬性拦截）
 src/schema.ts             元数据结构定义
-src/policy.ts             合规策略校验
+src/policy.ts             合规策略校验（错误仅阻断 slug 不一致与重复）
 scripts/validate.ts       校验入口
+scripts/build-site.ts     静态站构建（EJS → docs/）
 scripts/build-readme.ts   由 fonts/*.json 生成上方索引表
+scripts/gen-previews.ts   批量预览图生成（封装 font2image CLI）
 scripts/fetch-artifact.ts 下载官方产物并校验 SHA-256
 src/tags.ts               Release tag 与产物命名规则
-.github/workflows/        ci.yml（校验）/ release.yml（tag 触发发版）
+.github/workflows/        ci.yml（校验 + Pages 部署）/ release.yml（tag 触发发版）
 ```
 
 字体二进制文件**不进 Git**（见 `.gitignore`）。它们只在 CI 的 `build/` 目录里短暂存在：下载 → 校验摘要 → 上传到 Release → 丢弃，本地仓库中始终不会有字体文件。
+
+本地生成预览图时，字体文件需先放入 `fonts/binary/`（可从 GitHub Release 下载或手动放置），产物输出到 `docs/images/`。
+
+## 预览图生成
+
+项目内置了 [font2image](font2image/) 引擎，可离线批量生成字体预览图（PNG / WebP / JPG）。它通过本地 Edge / Chrome 渲染 Canvas，支持诗词样张、字符覆盖度检测、TTC / WOFF2 解包、增量生成。
+
+```bash
+# 批量生成（扫描 fonts/binary/，输出到 docs/images/）
+npm run preview:all
+
+# 指定字体目录
+npm run preview:all -- --in /path/to/fonts
+
+# 强制重新生成（忽略增量缓存）
+npm run preview:all -- --force
+
+# 单文件模式（直接调用 font2image CLI）
+npm run preview -- path/to/font.ttf --out docs/images --sizes 192,512
+```
+
+font2image 的完整参数可通过 `npm run preview -- --help` 查看，包括 `--format`、`--text`、`--poem`、`--background`、`--quality` 等。
 
 ## 贡献
 
 ### 收录新字体
 
-1. 在 `src/licenses.ts` 确认该字体的授权已注册。若没有，先补注册，并**务必核对官方授权原文**后才把 `verified` 设为 `true`
-2. 新建 `fonts/<slug>.json`，文件名必须与 `slug` 字段一致
-3. 若要镜像（`mirror: true`），还需要三样东西：
+1. 新建 `fonts/<slug>.json`，文件名必须与 `slug` 字段一致
+2. 在 `src/licenses.ts` 确认该字体的授权已注册。若没有，先补注册，并**务必核对官方授权原文**后才把 `verified` 设为 `true`
+3. 若要镜像，还需要三样东西：
    - 把授权原文放进 `licenses/<slug>/`
    - 填 `sourceUrl`，指向官方发布的具体产物文件（不是发布页）
    - 填 `sha256`，即该产物的摘要：`curl -sL <sourceUrl> | sha256sum`
+   - 同时填了 `sourceUrl` 和 `sha256` 即视为镜像字体，无需额外标记
 4. 本地跑 `npm run validate`，确认无错误
-5. 跑 `npm run build:readme` 更新索引表，一并提交
+5. 跑 `npm run build:readme` 更新索引表，跑 `npm run build:site` 确认静态站正常，一并提交
 
 ### 发版
 
-`mirror: true` 的字体通过打 tag 触发 GitHub Actions 自动发版，不需要在本地上传二进制：
+已镜像的字体（同时填有 `sourceUrl` 和 `sha256`）通过打 tag 触发 GitHub Actions 自动发版，不需要在本地上传二进制：
 
 ```bash
 git tag zhuque-fangsong-v0.212      # 格式固定为 <slug>-v<version>
@@ -172,13 +200,15 @@ git push origin zhuque-fangsong-v0.212
 
 ## 本地开发
 
-需要 Node.js 20 及以上。
+需要 Node.js 22 及以上。生成预览图还需要本机已安装 Microsoft Edge 或 Google Chrome。
 
 ```bash
 npm install
 npm run validate              # 校验所有字体元数据
 npm run validate -- --check-links   # 额外检查官方链接是否可达
 npm run build:readme          # 重新生成索引表
+npm run build:site            # 构建静态网站（输出到 docs/）
+npm run preview:all           # 批量生成预览图（需先放入 fonts/binary/）
 npm run check                 # typecheck + validate
 ```
 

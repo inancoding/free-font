@@ -1,6 +1,7 @@
 import { checkLinks } from '../src/check-links.ts';
 import { loadFonts, type ValidationError } from '../src/load-fonts.ts';
 import { checkPolicies } from '../src/policy.ts';
+import { isMirrored } from '../src/schema.ts';
 
 const RED = '\u001b[31m';
 const YELLOW = '\u001b[33m';
@@ -60,7 +61,7 @@ async function main(): Promise<number> {
 
   const errorCount = all.filter((item) => item.severity === 'error').length;
   const warnCount = all.length - errorCount;
-  const mirrored = fonts.filter((item) => item.font.mirror).length;
+  const mirrored = fonts.filter((item) => isMirrored(item.font)).length;
 
   console.log(
     `\n${DIM}${'─'.repeat(52)}${RESET}\n` +

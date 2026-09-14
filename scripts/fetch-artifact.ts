@@ -9,7 +9,7 @@ import { getLicense } from '../src/licenses.ts';
 import { loadFonts } from '../src/load-fonts.ts';
 import { REPO_ROOT } from '../src/paths.ts';
 import { artifactNameFor, tagNameFor } from '../src/tags.ts';
-import type { Font } from '../src/schema.ts';
+import { isMirrored, type Font } from '../src/schema.ts';
 
 const BUILD_DIR = path.join(REPO_ROOT, 'build');
 const NOTES_PATH = path.join(BUILD_DIR, 'RELEASE_NOTES.md');
@@ -135,8 +135,8 @@ async function main(): Promise<number> {
     return 1;
   }
 
-  if (!font.mirror) {
-    console.error(`${font.slug} 的 mirror=false，不发布二进制产物。`);
+  if (!isMirrored(font)) {
+    console.error(`${font.slug} 未设置镜像（缺少 sourceUrl 或 sha256），不发布二进制产物。`);
     return 1;
   }
   if (!font.sourceUrl || !font.sha256) {

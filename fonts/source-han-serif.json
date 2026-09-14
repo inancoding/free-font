@@ -9,7 +9,7 @@
   "weights": ["ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "Black"],
   "officialUrl": "https://github.com/adobe-fonts/source-han-serif",
   "sourceUrl": "https://github.com/adobe-fonts/source-han-serif/releases/tag/2.003",
-  "mirror": false,
+  "category": "serif",
   "tags": ["宋体", "衬线", "CJK", "多语言", "可变字体"],
   "constraints": [
     "CFF2 格式的可变字体在 Windows 上存在已知渲染问题，官方建议改用 TTF 可变字体版本"
