@@ -50,17 +50,7 @@ export async function loadFonts(): Promise<LoadResult> {
     entries = await readdir(FONTS_DIR);
   } catch (err) {
     if ((err as NodeJS.ErrnoException).code === 'ENOENT') {
-      return {
-        fonts,
-        errors: [
-          {
-            file: 'fonts/',
-            field: '',
-            message: 'fonts/ 目录不存在，尚无任何字体元数据',
-            severity: 'error',
-          },
-        ],
-      };
+      return { fonts, errors: [] };
     }
     throw err;
   }
