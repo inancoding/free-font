@@ -4,6 +4,7 @@ import path from 'node:path';
 import { REPO_ROOT, FONTS_DIR } from '../src/paths.ts';
 import { fontSchema } from '../src/schema.ts';
 import { LICENSE_IDS, ALL_LICENSES } from '../src/licenses.ts';
+import { parseFontMeta } from '../src/parse-font-meta.ts';
 import ejs from 'ejs';
 
 const PORT = Number(process.env.PORT ?? 3000);
@@ -39,6 +40,15 @@ function parseBody(req: IncomingMessage): Promise<string> {
     const chunks: Buffer[] = [];
     req.on('data', (chunk) => chunks.push(chunk));
     req.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+    req.on('error', reject);
+  });
+}
+
+function readBody(req: IncomingMessage): Promise<Buffer> {
+  return new Promise((resolve, reject) => {
+    const chunks: Buffer[] = [];
+    req.on('data', (chunk) => chunks.push(chunk));
+    req.on('end', () => resolve(Buffer.concat(chunks)));
     req.on('error', reject);
   });
 }
@@ -158,6 +168,24 @@ const server = createServer(async (req, res) => {
     const html = await renderAdmin();
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end(html);
+    return;
+  }
+
+  if (url.pathname === '/api/font-meta' && req.method === 'POST') {
+    try {
+      const buf = await readBody(req);
+      if (buf.length === 0 || buf.length > 50 * 1024 * 1024) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: '文件为空或超过 50MB 限制' }));
+        return;
+      }
+      const meta = parseFontMeta(buf);
+      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify(meta));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ error: (err as Error).message }));
+    }
     return;
   }
 

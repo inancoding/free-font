@@ -2,7 +2,6 @@
   var name = font.name.zh && font.name.en
     ? font.name.zh + ' / ' + font.name.en
     : (font.name.zh || font.name.en || font.slug);
-  var catLabels = { 'sans-serif': '无衬线', 'serif': '衬线', 'monospace': '等宽', 'display': '展示', 'handwriting': '手写' };
 %>
 
 <div class="detail-header">
@@ -39,7 +38,7 @@
       <dd><%= (font.languageNames || font.languages).join('、') %></dd>
       <% if (font.category) { %>
         <dt>分类</dt>
-        <dd><%= catLabels[font.category] || font.category %></dd>
+        <dd><%= font.category %></dd>
       <% } %>
       <% if (font.tags && font.tags.length > 0) { %>
         <dt>标签</dt>

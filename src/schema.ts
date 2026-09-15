@@ -21,7 +21,7 @@ export const isoDateSchema = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/, 'addedAt 必须是 YYYY-MM-DD 格式');
 
-export const categorySchema = z.enum(['sans-serif', 'serif', 'monospace', 'display', 'handwriting']);
+export const categorySchema = z.enum(['楷体', '宋体', '黑体', '手写体', '艺术体', '手绘体', '英文字体']);
 
 /**
  * 字体元数据结构。

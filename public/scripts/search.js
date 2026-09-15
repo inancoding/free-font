@@ -116,8 +116,7 @@
 
     var badges = '<span class="badge badge-license">' + esc(font.license) + '</span>';
     if (font.category) {
-      var catLabel = { 'sans-serif': '无衬线', 'serif': '衬线', 'monospace': '等宽', 'display': '展示', 'handwriting': '手写' };
-      badges += ' <span class="badge badge-category">' + (catLabel[font.category] || font.category) + '</span>';
+      badges += ' <span class="badge badge-category">' + esc(font.category) + '</span>';
     }
     var shownLangs = font.languages.slice(0, 3);
     shownLangs.forEach(function (l) {

@@ -88,6 +88,13 @@
   </div>
 
   <form method="POST" action="/admin" id="font-form">
+    <div class="form-group">
+      <label for="fontFile">导入字体文件（可选）</label>
+      <input type="file" id="fontFile" accept=".ttf,.otf,.woff,.woff2">
+      <div class="hint">选择 TTF/OTF 文件后自动读取名称、厂商、版本等信息</div>
+      <div id="font-meta-status" style="font-size: 0.85rem; color: #0066cc; margin-top: 0.25rem; display: none;"></div>
+    </div>
+
     <div class="form-row">
       <div class="form-group">
         <label for="slug">Slug</label>
@@ -132,11 +139,13 @@
         <label for="category">分类</label>
         <select id="category" name="category">
           <option value="">（无）</option>
-          <option value="sans-serif">无衬线</option>
-          <option value="serif">衬线</option>
-          <option value="monospace">等宽</option>
-          <option value="display">展示</option>
-          <option value="handwriting">手写</option>
+          <option value="楷体">楷体</option>
+          <option value="宋体">宋体</option>
+          <option value="黑体">黑体</option>
+          <option value="手写体">手写体</option>
+          <option value="艺术体">艺术体</option>
+          <option value="手绘体">手绘体</option>
+          <option value="英文字体">英文字体</option>
         </select>
       </div>
     </div>
@@ -364,5 +373,61 @@
 
   document.getElementById('image-modal').addEventListener('click', function(e) {
     if (e.target === this) closeImagePicker();
+  });
+
+  document.getElementById('fontFile').addEventListener('change', function() {
+    const file = this.files[0];
+    if (!file) return;
+    const statusEl = document.getElementById('font-meta-status');
+    statusEl.style.display = 'block';
+    statusEl.style.color = '#0066cc';
+    statusEl.textContent = '正在读取字体信息…';
+
+    const ext = file.name.split('.').pop().toLowerCase();
+    const formatMap = { ttf: 'ttf', otf: 'otf', woff: 'woff', woff2: 'woff2' };
+    const detectedFormat = formatMap[ext] || ext;
+
+    fetch('/api/font-meta', { method: 'POST', body: file })
+      .then(r => r.json())
+      .then(meta => {
+        const lines = [];
+
+        if (meta.familyName) {
+          const nameEn = document.getElementById('nameEn');
+          if (!nameEn.value) nameEn.value = meta.familyName;
+          lines.push('名称: ' + meta.familyName);
+        }
+        if (meta.manufacturer) {
+          const vendor = document.getElementById('vendor');
+          if (!vendor.value) vendor.value = meta.manufacturer;
+          lines.push('厂商: ' + meta.manufacturer);
+        }
+        if (meta.version) {
+          const version = document.getElementById('version');
+          if (version.value === '1.0.0') version.value = meta.version;
+          lines.push('版本: ' + meta.version);
+        }
+        if (meta.designer) {
+          lines.push('设计师: ' + meta.designer);
+        }
+
+        const fmtCheckbox = document.querySelector('input[name="formats"][value="' + detectedFormat + '"]');
+        if (fmtCheckbox && !fmtCheckbox.checked) {
+          fmtCheckbox.checked = true;
+          lines.push('格式: ' + detectedFormat.toUpperCase());
+        }
+
+        if (lines.length === 0) {
+          statusEl.style.color = '#999';
+          statusEl.textContent = '未能从文件中读取到元数据';
+        } else {
+          statusEl.style.color = '#28a745';
+          statusEl.textContent = '已自动填充：' + lines.join('，');
+        }
+      })
+      .catch(err => {
+        statusEl.style.color = '#dc3545';
+        statusEl.textContent = '读取失败：' + err.message;
+      });
   });
 </script>
