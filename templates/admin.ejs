@@ -45,6 +45,10 @@
   .image-picker-wrap .picker-btn:hover { background: #f0f0f0; }
   .image-picker-wrap .file-name { font-size: 0.85rem; color: #666; }
 
+  .zip-upload-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+  .zip-file-input { display: none; }
+  .zip-status { width: 100%; font-size: 0.85rem; margin-top: 0.25rem; }
+
   .modal-overlay {
     display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
     z-index: 1000; align-items: center; justify-content: center;
@@ -225,16 +229,22 @@
       <textarea id="description" name="description" placeholder="一句话描述这款字体..."></textarea>
     </div>
 
-    <div class="form-row">
-      <div class="form-group">
-        <label for="glyphCount">字数</label>
-        <input type="number" id="glyphCount" name="glyphCount" min="1" placeholder="如 6763">
+    <div class="form-group">
+      <label>字体 ZIP 产物</label>
+      <div class="zip-upload-wrap">
+        <input type="file" id="zipFile" accept=".zip" class="zip-file-input">
+        <button type="button" class="picker-btn" id="zip-pick-btn" onclick="document.getElementById('zipFile').click()">选择 ZIP 文件</button>
+        <span class="file-name" id="zip-filename"></span>
+        <div class="zip-status" id="zip-status"></div>
       </div>
-      <div class="form-group">
-        <label for="sha256">SHA-256</label>
-        <input type="text" id="sha256" name="sha256" pattern="[a-f0-9]{64}" placeholder="填写后视为已发版">
-        <div class="hint">64 位十六进制，有值即视为已发版</div>
-      </div>
+      <div class="hint">上传字体 ZIP 后自动计算 SHA-256 并标记为已发版</div>
+      <input type="hidden" id="sha256" name="sha256">
+      <input type="hidden" id="zipTmpPath" name="zipTmpPath">
+    </div>
+
+    <div class="form-group">
+      <label for="glyphCount">字数</label>
+      <input type="number" id="glyphCount" name="glyphCount" min="1" placeholder="如 6763">
     </div>
 
     <div class="form-row">
@@ -315,6 +325,10 @@
   function resetForm() {
     document.getElementById('font-form').reset();
     document.getElementById('addedAt').value = new Date().toISOString().slice(0, 10);
+    document.getElementById('sha256').value = '';
+    document.getElementById('zipTmpPath').value = '';
+    document.getElementById('zip-filename').textContent = '';
+    document.getElementById('zip-status').textContent = '';
     setImagePreview('cover', '');
     setImagePreview('preview', '');
   }
@@ -428,6 +442,37 @@
       .catch(err => {
         statusEl.style.color = '#dc3545';
         statusEl.textContent = '读取失败：' + err.message;
+      });
+  });
+
+  document.getElementById('zipFile').addEventListener('change', function() {
+    const file = this.files[0];
+    if (!file) return;
+    const statusEl = document.getElementById('zip-status');
+    const nameEl = document.getElementById('zip-filename');
+    nameEl.textContent = file.name;
+    statusEl.style.color = '#0066cc';
+    statusEl.textContent = '正在上传并计算 SHA-256…';
+
+    const formData = new FormData();
+    formData.append('zip', file);
+
+    fetch('/api/upload-zip', { method: 'POST', body: formData })
+      .then(r => r.json())
+      .then(data => {
+        if (data.error) {
+          statusEl.style.color = '#dc3545';
+          statusEl.textContent = '上传失败：' + data.error;
+          return;
+        }
+        document.getElementById('sha256').value = data.sha256;
+        document.getElementById('zipTmpPath').value = data.tmpFilename;
+        statusEl.style.color = '#28a745';
+        statusEl.textContent = '已上传，SHA-256: ' + data.sha256.slice(0, 16) + '…';
+      })
+      .catch(err => {
+        statusEl.style.color = '#dc3545';
+        statusEl.textContent = '上传失败：' + err.message;
       });
   });
 </script>

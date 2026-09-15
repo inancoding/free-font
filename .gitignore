@@ -13,6 +13,8 @@ tmp/
 *.woff2
 *.ttc
 *.zip
+!zips/*.zip
+zips/.tmp/
 
 # 生成的静态网站
 docs/

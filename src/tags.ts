@@ -17,19 +17,19 @@ export function releaseUrlFor(font: Font): string {
   return `https://github.com/${REPO_OWNER}/${REPO_NAME}/releases/tag/${tagNameFor(font)}`;
 }
 
-/** 打包产物名，同时用作 Release 附件名 */
+/** 打包产物名，对应 zips/ 目录中的文件名 */
 export function artifactNameFor(font: Font): string {
   return `${font.slug}-${font.version}.zip`;
 }
 
-/** GitHub Release 附件直接下载链接（点击即开始下载） */
+/** GitHub 仓库内 ZIP 文件的原始下载链接 */
 export function directDownloadUrlFor(font: Font): string {
-  return `https://github.com/${REPO_OWNER}/${REPO_NAME}/releases/download/${tagNameFor(font)}/${artifactNameFor(font)}`;
+  return `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${tagNameFor(font)}/zips/${artifactNameFor(font)}`;
 }
 
-/** jsDelivr CDN 加速下载链接 */
+/** jsDelivr CDN 加速下载链接（从仓库 tag 读取） */
 export function jsdelivrUrlFor(font: Font): string {
-  return `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${tagNameFor(font)}/${artifactNameFor(font)}`;
+  return `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${tagNameFor(font)}/zips/${artifactNameFor(font)}`;
 }
 
 export interface DownloadLink {

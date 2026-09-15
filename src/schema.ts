@@ -81,7 +81,7 @@ export type Font = z.infer<typeof fontSchema>;
 export type FontFormat = z.infer<typeof fontFormatSchema>;
 export type Category = z.infer<typeof categorySchema>;
 
-/** 有 sha256 即视为已发版（手动上传到 Release） */
+/** 有 sha256 即视为已发版（ZIP 已入库） */
 export function isMirrored(font: Font): boolean {
   return Boolean(font.sha256);
 }

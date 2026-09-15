@@ -1,8 +1,9 @@
 import { readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
-import { IMAGES_DIR, LICENSES_DIR } from './paths.ts';
+import { IMAGES_DIR, LICENSES_DIR, ZIPS_DIR } from './paths.ts';
 import { ALL_LICENSES, isMirrorAllowed } from './licenses.ts';
 import { isMirrored } from './schema.ts';
+import { artifactNameFor } from './tags.ts';
 import type { LoadedFont, ValidationError } from './load-fonts.ts';
 
 async function exists(target: string): Promise<boolean> {
@@ -74,6 +75,11 @@ export async function checkPolicies(fonts: LoadedFont[]): Promise<ValidationErro
           `建议在 licenses/${font.slug}/ 存放授权原文副本`,
           'warn',
         );
+      }
+
+      const zipPath = path.join(ZIPS_DIR, artifactNameFor(font));
+      if (!(await exists(zipPath))) {
+        push('sha256', `ZIP 产物不存在：zips/${artifactNameFor(font)}`, 'error');
       }
     }
 

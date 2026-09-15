@@ -10,7 +10,6 @@
   },
   "scripts": {
     "dev": "tsx scripts/dev-server.ts",
-    "upload": "tsx scripts/upload-release.ts",
     "validate": "tsx scripts/validate.ts",
     "build:site": "tsx scripts/build-site.ts",
     "build": "tsx scripts/build-site.ts",

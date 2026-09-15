@@ -1,7 +1,8 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile, readdir, mkdir, rename } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
-import { REPO_ROOT, FONTS_DIR } from '../src/paths.ts';
+import { REPO_ROOT, FONTS_DIR, ZIPS_DIR, ZIPS_TMP_DIR } from '../src/paths.ts';
 import { fontSchema } from '../src/schema.ts';
 import { LICENSE_IDS, ALL_LICENSES } from '../src/licenses.ts';
 import { parseFontMeta } from '../src/parse-font-meta.ts';
@@ -69,6 +70,43 @@ function parseFormData(body: string): Record<string, string | string[]> {
   return result;
 }
 
+function parseMultipart(buf: Buffer, boundary: string): { fields: Record<string, string>; files: Record<string, Buffer> } {
+  const fields: Record<string, string> = {};
+  const files: Record<string, Buffer> = {};
+  const delimiter = Buffer.from(`--${boundary}`);
+  const parts: Buffer[] = [];
+  let start = 0;
+  while (true) {
+    const idx = buf.indexOf(delimiter, start);
+    if (idx === -1) break;
+    if (start > 0) parts.push(buf.subarray(start, idx));
+    start = idx + delimiter.length;
+  }
+
+  for (const part of parts) {
+    const headerEnd = part.indexOf('\r\n\r\n');
+    if (headerEnd === -1) continue;
+    const headers = part.subarray(0, headerEnd).toString('utf8');
+    let body = part.subarray(headerEnd + 4);
+    if (body.length >= 2 && body[body.length - 2] === 0x0d && body[body.length - 1] === 0x0a) {
+      body = body.subarray(0, body.length - 2);
+    }
+
+    const nameMatch = headers.match(/name="([^"]+)"/);
+    if (!nameMatch?.[1]) continue;
+    const name = nameMatch[1];
+
+    const filenameMatch = headers.match(/filename="([^"]*)"/);
+    if (filenameMatch) {
+      files[name] = body;
+    } else {
+      fields[name] = body.toString('utf8');
+    }
+  }
+
+  return { fields, files };
+}
+
 async function getNextSlug(): Promise<string> {
   const files = await readdir(FONTS_DIR);
   const slugs = files.filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', ''));
@@ -132,6 +170,15 @@ async function handlePost(req: IncomingMessage, res: ServerResponse): Promise<vo
     return;
   }
 
+  const zipTmpPath = asString(form.zipTmpPath).trim();
+  if (zipTmpPath) {
+    const tmpFile = path.join(ZIPS_TMP_DIR, path.basename(zipTmpPath));
+    const finalName = `${slug}-${result.data.version}.zip`;
+    const finalPath = path.join(ZIPS_DIR, finalName);
+    await mkdir(ZIPS_DIR, { recursive: true });
+    await rename(tmpFile, finalPath);
+  }
+
   const fontPath = path.join(FONTS_DIR, `${slug}.json`);
   await writeFile(fontPath, JSON.stringify(result.data, null, 2) + '\n', 'utf8');
 
@@ -182,6 +229,46 @@ const server = createServer(async (req, res) => {
       const meta = parseFontMeta(buf);
       res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
       res.end(JSON.stringify(meta));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ error: (err as Error).message }));
+    }
+    return;
+  }
+
+  if (url.pathname === '/api/upload-zip' && req.method === 'POST') {
+    try {
+      const contentType = req.headers['content-type'] ?? '';
+      const boundaryMatch = contentType.match(/boundary=(.+)/);
+      if (!boundaryMatch?.[1]) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: '缺少 boundary' }));
+        return;
+      }
+
+      const buf = await readBody(req);
+      if (buf.length === 0 || buf.length > 500 * 1024 * 1024) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: '文件为空或超过 500MB 限制' }));
+        return;
+      }
+
+      const { files } = parseMultipart(buf, boundaryMatch[1]);
+      const zipBuf = files['zip'];
+      if (!zipBuf || zipBuf.length === 0) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: '未找到 ZIP 文件' }));
+        return;
+      }
+
+      const sha256 = createHash('sha256').update(zipBuf).digest('hex');
+      await mkdir(ZIPS_TMP_DIR, { recursive: true });
+      const tmpFilename = `${sha256}.zip`;
+      const tmpPath = path.join(ZIPS_TMP_DIR, tmpFilename);
+      await writeFile(tmpPath, zipBuf);
+
+      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ sha256, tmpFilename }));
     } catch (err) {
       res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8' });
       res.end(JSON.stringify({ error: (err as Error).message }));

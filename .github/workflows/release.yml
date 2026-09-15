@@ -1,7 +1,7 @@
 name: Release
 
-# 打 tag 触发，tag 形如 <slug>-v<version>，例如 zhuque-fangsong-v0.212
-# 流程：校验 tag → 生成 Release 骨架 → 手动上传 zip 附件
+# 打 tag 触发，tag 形如 <slug>-v<version>
+# ZIP 已提交至仓库 zips/ 目录，此处仅校验并创建 GitHub Release
 on:
   push:
     tags: ['*-v*']
@@ -9,7 +9,6 @@ on:
 permissions:
   contents: write
 
-# 同一 tag 的重跑排队而非并发，避免两个 job 同时改同一个 Release
 concurrency:
   group: release-${{ github.ref_name }}
   cancel-in-progress: false
@@ -31,7 +30,6 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      # 发版前重跑校验：授权白名单和 sha256 缺失都必须在这里挡住
       - run: pnpm run typecheck
       - run: pnpm run validate
 
@@ -42,7 +40,7 @@ jobs:
         id: relname
         run: echo "name=$(cat build/RELEASE_NAME.txt)" >> "$GITHUB_OUTPUT"
 
-      - name: 创建 Release（骨架，无附件）
+      - name: 创建 GitHub Release
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ github.ref_name }}
@@ -50,4 +48,3 @@ jobs:
           body_path: build/RELEASE_NOTES.md
           draft: false
           prerelease: false
-          files: ''

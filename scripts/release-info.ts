@@ -71,8 +71,7 @@ async function main(): Promise<number> {
   lines.push(`- [GitHub 直接下载](${directDownloadUrlFor(font)})`);
   lines.push(`- [jsDelivr 加速](${jsdelivrUrlFor(font)})`);
   lines.push('');
-  lines.push(`> 附件需手动上传至此 Release。上传后上述链接即可生效。`);
-  lines.push(`> 下方的 Source code (zip/tar.gz) 是本项目的源代码，无需下载。`);
+  lines.push(`> 字体 ZIP 已提交至仓库 \`zips/\` 目录，上述链接在推送 tag 后自动生效。`);
 
   if (font.constraints.length > 0) {
     lines.push('');
