@@ -2,11 +2,16 @@
   .admin-form { max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
   .admin-form h1 { margin-bottom: 1.5rem; }
   .form-group { margin-bottom: 1rem; }
-  .form-group label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+  .form-group > label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
   .form-group .hint { font-size: 0.85rem; color: var(--text-secondary, #666); margin-top: 0.15rem; }
-  .form-group input, .form-group textarea, .form-group select {
+  .form-group input[type="text"],
+  .form-group input[type="url"],
+  .form-group input[type="number"],
+  .form-group input[type="date"],
+  .form-group textarea,
+  .form-group select {
     width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;
-    font-size: 1rem; font-family: inherit;
+    font-size: 1rem; font-family: inherit; box-sizing: border-box;
   }
   .form-group textarea { min-height: 60px; resize: vertical; }
   .form-row { display: flex; gap: 1rem; }
@@ -19,13 +24,65 @@
   .btn-submit { background: var(--accent, #0066cc); color: #fff; }
   .btn-reset { background: #eee; color: #333; }
   .success-msg { background: #d4edda; color: #155724; padding: 0.75rem 1rem; border-radius: 4px; margin-bottom: 1rem; }
+
+  .checkbox-group { display: flex; flex-wrap: wrap; gap: 0.4rem 0.75rem; }
+  .checkbox-group label {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-weight: 400; font-size: 0.9rem; cursor: pointer; white-space: nowrap;
+  }
+  .checkbox-group input[type="checkbox"] { margin: 0; }
+
+  .image-picker-wrap { display: flex; align-items: center; gap: 0.75rem; }
+  .image-picker-wrap .preview-thumb {
+    width: 64px; height: 64px; border-radius: 4px; object-fit: cover;
+    border: 1px solid #ddd; background: #f8f8f8;
+  }
+  .image-picker-wrap .preview-thumb.empty { display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 0.75rem; }
+  .image-picker-wrap .picker-btn {
+    padding: 0.35rem 0.75rem; border: 1px solid #ccc; border-radius: 4px;
+    background: #fff; cursor: pointer; font-size: 0.85rem;
+  }
+  .image-picker-wrap .picker-btn:hover { background: #f0f0f0; }
+  .image-picker-wrap .file-name { font-size: 0.85rem; color: #666; }
+
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+    z-index: 1000; align-items: center; justify-content: center;
+  }
+  .modal-overlay.active { display: flex; }
+  .modal-box {
+    background: #fff; border-radius: 8px; padding: 1.5rem; width: 90%; max-width: 600px;
+    max-height: 80vh; overflow-y: auto;
+  }
+  .modal-box h3 { margin: 0 0 1rem; }
+  .modal-box .modal-close {
+    float: right; background: none; border: none; font-size: 1.5rem; cursor: pointer; line-height: 1;
+  }
+  .modal-filter {
+    width: 100%; padding: 0.4rem 0.5rem; border: 1px solid #ccc; border-radius: 4px;
+    margin-bottom: 0.75rem; font-size: 0.9rem; box-sizing: border-box;
+  }
+  .modal-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 0.5rem;
+  }
+  .modal-grid .img-option {
+    cursor: pointer; border: 2px solid transparent; border-radius: 4px; overflow: hidden;
+    text-align: center; transition: border-color 0.15s;
+  }
+  .modal-grid .img-option:hover { border-color: var(--accent, #0066cc); }
+  .modal-grid .img-option img {
+    width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
+  }
+  .modal-grid .img-option .img-label {
+    font-size: 0.65rem; color: #666; padding: 0.15rem; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap;
+  }
 </style>
 
 <div class="admin-form">
   <h1>新增字体</h1>
 
-  <% if (new URLSearchParams(typeof location !== 'undefined' ? '' : '').has('ok')) { %>
-  <% } %>
   <div id="success-msg" class="success-msg" style="display:none;">
     字体已保存！<a href="/admin">继续新增</a> 或 <a href="/">返回首页</a>。
   </div>
@@ -64,7 +121,12 @@
     <div class="form-row">
       <div class="form-group">
         <label for="license">授权</label>
-        <input type="text" id="license" name="license" placeholder="如 OFL-1.1" required>
+        <select id="license" name="license" required>
+          <option value="">请选择授权协议</option>
+          <% for (const lic of licenseOptions) { %>
+          <option value="<%= lic.id %>"><%= lic.name %></option>
+          <% } %>
+        </select>
       </div>
       <div class="form-group">
         <label for="category">分类</label>
@@ -86,21 +148,66 @@
     </div>
 
     <div class="form-group">
-      <label for="languages">语言</label>
-      <input type="text" id="languages" name="languages" placeholder="zh-Hans, zh-Hant, en, ja" required>
-      <div class="hint">逗号分隔</div>
+      <label>语言</label>
+      <div class="checkbox-group" id="languages-group">
+        <label><input type="checkbox" name="languages" value="zh-Hans"> 简体中文</label>
+        <label><input type="checkbox" name="languages" value="zh-Hant"> 繁体中文</label>
+        <label><input type="checkbox" name="languages" value="en"> 英语</label>
+        <label><input type="checkbox" name="languages" value="ja"> 日语</label>
+        <label><input type="checkbox" name="languages" value="ko"> 韩语</label>
+        <label><input type="checkbox" name="languages" value="vi"> 越南语</label>
+        <label><input type="checkbox" name="languages" value="th"> 泰语</label>
+        <label><input type="checkbox" name="languages" value="ar"> 阿拉伯语</label>
+        <label><input type="checkbox" name="languages" value="ru"> 俄语</label>
+        <label><input type="checkbox" name="languages" value="el"> 希腊语</label>
+      </div>
+      <div class="hint">至少选择一种语言</div>
     </div>
 
-    <div class="form-row">
-      <div class="form-group">
-        <label for="formats">格式</label>
-        <input type="text" id="formats" name="formats" placeholder="otf, ttf, woff2" required>
-        <div class="hint">逗号分隔，可选：otf, ttf, woff, woff2, ttc, variable-ttf, variable-otf</div>
+    <div class="form-group">
+      <label>字重</label>
+      <div class="checkbox-group" id="weights-group">
+        <label><input type="checkbox" name="weights" value="Thin"> Thin</label>
+        <label><input type="checkbox" name="weights" value="ExtraLight"> ExtraLight</label>
+        <label><input type="checkbox" name="weights" value="Light"> Light</label>
+        <label><input type="checkbox" name="weights" value="Regular"> Regular</label>
+        <label><input type="checkbox" name="weights" value="Medium"> Medium</label>
+        <label><input type="checkbox" name="weights" value="SemiBold"> SemiBold</label>
+        <label><input type="checkbox" name="weights" value="Bold"> Bold</label>
+        <label><input type="checkbox" name="weights" value="ExtraBold"> ExtraBold</label>
+        <label><input type="checkbox" name="weights" value="Black"> Black</label>
+        <label><input type="checkbox" name="weights" value="Heavy"> Heavy</label>
       </div>
-      <div class="form-group">
-        <label for="weights">字重</label>
-        <input type="text" id="weights" name="weights" placeholder="Regular, Bold" required>
-        <div class="hint">逗号分隔</div>
+      <div class="hint">至少选择一种字重</div>
+    </div>
+
+    <div class="form-group">
+      <label>格式</label>
+      <div class="checkbox-group" id="formats-group">
+        <label><input type="checkbox" name="formats" value="otf"> OTF</label>
+        <label><input type="checkbox" name="formats" value="ttf"> TTF</label>
+        <label><input type="checkbox" name="formats" value="woff"> WOFF</label>
+        <label><input type="checkbox" name="formats" value="woff2"> WOFF2</label>
+        <label><input type="checkbox" name="formats" value="ttc"> TTC</label>
+        <label><input type="checkbox" name="formats" value="variable-ttf"> Variable TTF</label>
+        <label><input type="checkbox" name="formats" value="variable-otf"> Variable OTF</label>
+      </div>
+      <div class="hint">至少选择一种格式</div>
+    </div>
+
+    <div class="form-group">
+      <label>标签</label>
+      <div class="checkbox-group" id="tags-group">
+        <label><input type="checkbox" name="tags" value="等宽"> 等宽</label>
+        <label><input type="checkbox" name="tags" value="标题"> 标题</label>
+        <label><input type="checkbox" name="tags" value="正文"> 正文</label>
+        <label><input type="checkbox" name="tags" value="代码"> 代码</label>
+        <label><input type="checkbox" name="tags" value="古籍"> 古籍</label>
+        <label><input type="checkbox" name="tags" value="可变字体"> 可变字体</label>
+        <label><input type="checkbox" name="tags" value="多语言"> 多语言</label>
+        <label><input type="checkbox" name="tags" value="编程"> 编程</label>
+        <label><input type="checkbox" name="tags" value="UI"> UI</label>
+        <label><input type="checkbox" name="tags" value="手写"> 手写</label>
       </div>
     </div>
 
@@ -123,18 +230,27 @@
 
     <div class="form-row">
       <div class="form-group">
-        <label for="cover">封面图文件名</label>
-        <input type="text" id="cover" name="cover" placeholder="如 my-font-cover.webp">
+        <label>封面图</label>
+        <div class="image-picker-wrap">
+          <div class="preview-thumb empty" id="cover-preview">无图</div>
+          <div>
+            <button type="button" class="picker-btn" onclick="openImagePicker('cover')">选择图片</button>
+            <div class="file-name" id="cover-filename"></div>
+          </div>
+        </div>
+        <input type="hidden" id="cover" name="cover">
       </div>
       <div class="form-group">
-        <label for="preview">预览图文件名</label>
-        <input type="text" id="preview" name="preview" placeholder="如 my-font-192.webp">
+        <label>预览图</label>
+        <div class="image-picker-wrap">
+          <div class="preview-thumb empty" id="preview-review">无图</div>
+          <div>
+            <button type="button" class="picker-btn" onclick="openImagePicker('preview')">选择图片</button>
+            <div class="file-name" id="preview-filename"></div>
+          </div>
+        </div>
+        <input type="hidden" id="preview" name="preview">
       </div>
-    </div>
-
-    <div class="form-group">
-      <label for="tags">标签</label>
-      <input type="text" id="tags" name="tags" placeholder="逗号分隔，如 中文, 楷体, 古籍">
     </div>
 
     <div class="form-group">
@@ -155,24 +271,96 @@
 
     <div class="form-actions">
       <button type="submit" class="btn-submit">保存</button>
-      <button type="reset" class="btn-reset">重置</button>
+      <button type="reset" class="btn-reset" onclick="resetForm()">重置</button>
     </div>
   </form>
 </div>
 
+<div class="modal-overlay" id="image-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeImagePicker()">&times;</button>
+    <h3 id="modal-title">选择图片</h3>
+    <input type="text" class="modal-filter" id="modal-filter" placeholder="搜索文件名..." oninput="filterImages()">
+    <div class="modal-grid" id="modal-grid"></div>
+  </div>
+</div>
+
 <script>
-  // 设置默认日期为今天
+  let allImages = [];
+  let currentPickerTarget = null;
+
+  fetch('/images/list.json')
+    .then(r => r.json())
+    .then(list => { allImages = list; })
+    .catch(() => {});
+
   document.getElementById('addedAt').value = new Date().toISOString().slice(0, 10);
 
-  // 检查 URL 参数判断是否刚保存成功
   if (new URLSearchParams(location.search).has('ok')) {
     document.getElementById('success-msg').style.display = 'block';
-    document.getElementById('font-form').reset();
-    document.getElementById('addedAt').value = new Date().toISOString().slice(0, 10);
+    resetForm();
   }
 
-  // 多行文本字段用换行分隔而非逗号
-  document.getElementById('constraints').addEventListener('keydown', function(e) {
-    // 允许换行，不做特殊处理
+  function resetForm() {
+    document.getElementById('font-form').reset();
+    document.getElementById('addedAt').value = new Date().toISOString().slice(0, 10);
+    setImagePreview('cover', '');
+    setImagePreview('preview', '');
+  }
+
+  function openImagePicker(target) {
+    currentPickerTarget = target;
+    document.getElementById('modal-title').textContent = target === 'cover' ? '选择封面图' : '选择预览图';
+    document.getElementById('modal-filter').value = '';
+    renderImageGrid(allImages);
+    document.getElementById('image-modal').classList.add('active');
+  }
+
+  function closeImagePicker() {
+    document.getElementById('image-modal').classList.remove('active');
+    currentPickerTarget = null;
+  }
+
+  function filterImages() {
+    const q = document.getElementById('modal-filter').value.toLowerCase();
+    const filtered = allImages.filter(f => f.toLowerCase().includes(q));
+    renderImageGrid(filtered);
+  }
+
+  function renderImageGrid(images) {
+    const grid = document.getElementById('modal-grid');
+    if (images.length === 0) {
+      grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:#999;padding:2rem;">没有匹配的图片</div>';
+      return;
+    }
+    grid.innerHTML = images.map(f => `
+      <div class="img-option" onclick="selectImage('${f}')">
+        <img src="/images/${f}" alt="${f}" loading="lazy">
+        <div class="img-label" title="${f}">${f}</div>
+      </div>
+    `).join('');
+  }
+
+  function selectImage(filename) {
+    if (!currentPickerTarget) return;
+    document.getElementById(currentPickerTarget).value = filename;
+    setImagePreview(currentPickerTarget, filename);
+    closeImagePicker();
+  }
+
+  function setImagePreview(target, filename) {
+    const reviewEl = document.getElementById(target === 'cover' ? 'cover-preview' : 'preview-review');
+    const nameEl = document.getElementById(target === 'cover' ? 'cover-filename' : 'preview-filename');
+    if (filename) {
+      reviewEl.outerHTML = `<img class="preview-thumb" id="${target === 'cover' ? 'cover-preview' : 'preview-review'}" src="/images/${filename}" alt="${filename}">`;
+      nameEl.textContent = filename;
+    } else {
+      reviewEl.outerHTML = `<div class="preview-thumb empty" id="${target === 'cover' ? 'cover-preview' : 'preview-review'}">无图</div>`;
+      nameEl.textContent = '';
+    }
+  }
+
+  document.getElementById('image-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeImagePicker();
   });
 </script>
