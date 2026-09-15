@@ -1,17 +1,36 @@
 {
   "slug": "smiley-sans",
-  "name": { "zh": "得意黑", "en": "Smiley Sans" },
+  "name": {
+    "zh": "得意黑",
+    "en": "Smiley Sans"
+  },
   "vendor": "锚定工坊 Atelier Anchor",
   "version": "2.0.1",
   "license": "OFL-1.1",
-  "languages": ["zh-Hans", "ja", "latin", "cyrillic", "greek"],
-  "formats": ["otf", "ttf", "woff2"],
-  "weights": ["Oblique"],
+  "languages": [
+    "zh-Hans",
+    "ja",
+    "latin",
+    "cyrillic",
+    "greek"
+  ],
+  "formats": [
+    "otf",
+    "ttf",
+    "woff2"
+  ],
+  "weights": [
+    "Oblique"
+  ],
   "officialUrl": "https://github.com/atelier-anchor/smiley-sans",
-  "sourceUrl": "https://github.com/atelier-anchor/smiley-sans/releases/download/v2.0.1/smiley-sans-v2.0.1.zip",
   "sha256": "299c0be6c960ae37361762eca76f7d0cd516615435bb96c0d4b98a1e70178a07",
   "category": "display",
-  "tags": ["黑体", "无衬线", "窄斜", "标题字体"],
+  "tags": [
+    "黑体",
+    "无衬线",
+    "窄斜",
+    "标题字体"
+  ],
   "constraints": [
     "保留字体名为「Smiley」与「得意黑」，衍生版本不得沿用",
     "仅单一字重（Oblique），无正体、无多字重可选"

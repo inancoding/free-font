@@ -7,68 +7,11 @@ import { loadFonts } from '../src/load-fonts.ts';
 import { ALL_LICENSES } from '../src/licenses.ts';
 import { isMirrored, type Font } from '../src/schema.ts';
 import { REPO_ROOT } from '../src/paths.ts';
-import { releaseUrlFor } from '../src/tags.ts';
+import { releaseUrlFor, downloadLinksFor } from '../src/tags.ts';
 
 const TEMPLATES_DIR = path.join(REPO_ROOT, 'templates');
 const PUBLIC_DIR = path.join(REPO_ROOT, 'public');
 const DOCS_DIR = path.join(REPO_ROOT, 'docs');
-const IMAGES_DIR = path.join(PUBLIC_DIR, 'images');
-const MANIFEST_PATH = path.join(IMAGES_DIR, 'manifest.json');
-
-interface ManifestImage {
-  path: string;
-  size: number;
-  format: string;
-}
-
-interface ManifestFont {
-  file: string;
-  family: { en?: string; zh?: string };
-  images: ManifestImage[];
-}
-
-interface Manifest {
-  fonts: ManifestFont[];
-}
-
-function loadPreviewManifest(): Manifest | null {
-  if (!existsSync(MANIFEST_PATH)) return null;
-  try {
-    return JSON.parse(readFileSync(MANIFEST_PATH, 'utf8'));
-  } catch {
-    return null;
-  }
-}
-
-function findPreviewForFont(manifest: Manifest | null, font: Font, size: number): string | undefined {
-  if (!manifest) return undefined;
-  const fontNameEn = font.name.en?.toLowerCase();
-  const fontNameZh = font.name.zh?.toLowerCase();
-
-  let prefixMatch: string | undefined;
-
-  for (const mf of manifest.fonts) {
-    const mfEn = mf.family.en?.toLowerCase();
-    const mfZh = mf.family.zh?.toLowerCase();
-
-    const exactEn = fontNameEn && mfEn && fontNameEn === mfEn;
-    const exactZh = fontNameZh && mfZh && fontNameZh === mfZh;
-    if (exactEn || exactZh) {
-      const img = mf.images.find((i) => i.size === size);
-      if (img) return img.path;
-    }
-
-    if (!prefixMatch) {
-      const startsEn = fontNameEn && mfEn && mfEn.startsWith(fontNameEn);
-      const startsZh = fontNameZh && mfZh && mfZh.startsWith(fontNameZh);
-      if (startsEn || startsZh) {
-        const img = mf.images.find((i) => i.size === size);
-        if (img) prefixMatch = img.path;
-      }
-    }
-  }
-  return prefixMatch;
-}
 
 async function renderTemplate(name: string, data: Record<string, unknown>): Promise<string> {
   const template = await readFile(path.join(TEMPLATES_DIR, name), 'utf8');
@@ -80,7 +23,7 @@ function wrapLayout(body: string, pageTitle: string, baseUrl: string): string {
   return ejs.render(layoutTemplate, { body, pageTitle, baseUrl }, { filename: path.join(TEMPLATES_DIR, '_layout.ejs') });
 }
 
-function toFontData(font: Font, manifest: Manifest | null) {
+function toFontData(font: Font) {
   const mirrored = isMirrored(font);
   return {
     slug: font.slug,
@@ -92,23 +35,23 @@ function toFontData(font: Font, manifest: Manifest | null) {
     formats: font.formats,
     weights: font.weights,
     officialUrl: font.officialUrl,
-    sourceUrl: font.sourceUrl,
     sha256: font.sha256,
     description: font.description,
     category: font.category,
     downloadUrl: font.downloadUrl,
     tags: font.tags,
     constraints: font.constraints,
-    cover: findPreviewForFont(manifest, font, 400),
-    preview: findPreviewForFont(manifest, font, 192),
+    cover: font.cover,
+    preview: font.preview,
     addedAt: font.addedAt,
     notes: font.notes,
     mirrored,
     releaseUrl: mirrored ? releaseUrlFor(font) : undefined,
+    downloadLinks: downloadLinksFor(font),
   };
 }
 
-function buildDataJson(fonts: Font[], manifest: Manifest | null): string {
+function buildDataJson(fonts: Font[]): string {
   const items = fonts.map((font) => ({
     slug: font.slug,
     name: font.name,
@@ -118,8 +61,8 @@ function buildDataJson(fonts: Font[], manifest: Manifest | null): string {
     category: font.category,
     tags: font.tags,
     description: font.description,
-    cover: findPreviewForFont(manifest, font, 400),
-    preview: findPreviewForFont(manifest, font, 192),
+    cover: font.cover,
+    preview: font.preview,
     officialUrl: font.officialUrl,
     downloadUrl: font.downloadUrl,
     mirrored: isMirrored(font),
@@ -146,8 +89,7 @@ async function main(): Promise<number> {
   }
 
   const fonts = loaded.map((l) => l.font);
-  const manifest = loadPreviewManifest();
-  const dataFonts = fonts.map((f) => toFontData(f, manifest));
+  const dataFonts = fonts.map((f) => toFontData(f));
   const mirroredCount = dataFonts.filter((f) => f.mirrored).length;
   const previewCount = dataFonts.filter((f) => f.preview).length;
   const coverCount = dataFonts.filter((f) => f.cover).length;
@@ -184,7 +126,7 @@ async function main(): Promise<number> {
   writeFileSync(path.join(DOCS_DIR, 'about.html'), aboutHtml, 'utf8');
   console.log('生成 docs/about.html');
 
-  writeFileSync(path.join(DOCS_DIR, 'data.json'), buildDataJson(fonts, manifest), 'utf8');
+  writeFileSync(path.join(DOCS_DIR, 'data.json'), buildDataJson(fonts), 'utf8');
   console.log('生成 docs/data.json');
 
   cpSync(PUBLIC_DIR, DOCS_DIR, { recursive: true });

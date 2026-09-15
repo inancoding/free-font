@@ -26,7 +26,7 @@ export const categorySchema = z.enum(['sans-serif', 'serif', 'monospace', 'displ
 /**
  * 字体元数据结构。
  *
- * 只校验形状，不管合规策略。授权是否允许镜像等逻辑在 policy.ts 中处理。
+ * 只校验形状，不管合规策略。
  */
 export const fontSchema = z.object({
   slug: slugSchema,
@@ -48,8 +48,9 @@ export const fontSchema = z.object({
   formats: z.array(fontFormatSchema).min(1),
   weights: z.array(z.string().min(1)).min(1),
 
+  /** 来源页（字体官网，非下载链接） */
   officialUrl: z.url(),
-  sourceUrl: z.url().optional(),
+  /** 产物 SHA-256，有值即视为已发版 */
   sha256: z
     .string()
     .regex(/^[a-f0-9]{64}$/, 'sha256 必须是 64 位十六进制字符串')
@@ -59,12 +60,19 @@ export const fontSchema = z.object({
   description: z.string().optional(),
   /** 字体分类 */
   category: categorySchema.optional(),
-  /** 直接下载链接（Release 资产、CDN 等），用于网站展示 */
+  /** 字形数（收录字数） */
+  glyphCount: z.number().int().positive().optional(),
+  /** 直接下载链接（Release 附件直链） */
   downloadUrl: z.url().optional(),
 
   tags: z.array(z.string().min(1)).default([]),
   constraints: z.array(z.string().min(1)).default([]),
+
+  /** 封面图文件名（400px，首页卡片用） */
+  cover: z.string().min(1).optional(),
+  /** 预览图文件名（192px，详情页用） */
   preview: z.string().min(1).optional(),
+
   addedAt: isoDateSchema,
   notes: z.string().optional(),
 });
@@ -73,7 +81,7 @@ export type Font = z.infer<typeof fontSchema>;
 export type FontFormat = z.infer<typeof fontFormatSchema>;
 export type Category = z.infer<typeof categorySchema>;
 
-/** sourceUrl + sha256 同时存在即视为已镜像 */
+/** 有 sha256 即视为已发版（手动上传到 Release） */
 export function isMirrored(font: Font): boolean {
-  return Boolean(font.sourceUrl && font.sha256);
+  return Boolean(font.sha256);
 }

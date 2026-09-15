@@ -3,7 +3,6 @@
     ? font.name.zh + ' / ' + font.name.en
     : (font.name.zh || font.name.en || font.slug);
   var catLabels = { 'sans-serif': '无衬线', 'serif': '衬线', 'monospace': '等宽', 'display': '展示', 'handwriting': '手写' };
-  var mirrored = font.sourceUrl && font.sha256;
 %>
 
 <div class="detail-header">
@@ -50,17 +49,20 @@
 
 <div class="download-section">
   <h2>下载</h2>
-  <div class="download-links">
-    <% if (mirrored) { %>
-      <a class="btn btn-primary" href="https://github.com/inancoding/free-font/releases/tag/<%= font.slug %>-v<%= font.version %>" target="_blank" rel="noopener">GitHub Release 下载</a>
-    <% } %>
-    <% if (font.downloadUrl) { %>
-      <a class="btn btn-primary" href="<%= font.downloadUrl %>" target="_blank" rel="noopener">直接下载</a>
-    <% } %>
-    <a class="btn btn-secondary" href="<%= font.officialUrl %>" target="_blank" rel="noopener">官方仓库</a>
-    <% if (font.sourceUrl && !mirrored) { %>
-      <a class="btn btn-secondary" href="<%= font.sourceUrl %>" target="_blank" rel="noopener">官方下载</a>
-    <% } %>
+  <% if (font.downloadLinks && font.downloadLinks.length > 0) { %>
+    <div class="download-links">
+      <% font.downloadLinks.forEach(function(link) { %>
+        <a class="btn <%= link.primary ? 'btn-primary' : 'btn-secondary' %>" href="<%= link.url %>" target="_blank" rel="noopener"><%= link.label %></a>
+      <% }); %>
+      <% if (font.releaseUrl) { %>
+        <a class="btn btn-secondary" href="<%= font.releaseUrl %>" target="_blank" rel="noopener">Release 页面</a>
+      <% } %>
+    </div>
+  <% } else { %>
+    <p class="download-unavailable">该字体尚未发版，暂无下载链接。</p>
+  <% } %>
+  <div class="download-links" style="margin-top: 0.5rem;">
+    <a class="btn btn-secondary" href="<%= font.officialUrl %>" target="_blank" rel="noopener">字体官网</a>
   </div>
 </div>
 

@@ -1,6 +1,6 @@
 import { readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
-import { LICENSES_DIR, PREVIEW_DIR } from './paths.ts';
+import { IMAGES_DIR, LICENSES_DIR } from './paths.ts';
 import { ALL_LICENSES, isMirrorAllowed } from './licenses.ts';
 import { isMirrored } from './schema.ts';
 import type { LoadedFont, ValidationError } from './load-fonts.ts';
@@ -65,11 +65,7 @@ export async function checkPolicies(fonts: LoadedFont[]): Promise<ValidationErro
         const reason = !license.verified
           ? '授权条款尚未经人工核实'
           : '该授权不允许再分发字体二进制';
-        push('mirror', `镜像提醒：${reason}，请确认法律风险`, 'warn');
-      }
-
-      if (!font.sha256 && font.sourceUrl) {
-        push('sha256', '有 sourceUrl 但缺少 sha256，建议补充以保证字节一致性', 'warn');
+        push('mirror', `发版提醒：${reason}，请确认法律风险`, 'warn');
       }
 
       if (license?.requiresLicenseText && !(await hasLicenseText(font.slug))) {
@@ -81,10 +77,17 @@ export async function checkPolicies(fonts: LoadedFont[]): Promise<ValidationErro
       }
     }
 
+    if (font.cover) {
+      const coverPath = path.join(IMAGES_DIR, path.basename(font.cover));
+      if (!(await exists(coverPath))) {
+        push('cover', `封面图不存在：images/${path.basename(font.cover)}`, 'warn');
+      }
+    }
+
     if (font.preview) {
-      const previewPath = path.join(PREVIEW_DIR, path.basename(font.preview));
+      const previewPath = path.join(IMAGES_DIR, path.basename(font.preview));
       if (!(await exists(previewPath))) {
-        push('preview', `预览图不存在：preview/${path.basename(font.preview)}`, 'warn');
+        push('preview', `预览图不存在：images/${path.basename(font.preview)}`, 'warn');
       }
     }
 

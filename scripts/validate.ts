@@ -11,7 +11,7 @@ const RESET = '\u001b[0m';
 
 const USAGE = `用法: npm run validate [-- --check-links]
 
-  --check-links   额外校验 officialUrl / sourceUrl 是否可达（需联网，较慢）
+  --check-links   额外校验 officialUrl 是否可达（需联网，较慢）
 `;
 
 function report(errors: ValidationError[]): void {
@@ -66,7 +66,7 @@ async function main(): Promise<number> {
   console.log(
     `\n${DIM}${'─'.repeat(52)}${RESET}\n` +
       `字体条目 ${BOLD}${fonts.length}${RESET} 个` +
-      `${DIM}（镜像 ${mirrored} / 外链 ${fonts.length - mirrored}）${RESET}\n` +
+      `${DIM}（已发版 ${mirrored} / 待发版 ${fonts.length - mirrored}）${RESET}\n` +
       `错误 ${errorCount > 0 ? RED + BOLD + errorCount + RESET : BOLD + '0' + RESET}` +
       `    警告 ${warnCount > 0 ? YELLOW + BOLD + warnCount + RESET : BOLD + '0' + RESET}` +
       (shouldCheckLinks ? '' : `    ${DIM}(未检查死链，加 --check-links 开启)${RESET}`),

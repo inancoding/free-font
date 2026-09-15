@@ -43,9 +43,6 @@ export async function checkLinks(fonts: LoadedFont[]): Promise<ValidationError[]
   const targets: Target[] = [];
   for (const { relPath, font } of fonts) {
     targets.push({ file: relPath, field: 'officialUrl', url: font.officialUrl });
-    if (font.sourceUrl) {
-      targets.push({ file: relPath, field: 'sourceUrl', url: font.sourceUrl });
-    }
   }
 
   const unique = new Map<string, Target[]>();

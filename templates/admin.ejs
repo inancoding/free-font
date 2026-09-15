@@ -1,0 +1,178 @@
+<style>
+  .admin-form { max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+  .admin-form h1 { margin-bottom: 1.5rem; }
+  .form-group { margin-bottom: 1rem; }
+  .form-group label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+  .form-group .hint { font-size: 0.85rem; color: var(--text-secondary, #666); margin-top: 0.15rem; }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;
+    font-size: 1rem; font-family: inherit;
+  }
+  .form-group textarea { min-height: 60px; resize: vertical; }
+  .form-row { display: flex; gap: 1rem; }
+  .form-row .form-group { flex: 1; }
+  .form-actions { margin-top: 1.5rem; display: flex; gap: 0.5rem; }
+  .form-actions button {
+    padding: 0.6rem 1.5rem; border: none; border-radius: 4px;
+    font-size: 1rem; cursor: pointer;
+  }
+  .btn-submit { background: var(--accent, #0066cc); color: #fff; }
+  .btn-reset { background: #eee; color: #333; }
+  .success-msg { background: #d4edda; color: #155724; padding: 0.75rem 1rem; border-radius: 4px; margin-bottom: 1rem; }
+</style>
+
+<div class="admin-form">
+  <h1>新增字体</h1>
+
+  <% if (new URLSearchParams(typeof location !== 'undefined' ? '' : '').has('ok')) { %>
+  <% } %>
+  <div id="success-msg" class="success-msg" style="display:none;">
+    字体已保存！<a href="/admin">继续新增</a> 或 <a href="/">返回首页</a>。
+  </div>
+
+  <form method="POST" action="/admin" id="font-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="slug">Slug</label>
+        <input type="text" id="slug" name="slug" pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="如 source-han-sans" required>
+        <div class="hint">小写字母和连字符，将用作文件名和 Release tag 的一部分</div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="nameZh">中文名</label>
+        <input type="text" id="nameZh" name="nameZh" placeholder="如 霞鹜文楷">
+      </div>
+      <div class="form-group">
+        <label for="nameEn">英文名</label>
+        <input type="text" id="nameEn" name="nameEn" placeholder="如 LXGW WenKai">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="vendor">厂商 / 作者</label>
+        <input type="text" id="vendor" name="vendor" required>
+      </div>
+      <div class="form-group">
+        <label for="version">版本</label>
+        <input type="text" id="version" name="version" value="1.0.0" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="license">授权</label>
+        <input type="text" id="license" name="license" placeholder="如 OFL-1.1" required>
+      </div>
+      <div class="form-group">
+        <label for="category">分类</label>
+        <select id="category" name="category">
+          <option value="">（无）</option>
+          <option value="sans-serif">无衬线</option>
+          <option value="serif">衬线</option>
+          <option value="monospace">等宽</option>
+          <option value="display">展示</option>
+          <option value="handwriting">手写</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="officialUrl">字体官网</label>
+      <input type="url" id="officialUrl" name="officialUrl" placeholder="https://..." required>
+      <div class="hint">字体官方页面，非下载链接</div>
+    </div>
+
+    <div class="form-group">
+      <label for="languages">语言</label>
+      <input type="text" id="languages" name="languages" placeholder="zh-Hans, zh-Hant, en, ja" required>
+      <div class="hint">逗号分隔</div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="formats">格式</label>
+        <input type="text" id="formats" name="formats" placeholder="otf, ttf, woff2" required>
+        <div class="hint">逗号分隔，可选：otf, ttf, woff, woff2, ttc, variable-ttf, variable-otf</div>
+      </div>
+      <div class="form-group">
+        <label for="weights">字重</label>
+        <input type="text" id="weights" name="weights" placeholder="Regular, Bold" required>
+        <div class="hint">逗号分隔</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="description">简介</label>
+      <textarea id="description" name="description" placeholder="一句话描述这款字体..."></textarea>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="glyphCount">字数</label>
+        <input type="number" id="glyphCount" name="glyphCount" min="1" placeholder="如 6763">
+      </div>
+      <div class="form-group">
+        <label for="sha256">SHA-256</label>
+        <input type="text" id="sha256" name="sha256" pattern="[a-f0-9]{64}" placeholder="填写后视为已发版">
+        <div class="hint">64 位十六进制，有值即视为已发版</div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="cover">封面图文件名</label>
+        <input type="text" id="cover" name="cover" placeholder="如 my-font-cover.webp">
+      </div>
+      <div class="form-group">
+        <label for="preview">预览图文件名</label>
+        <input type="text" id="preview" name="preview" placeholder="如 my-font-192.webp">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="tags">标签</label>
+      <input type="text" id="tags" name="tags" placeholder="逗号分隔，如 中文, 楷体, 古籍">
+    </div>
+
+    <div class="form-group">
+      <label for="constraints">使用限制</label>
+      <textarea id="constraints" name="constraints" placeholder="每行一条限制"></textarea>
+      <div class="hint">每行一条</div>
+    </div>
+
+    <div class="form-group">
+      <label for="notes">备注</label>
+      <textarea id="notes" name="notes" placeholder="任何补充说明..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="addedAt">收录日期</label>
+      <input type="date" id="addedAt" name="addedAt" required>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn-submit">保存</button>
+      <button type="reset" class="btn-reset">重置</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  // 设置默认日期为今天
+  document.getElementById('addedAt').value = new Date().toISOString().slice(0, 10);
+
+  // 检查 URL 参数判断是否刚保存成功
+  if (new URLSearchParams(location.search).has('ok')) {
+    document.getElementById('success-msg').style.display = 'block';
+    document.getElementById('font-form').reset();
+    document.getElementById('addedAt').value = new Date().toISOString().slice(0, 10);
+  }
+
+  // 多行文本字段用换行分隔而非逗号
+  document.getElementById('constraints').addEventListener('keydown', function(e) {
+    // 允许换行，不做特殊处理
+  });
+</script>

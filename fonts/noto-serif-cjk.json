@@ -1,16 +1,42 @@
 {
   "slug": "noto-serif-cjk",
-  "name": { "zh": "思源宋体（Noto 版）", "en": "Noto Serif CJK" },
+  "name": {
+    "zh": "思源宋体（Noto 版）",
+    "en": "Noto Serif CJK"
+  },
   "vendor": "Google",
   "version": "2.003",
   "license": "OFL-1.1",
-  "languages": ["zh-Hans", "zh-Hant", "ja", "ko", "latin"],
-  "formats": ["otf", "ttc", "variable-otf", "variable-ttf"],
-  "weights": ["ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "Black"],
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "ja",
+    "ko",
+    "latin"
+  ],
+  "formats": [
+    "otf",
+    "ttc",
+    "variable-otf",
+    "variable-ttf"
+  ],
+  "weights": [
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "Black"
+  ],
   "officialUrl": "https://github.com/notofonts/noto-cjk",
-  "sourceUrl": "https://github.com/notofonts/noto-cjk/releases/tag/Serif2.003",
   "category": "serif",
-  "tags": ["宋体", "衬线", "CJK", "多语言"],
+  "tags": [
+    "宋体",
+    "衬线",
+    "CJK",
+    "多语言"
+  ],
   "constraints": [
     "与 Adobe 的 Source Han Serif 同源，字形一致但打包方式与版本号体系不同",
     "Google Fonts 上的 Noto Serif SC 是另一套可变 TTF 产物，与本仓库的分语言 zip 不是同一批文件"

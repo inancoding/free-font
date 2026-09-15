@@ -2,10 +2,11 @@ node_modules/
 dist/
 *.tsbuildinfo
 
-# 字体二进制不入库，仅本地打包时暂存
+# 构建产物
 build/
 tmp/
-fonts/binary/
+
+# 字体二进制不入库
 *.ttf
 *.otf
 *.woff
@@ -13,7 +14,7 @@ fonts/binary/
 *.ttc
 *.zip
 
-# 生成的静态网站与预览图
+# 生成的静态网站
 docs/
 
 # 发版凭证
