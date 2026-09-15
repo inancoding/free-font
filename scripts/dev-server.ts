@@ -149,6 +149,15 @@ const server = createServer(async (req, res) => {
   }
 });
 
+server.on('error', (err: NodeJS.ErrnoException) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`错误：端口 ${PORT} 已被占用`);
+    console.error(`请关闭占用该端口的程序，或使用 PORT=<端口号> npm run dev 指定其他端口`);
+    process.exit(1);
+  }
+  throw err;
+});
+
 server.listen(PORT, () => {
   console.log(`开发服务器已启动：http://localhost:${PORT}`);
   console.log(`新增字体页面：http://localhost:${PORT}/admin`);
