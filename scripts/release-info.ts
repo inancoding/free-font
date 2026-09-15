@@ -72,6 +72,7 @@ async function main(): Promise<number> {
   lines.push(`- [jsDelivr 加速](${jsdelivrUrlFor(font)})`);
   lines.push('');
   lines.push(`> 附件需手动上传至此 Release。上传后上述链接即可生效。`);
+  lines.push(`> 下方的 Source code (zip/tar.gz) 是本项目的源代码，无需下载。`);
 
   if (font.constraints.length > 0) {
     lines.push('');
