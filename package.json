@@ -12,7 +12,6 @@
     "dev": "tsx scripts/dev-server.ts",
     "upload": "tsx scripts/upload-release.ts",
     "validate": "tsx scripts/validate.ts",
-    "build:readme": "tsx scripts/build-readme.ts",
     "build:site": "tsx scripts/build-site.ts",
     "build": "tsx scripts/build-site.ts",
     "typecheck": "tsc --noEmit",
