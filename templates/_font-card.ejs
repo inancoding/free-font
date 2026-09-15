@@ -17,8 +17,11 @@
     <% if (font.category) { %>
       <span class="badge badge-category"><%= catLabels[font.category] || font.category %></span>
     <% } %>
-    <% font.languages.slice(0, 3).forEach(function(l) { %>
+    <% var langNames = font.languageNames || font.languages; langNames.slice(0, 3).forEach(function(l) { %>
       <span class="badge badge-lang"><%= l %></span>
+    <% }); %>
+    <% font.tags.slice(0, 2).forEach(function(t) { %>
+      <span class="badge badge-tag"><%= t %></span>
     <% }); %>
   </div>
 </a>

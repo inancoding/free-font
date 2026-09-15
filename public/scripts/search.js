@@ -4,10 +4,29 @@
   var searchInput = document.getElementById('search-input');
   var categoryFilters = document.getElementById('category-filters');
   var langFilters = document.getElementById('lang-filters');
+  var tagFilters = document.getElementById('tag-filters');
 
   var activeCategory = '';
   var activeLang = '';
+  var activeTag = '';
   var query = '';
+
+  var LANG_NAMES = {
+    'zh-Hans': '简体中文',
+    'zh-Hant': '繁体中文',
+    en: '英语',
+    ja: '日语',
+    ko: '韩语',
+    vi: '越南语',
+    th: '泰语',
+    ar: '阿拉伯语',
+    ru: '俄语',
+    el: '希腊语',
+  };
+
+  function langName(code) {
+    return LANG_NAMES[code] || code;
+  }
 
   function init() {
     fetch('data.json')
@@ -49,6 +68,16 @@
         render();
       });
     }
+    if (tagFilters) {
+      tagFilters.addEventListener('click', function (e) {
+        var btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        var val = btn.dataset.value || '';
+        activeTag = activeTag === val ? '' : val;
+        updateButtons(tagFilters, activeTag);
+        render();
+      });
+    }
   }
 
   function updateButtons(container, active) {
@@ -61,6 +90,7 @@
   function match(font) {
     if (activeCategory && font.category !== activeCategory) return false;
     if (activeLang && font.languages.indexOf(activeLang) === -1) return false;
+    if (activeTag && font.tags.indexOf(activeTag) === -1) return false;
     if (query) {
       var hay = [
         font.name.zh || '',
@@ -91,8 +121,13 @@
     }
     var shownLangs = font.languages.slice(0, 3);
     shownLangs.forEach(function (l) {
-      badges += ' <span class="badge badge-lang">' + esc(l) + '</span>';
+      badges += ' <span class="badge badge-lang">' + esc(langName(l)) + '</span>';
     });
+    if (font.tags) {
+      font.tags.slice(0, 2).forEach(function (t) {
+        badges += ' <span class="badge badge-tag">' + esc(t) + '</span>';
+      });
+    }
 
     return '<a class="font-card" href="fonts/' + font.slug + '.html">' +
       preview +

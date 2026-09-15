@@ -36,10 +36,14 @@
       <dt>格式</dt>
       <dd><%= font.formats.join('、') %></dd>
       <dt>语言</dt>
-      <dd><%= font.languages.join('、') %></dd>
+      <dd><%= (font.languageNames || font.languages).join('、') %></dd>
       <% if (font.category) { %>
         <dt>分类</dt>
         <dd><%= catLabels[font.category] || font.category %></dd>
+      <% } %>
+      <% if (font.tags && font.tags.length > 0) { %>
+        <dt>标签</dt>
+        <dd><%= font.tags.join('、') %></dd>
       <% } %>
       <dt>收录日期</dt>
       <dd><%= font.addedAt %></dd>

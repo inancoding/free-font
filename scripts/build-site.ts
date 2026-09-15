@@ -8,6 +8,7 @@ import { ALL_LICENSES } from '../src/licenses.ts';
 import { isMirrored, type Font } from '../src/schema.ts';
 import { REPO_ROOT } from '../src/paths.ts';
 import { releaseUrlFor, downloadLinksFor } from '../src/tags.ts';
+import { languageDisplayName } from '../src/languages.ts';
 
 const TEMPLATES_DIR = path.join(REPO_ROOT, 'templates');
 const PUBLIC_DIR = path.join(REPO_ROOT, 'public');
@@ -32,6 +33,7 @@ function toFontData(font: Font) {
     version: font.version,
     license: font.license,
     languages: font.languages,
+    languageNames: font.languages.map((l) => languageDisplayName(l)),
     formats: font.formats,
     weights: font.weights,
     officialUrl: font.officialUrl,
