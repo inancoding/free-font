@@ -18,14 +18,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
+          cache: pnpm
 
-      - run: npm ci
-      - run: npm run typecheck
-      - run: npm run validate
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run typecheck
+      - run: pnpm run validate
 
   # 死链检查单独跑，且只在定时任务里执行。
   # 放进 PR 检查会因为第三方站点反爬或临时故障频繁误报，
@@ -36,13 +40,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
+          cache: pnpm
 
-      - run: npm ci
-      - run: npm run validate -- --check-links
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run validate -- --check-links
 
   pages:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -54,13 +62,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
+          cache: pnpm
 
-      - run: npm ci
-      - run: npm run build:site
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run build:site
 
       - uses: actions/configure-pages@v5
 

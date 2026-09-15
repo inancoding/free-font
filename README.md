@@ -45,7 +45,7 @@ scripts/
 ### 方式一：UI 界面（推荐）
 
 ```bash
-npm run dev               # 启动本地服务器
+pnpm run dev               # 启动本地服务器
 # 访问 http://localhost:3000/admin 填写表单
 ```
 
@@ -55,7 +55,7 @@ npm run dev               # 启动本地服务器
 2. 在 `src/licenses.ts` 确认该字体的授权已注册
 3. 把授权原文放进 `licenses/<slug>/`
 4. 封面图和预览图放入 `public/images/`，在 JSON 中填写 `cover` 和 `preview`
-5. 本地跑 `npm run validate`，确认无错误
+5. 本地跑 `pnpm run validate`，确认无错误
 
 ## 发版流程
 
@@ -85,7 +85,7 @@ CI 会先重跑 `typecheck` 与 `validate`（合规校验不通过的字体发�
 ### 3. 上传附件
 
 ```bash
-npm run upload -- <slug>-v<version> ./<slug>-<version>.zip
+pnpm run upload -- <slug>-v<version> ./<slug>-<version>.zip
 ```
 
 > 前置条件：安装 [GitHub CLI](https://cli.github.com/) 并执行 `gh auth login`。
@@ -112,12 +112,12 @@ git push origin <tag>              # 单独重推，触发工作流
 需要 Node.js 22 及以上。
 
 ```bash
-npm install
-npm run dev                 # 启动开发服务器（含管理页面）
-npm run validate            # 校验所有字体元数据
-npm run validate -- --check-links   # 额外检查官方链接是否可达
-npm run build:site          # 构建静态网站（输出到 docs/）
-npm run check               # typecheck + validate
+pnpm install
+pnpm run dev                 # 启动开发服务器（含管理页面）
+pnpm run validate            # 校验所有字体元数据
+pnpm run validate -- --check-links   # 额外检查官方链接是否可达
+pnpm run build:site          # 构建静态网站（输出到 docs/）
+pnpm run check               # typecheck + validate
 ```
 
 ## 许可

@@ -20,19 +20,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: npm
+          cache: pnpm
 
-      - run: npm ci
+      - run: pnpm install --frozen-lockfile
 
       # 发版前重跑校验：授权白名单和 sha256 缺失都必须在这里挡住
-      - run: npm run typecheck
-      - run: npm run validate
+      - run: pnpm run typecheck
+      - run: pnpm run validate
 
       - name: 生成 Release 标题和描述
-        run: npx tsx scripts/release-info.ts "${{ github.ref_name }}"
+        run: pnpm exec tsx scripts/release-info.ts "${{ github.ref_name }}"
 
       - name: 读取 Release 标题
         id: relname

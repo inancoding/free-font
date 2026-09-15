@@ -15,7 +15,7 @@
     "build:site": "tsx scripts/build-site.ts",
     "build": "tsx scripts/build-site.ts",
     "typecheck": "tsc --noEmit",
-    "check": "npm run typecheck && npm run validate"
+    "check": "pnpm run typecheck && pnpm run validate"
   },
   "dependencies": {
     "ejs": "^6.0.1"
