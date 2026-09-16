@@ -1,0 +1,30 @@
+{
+  "slug": "alibaba-sans",
+  "name": {
+    "en": "Alibaba Sans"
+  },
+  "vendor": "Monotype Imaging Inc.",
+  "version": "1.02",
+  "license": "Alibaba-PuHuiTi",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Light",
+    "Regular",
+    "Medium",
+    "Bold",
+    "Black",
+    "Heavy"
+  ],
+  "officialUrl": "https://www.alibabafonts.com/",
+  "sha256": "cf8d117a431dbdb50708202a56ad5baeaa7266b9bfff981395ced890e8f5e76b",
+  "tags": [],
+  "constraints": [],
+  "cover": "AlibabaSans-Regular-cover.webp",
+  "preview": "AlibabaSans-Regular-preview.webp",
+  "addedAt": "2026-09-16"
+}
