@@ -260,8 +260,9 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   min-height: 200px;
 }
 .detail-preview img {
-  max-width: 100%;
-  max-height: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
 }
 .detail-info { display: flex; flex-direction: column; gap: .75rem; }
 .detail-info dl { display: grid; grid-template-columns: auto 1fr; gap: .4rem .75rem; }
