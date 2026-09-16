@@ -1,0 +1,37 @@
+{
+  "slug": "source-han-sans-cn",
+  "name": {
+    "zh": "思源黑体",
+    "en": "Source Han Sans CN"
+  },
+  "vendor": "Adobe",
+  "version": "2.005",
+  "license": "OFL-1.1",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "otf"
+  ],
+  "weights": [
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "Bold",
+    "Heavy"
+  ],
+  "officialUrl": "https://github.com/adobe-fonts/source-han-sans",
+  "sha256": "4f377213ff4a535af73a1600a314db7a9c0cbf058381e22983e69ccbb6860f8d",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "SourceHanSansCN-Regular-cover.webp",
+  "preview": "SourceHanSansCN-Regular-preview.webp",
+  "addedAt": "2026-09-16"
+}
