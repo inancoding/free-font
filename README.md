@@ -17,6 +17,7 @@
 
 ```
 fonts/<slug>.json         字体元数据（唯一需要手工维护的数据）
+zips/<slug>-<version>.zip 字体 ZIP 产物（入库后通过 CDN 分发）
 licenses/<slug>/          授权原文副本
 templates/                EJS 模板（首页、详情页、关于页、管理页）
 public/
@@ -34,11 +35,10 @@ scripts/
   build-site.ts           静态站构建（EJS → docs/）
   dev-server.ts           本地开发服务器 + 管理页面
   release-info.ts         生成 Release 标题和描述
-  upload-release.ts       上传 zip 到 Release
-.github/workflows/        ci.yml（校验 + Pages 部署）/ release.yml（tag 触发创建 Release 骨架）
+.github/workflows/        ci.yml（校验 + Pages 部署）/ release.yml（tag 触发创建 Release）
 ```
 
-字体二进制文件**不进 Git**。每款字体通过 GitHub Release 独立分发。
+字体 ZIP 提交至 `zips/` 目录，通过 GitHub Release 和 jsDelivr CDN 分发。
 
 ## 收录新字体
 
@@ -59,19 +59,26 @@ pnpm run dev               # 启动本地服务器
 
 ## 发版流程
 
-字体通过 GitHub Release 分发。发版步骤：
-
-### 1. 准备产物
-
-准备字体压缩包（zip），计算 SHA-256：
+### 1. 新增字体（Admin UI）
 
 ```bash
-sha256sum <file>.zip
+pnpm run dev               # 启动本地服务器
+# 访问 http://localhost:3000/admin
 ```
 
-在 `fonts/<slug>.json` 中填写 `sha256` 字段。
+在表单中上传字体 ZIP 文件，系统自动计算 SHA-256 并标记为已发版。封面图和预览图也通过文件上传自动入库。填写完成后点击保存。
 
-### 2. 打 tag 并推送
+### 2. 提交并推送
+
+```bash
+git add fonts/ zips/ public/images/
+git commit -m "新增 Xxx 字体"
+git push
+```
+
+CI 校验通过后自动部署 GitHub Pages，网站即时更新。
+
+### 3. 打 tag 创建 GitHub Release
 
 ```bash
 git tag <slug>-v<version>      # 格式固定为 <slug>-v<version>
@@ -80,19 +87,11 @@ git push origin <slug>-v<version>
 
 > **一次只推一个 tag。** 把多个 tag 合并进同一条 `git push`，GitHub 只会为其中一个创建 workflow run，其余的**静默丢失**。批量发版必须逐条推送。
 
-CI 会先重跑 `typecheck` 与 `validate`（合规校验不通过的字体发不出去），然后创建 Release 骨架（含 Release Notes）。
+CI 校验通过后自动创建 GitHub Release（含 Release Notes 和下载链接）。
 
-### 3. 上传附件
-
-```bash
-pnpm run upload -- <slug>-v<version> ./<slug>-<version>.zip
-```
-
-> 前置条件：安装 [GitHub CLI](https://cli.github.com/) 并执行 `gh auth login`。
-
-上传完成后，以下链接即可生效：
-- GitHub 直接下载：`https://github.com/inancoding/free-font/releases/download/<tag>/<artifact>.zip`
-- jsDelivr 加速：`https://cdn.jsdelivr.net/gh/inancoding/free-font@<tag>/<artifact>.zip`
+下载链接格式：
+- GitHub 直接下载：`https://raw.githubusercontent.com/inancoding/free-font/<tag>/zips/<slug>-<version>.zip`
+- jsDelivr 加速：`https://cdn.jsdelivr.net/gh/inancoding/free-font@<tag>/zips/<slug>-<version>.zip`
 
 ### 补救措施
 

@@ -49,39 +49,7 @@
   .zip-file-input { display: none; }
   .zip-status { width: 100%; font-size: 0.85rem; margin-top: 0.25rem; }
 
-  .modal-overlay {
-    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
-    z-index: 1000; align-items: center; justify-content: center;
-  }
-  .modal-overlay.active { display: flex; }
-  .modal-box {
-    background: #fff; border-radius: 8px; padding: 1.5rem; width: 90%; max-width: 600px;
-    max-height: 80vh; overflow-y: auto;
-  }
-  .modal-box h3 { margin: 0 0 1rem; }
-  .modal-box .modal-close {
-    float: right; background: none; border: none; font-size: 1.5rem; cursor: pointer; line-height: 1;
-  }
-  .modal-filter {
-    width: 100%; padding: 0.4rem 0.5rem; border: 1px solid #ccc; border-radius: 4px;
-    margin-bottom: 0.75rem; font-size: 0.9rem; box-sizing: border-box;
-  }
-  .modal-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: 0.5rem;
-  }
-  .modal-grid .img-option {
-    cursor: pointer; border: 2px solid transparent; border-radius: 4px; overflow: hidden;
-    text-align: center; transition: border-color 0.15s;
-  }
-  .modal-grid .img-option:hover { border-color: var(--accent, #0066cc); }
-  .modal-grid .img-option img {
-    width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
-  }
-  .modal-grid .img-option .img-label {
-    font-size: 0.65rem; color: #666; padding: 0.15rem; overflow: hidden;
-    text-overflow: ellipsis; white-space: nowrap;
-  }
+  .image-status { font-size: 0.85rem; margin-top: 0.25rem; }
 </style>
 
 <div class="admin-form">
@@ -251,26 +219,32 @@
       <div class="form-group">
         <label>封面图</label>
         <div class="image-picker-wrap">
+          <input type="file" id="coverFile" accept=".png,.webp,.jpg,.jpeg,.svg,.gif" class="zip-file-input">
           <div class="preview-thumb empty" id="cover-preview">无图</div>
           <div>
-            <button type="button" class="picker-btn" onclick="openImagePicker('cover')">选择图片</button>
+            <button type="button" class="picker-btn" onclick="document.getElementById('coverFile').click()">选择图片</button>
             <div class="file-name" id="cover-filename"></div>
           </div>
         </div>
+        <div class="image-status" id="cover-status"></div>
         <div class="hint">首页卡片展示，建议 400px 宽，比例 1:1 或 4:3</div>
         <input type="hidden" id="cover" name="cover">
+        <input type="hidden" id="coverTmpPath" name="coverTmpPath">
       </div>
       <div class="form-group">
         <label>预览图</label>
         <div class="image-picker-wrap">
+          <input type="file" id="previewFile" accept=".png,.webp,.jpg,.jpeg,.svg,.gif" class="zip-file-input">
           <div class="preview-thumb empty" id="preview-review">无图</div>
           <div>
-            <button type="button" class="picker-btn" onclick="openImagePicker('preview')">选择图片</button>
+            <button type="button" class="picker-btn" onclick="document.getElementById('previewFile').click()">选择图片</button>
             <div class="file-name" id="preview-filename"></div>
           </div>
         </div>
+        <div class="image-status" id="preview-status"></div>
         <div class="hint">详情页展示，建议 192px 宽，比例 1:1</div>
         <input type="hidden" id="preview" name="preview">
+        <input type="hidden" id="previewTmpPath" name="previewTmpPath">
       </div>
     </div>
 
@@ -297,24 +271,7 @@
   </form>
 </div>
 
-<div class="modal-overlay" id="image-modal">
-  <div class="modal-box">
-    <button class="modal-close" onclick="closeImagePicker()">&times;</button>
-    <h3 id="modal-title">选择图片</h3>
-    <input type="text" class="modal-filter" id="modal-filter" placeholder="搜索文件名..." oninput="filterImages()">
-    <div class="modal-grid" id="modal-grid"></div>
-  </div>
-</div>
-
 <script>
-  let allImages = [];
-  let currentPickerTarget = null;
-
-  fetch('/images/list.json')
-    .then(r => r.json())
-    .then(list => { allImages = list; })
-    .catch(() => {});
-
   document.getElementById('addedAt').value = new Date().toISOString().slice(0, 10);
 
   if (new URLSearchParams(location.search).has('ok')) {
@@ -331,46 +288,10 @@
     document.getElementById('zip-status').textContent = '';
     setImagePreview('cover', '');
     setImagePreview('preview', '');
-  }
-
-  function openImagePicker(target) {
-    currentPickerTarget = target;
-    document.getElementById('modal-title').textContent = target === 'cover' ? '选择封面图' : '选择预览图';
-    document.getElementById('modal-filter').value = '';
-    renderImageGrid(allImages);
-    document.getElementById('image-modal').classList.add('active');
-  }
-
-  function closeImagePicker() {
-    document.getElementById('image-modal').classList.remove('active');
-    currentPickerTarget = null;
-  }
-
-  function filterImages() {
-    const q = document.getElementById('modal-filter').value.toLowerCase();
-    const filtered = allImages.filter(f => f.toLowerCase().includes(q));
-    renderImageGrid(filtered);
-  }
-
-  function renderImageGrid(images) {
-    const grid = document.getElementById('modal-grid');
-    if (images.length === 0) {
-      grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;color:#999;padding:2rem;">没有匹配的图片</div>';
-      return;
-    }
-    grid.innerHTML = images.map(f => `
-      <div class="img-option" onclick="selectImage('${f}')">
-        <img src="/images/${f}" alt="${f}" loading="lazy">
-        <div class="img-label" title="${f}">${f}</div>
-      </div>
-    `).join('');
-  }
-
-  function selectImage(filename) {
-    if (!currentPickerTarget) return;
-    document.getElementById(currentPickerTarget).value = filename;
-    setImagePreview(currentPickerTarget, filename);
-    closeImagePicker();
+    document.getElementById('cover-status').textContent = '';
+    document.getElementById('preview-status').textContent = '';
+    document.getElementById('coverTmpPath').value = '';
+    document.getElementById('previewTmpPath').value = '';
   }
 
   function setImagePreview(target, filename) {
@@ -385,9 +306,44 @@
     }
   }
 
-  document.getElementById('image-modal').addEventListener('click', function(e) {
-    if (e.target === this) closeImagePicker();
-  });
+  function uploadImage(fileInputId, target) {
+    const fileInput = document.getElementById(fileInputId);
+    fileInput.addEventListener('change', function() {
+      const file = this.files[0];
+      if (!file) return;
+      const statusEl = document.getElementById(target + '-status');
+      const nameEl = document.getElementById(target + '-filename');
+      nameEl.textContent = file.name;
+      statusEl.style.color = '#0066cc';
+      statusEl.textContent = '正在上传…';
+
+      const formData = new FormData();
+      formData.append('image', file);
+      formData.append('filename', file.name);
+
+      fetch('/api/upload-image', { method: 'POST', body: formData })
+        .then(r => r.json())
+        .then(data => {
+          if (data.error) {
+            statusEl.style.color = '#dc3545';
+            statusEl.textContent = '上传失败：' + data.error;
+            return;
+          }
+          document.getElementById(target).value = data.filename;
+          document.getElementById(target + 'TmpPath').value = data.filename;
+          setImagePreview(target, data.filename);
+          statusEl.style.color = '#28a745';
+          statusEl.textContent = '已上传';
+        })
+        .catch(err => {
+          statusEl.style.color = '#dc3545';
+          statusEl.textContent = '上传失败：' + err.message;
+        });
+    });
+  }
+
+  uploadImage('coverFile', 'cover');
+  uploadImage('previewFile', 'preview');
 
   document.getElementById('fontFile').addEventListener('change', function() {
     const file = this.files[0];

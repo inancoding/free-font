@@ -1,0 +1,40 @@
+{
+  "slug": "alibaba-puhuiti",
+  "name": {
+    "zh": "阿里巴巴普惠体3.0",
+    "en": "Alibaba PuHuiTi"
+  },
+  "vendor": "阿里巴巴",
+  "version": "1.10",
+  "license": "Alibaba-PuHuiTi",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Thin",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "ExtraBold",
+    "Black",
+    "Heavy"
+  ],
+  "officialUrl": "https://www.alibabafonts.com/",
+  "sha256": "5a041a242a7454175c433158dbe1e8d8abea042bb965cd2471cf139fa60de5d1",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "AlibabaPuHuiTi-3-55-Regular-cover.webp",
+  "preview": "AlibabaPuHuiTi-3-55-Regular-preview.webp",
+  "addedAt": "2026-09-16"
+}

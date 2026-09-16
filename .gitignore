@@ -15,6 +15,7 @@ tmp/
 *.zip
 !zips/*.zip
 zips/.tmp/
+public/images/.tmp/
 
 # 生成的静态网站
 docs/

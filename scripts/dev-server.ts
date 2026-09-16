@@ -2,7 +2,7 @@ import { createServer, type IncomingMessage, type ServerResponse } from 'node:ht
 import { readFile, writeFile, readdir, mkdir, rename } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
-import { REPO_ROOT, FONTS_DIR, ZIPS_DIR, ZIPS_TMP_DIR } from '../src/paths.ts';
+import { REPO_ROOT, FONTS_DIR, IMAGES_DIR, IMAGES_TMP_DIR, ZIPS_DIR, ZIPS_TMP_DIR } from '../src/paths.ts';
 import { fontSchema } from '../src/schema.ts';
 import { LICENSE_IDS, ALL_LICENSES } from '../src/licenses.ts';
 import { parseFontMeta } from '../src/parse-font-meta.ts';
@@ -179,6 +179,16 @@ async function handlePost(req: IncomingMessage, res: ServerResponse): Promise<vo
     await rename(tmpFile, finalPath);
   }
 
+  for (const key of ['coverTmpPath', 'previewTmpPath'] as const) {
+    const tmpName = asString(form[key]).trim();
+    if (tmpName) {
+      const tmpFile = path.join(IMAGES_TMP_DIR, path.basename(tmpName));
+      const finalPath = path.join(IMAGES_DIR, path.basename(tmpName));
+      await mkdir(IMAGES_DIR, { recursive: true });
+      await rename(tmpFile, finalPath);
+    }
+  }
+
   const fontPath = path.join(FONTS_DIR, `${slug}.json`);
   await writeFile(fontPath, JSON.stringify(result.data, null, 2) + '\n', 'utf8');
 
@@ -269,6 +279,49 @@ const server = createServer(async (req, res) => {
 
       res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
       res.end(JSON.stringify({ sha256, tmpFilename }));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ error: (err as Error).message }));
+    }
+    return;
+  }
+
+  if (url.pathname === '/api/upload-image' && req.method === 'POST') {
+    try {
+      const contentType = req.headers['content-type'] ?? '';
+      const boundaryMatch = contentType.match(/boundary=(.+)/);
+      if (!boundaryMatch?.[1]) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: '缺少 boundary' }));
+        return;
+      }
+
+      const buf = await readBody(req);
+      if (buf.length === 0 || buf.length > 20 * 1024 * 1024) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: '文件为空或超过 20MB 限制' }));
+        return;
+      }
+
+      const { fields, files } = parseMultipart(buf, boundaryMatch[1]);
+      const imageBuf = files['image'];
+      const imageFilename = fields['filename'];
+      if (!imageBuf || imageBuf.length === 0) {
+        res.writeHead(400, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify({ error: '未找到图片文件' }));
+        return;
+      }
+
+      const filename = imageFilename && /\.(png|webp|jpg|jpeg|svg|gif)$/i.test(imageFilename)
+        ? imageFilename
+        : `image-${Date.now()}.png`;
+
+      await mkdir(IMAGES_TMP_DIR, { recursive: true });
+      const tmpPath = path.join(IMAGES_TMP_DIR, filename);
+      await writeFile(tmpPath, imageBuf);
+
+      res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+      res.end(JSON.stringify({ filename }));
     } catch (err) {
       res.writeHead(500, { 'Content-Type': 'application/json; charset=utf-8' });
       res.end(JSON.stringify({ error: (err as Error).message }));
