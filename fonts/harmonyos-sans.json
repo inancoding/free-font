@@ -1,0 +1,32 @@
+{
+  "slug": "harmonyos-sans",
+  "name": {
+    "zh": "鸿蒙黑体",
+    "en": "HarmonyOS Sans"
+  },
+  "vendor": "华为鸿蒙",
+  "version": "1.0",
+  "license": "Huawei-HarmonyOS-Sans",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://developer.huawei.com/consumer/cn/doc/design-guides/font-0000001828772001",
+  "sha256": "bb3bd893594e86a3cc0600cf80db73b53e016380f6f35106d04250e3bde1816f",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "HarmonyOS_Sans_SC-cover.webp",
+  "preview": "HarmonyOS_Sans_SC-preview.webp",
+  "addedAt": "2026-09-16"
+}
