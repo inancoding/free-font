@@ -1,0 +1,40 @@
+{
+  "slug": "misans",
+  "name": {
+    "en": "MiSans"
+  },
+  "vendor": "小米",
+  "version": "4.009",
+  "license": "Xiaomi-MiSans",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Thin",
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "ExtraBold",
+    "Black",
+    "Heavy"
+  ],
+  "officialUrl": "https://hyperos.mi.com/font/zh/",
+  "sha256": "48079cdb26d710124e235a89e02f0e1ff809b5511061e8d08bd0d99431a4332e",
+  "category": "黑体",
+  "glyphCount": 29608,
+  "tags": [
+    "可变字体"
+  ],
+  "constraints": [],
+  "cover": "MiSans-cover.webp",
+  "preview": "MiSans-preview.webp",
+  "addedAt": "2026-09-16"
+}
