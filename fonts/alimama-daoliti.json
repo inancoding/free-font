@@ -1,0 +1,30 @@
+{
+  "slug": "alimama-daoliti",
+  "name": {
+    "zh": "阿里妈妈刀隶体",
+    "en": "Alimama DaoLiTi"
+  },
+  "vendor": "Alibaba Design",
+  "version": "1.001",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.39cf3a81NRXnb3&cnid=1ntUmJ7Q4Jhw",
+  "sha256": "ddbbbbf17a02ace3dec39fcb3e7ca63a1759b506ff801c4da1fa2167b109ed68",
+  "category": "艺术体",
+  "tags": [
+    "标题"
+  ],
+  "constraints": [],
+  "cover": "AlimamaDaoLiTi-cover.webp",
+  "preview": "AlimamaDaoLiTi-preview.webp",
+  "addedAt": "2026-09-17"
+}
