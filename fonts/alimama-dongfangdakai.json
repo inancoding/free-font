@@ -1,0 +1,30 @@
+{
+  "slug": "alimama-dongfangdakai",
+  "name": {
+    "zh": "阿里妈妈东方大楷",
+    "en": "Alimama DongFangDaKai"
+  },
+  "vendor": "Alibaba Design",
+  "version": "1.006",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.39cf3a81NRXnb3&cnid=IhcTcFymWeyf",
+  "sha256": "6371df7a50d2e3dadc5f8a88f61964a5da25f4193581cf4928947cace78b224c",
+  "category": "楷体",
+  "tags": [
+    "标题"
+  ],
+  "constraints": [],
+  "cover": "AlimamaDongFangDaKai-Regular-cover.webp",
+  "preview": "AlimamaDongFangDaKai-Regular-preview.webp",
+  "addedAt": "2026-09-17"
+}
