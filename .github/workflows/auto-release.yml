@@ -1,0 +1,79 @@
+name: Auto Release
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: |
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: 检测变化的字体并创建 Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          git checkout "$SHA"
+
+          PREV_SHA=$(git rev-parse HEAD~1 2>/dev/null || echo "")
+
+          if [ -z "$PREV_SHA" ]; then
+            CHANGED=$(find fonts/ -name '*.json' -type f)
+          else
+            CHANGED=$(git diff --name-only --diff-filter=ACMR "$PREV_SHA" "$SHA" -- 'fonts/*.json' || true)
+          fi
+
+          if [ -z "$CHANGED" ]; then
+            echo "没有字体变更，跳过"
+            exit 0
+          fi
+
+          echo "检测到变更的字体文件："
+          echo "$CHANGED"
+
+          for file in $CHANGED; do
+            slug=$(basename "$file" .json)
+            version=$(jq -r '.version' "$file")
+            tag="${slug}-v${version}"
+
+            if git ls-remote --tags origin "refs/tags/${tag}" | grep -q .; then
+              echo "Tag ${tag} 已存在，跳过"
+              continue
+            fi
+
+            echo "创建 Release: ${tag}"
+            pnpm exec tsx scripts/release-info.ts "$tag"
+
+            gh release create "$tag" \
+              --title "$(cat build/RELEASE_NAME.txt)" \
+              --notes-file build/RELEASE_NOTES.md
+
+            echo "✓ ${tag} 创建完成"
+          done

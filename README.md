@@ -35,7 +35,7 @@ scripts/
   build-site.ts           静态站构建（EJS → docs/）
   dev-server.ts           本地开发服务器 + 管理页面
   release-info.ts         生成 Release 标题和描述
-.github/workflows/        ci.yml（校验 + Pages 部署）/ release.yml（tag 触发创建 Release）
+.github/workflows/        ci.yml（校验 + Pages 部署）/ auto-release.yml（push 后自动创建 Release）
 ```
 
 字体 ZIP 提交至 `zips/` 目录，通过 GitHub Release 和 jsDelivr CDN 分发。
@@ -76,31 +76,14 @@ git commit -m "新增 Xxx 字体"
 git push
 ```
 
-CI 校验通过后自动部署 GitHub Pages，网站即时更新。
-
-### 3. 打 tag 创建 GitHub Release
-
-```bash
-git tag <slug>-v<version>      # 格式固定为 <slug>-v<version>
-git push origin <slug>-v<version>
-```
-
-> **一次只推一个 tag。** 把多个 tag 合并进同一条 `git push`，GitHub 只会为其中一个创建 workflow run，其余的**静默丢失**。批量发版必须逐条推送。
-
-CI 校验通过后自动创建 GitHub Release（含 Release Notes 和下载链接）。
+推送后 CI 自动完成以下工作：
+1. 校验字体元数据
+2. 部署 GitHub Pages，网站即时更新
+3. 检测变更的字体，自动创建 tag 和 GitHub Release
 
 下载链接格式：
 - GitHub 直接下载：`https://raw.githubusercontent.com/inancoding/free-font/<tag>/zips/<slug>-<version>.zip`
 - jsDelivr 加速：`https://cdn.jsdelivr.net/gh/inancoding/free-font@<tag>/zips/<slug>-<version>.zip`
-
-### 补救措施
-
-已经推错了，删掉远端 tag 再单独重推（本地 tag 不用动）：
-
-```bash
-git push origin :refs/tags/<tag>   # 只删远端
-git push origin <tag>              # 单独重推，触发工作流
-```
 
 ## 侵权投诉
 
