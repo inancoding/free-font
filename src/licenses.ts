@@ -162,6 +162,22 @@ export const VENDOR_LICENSES = {
     requiresLicenseText: true,
     notes: '授权条款待人工核实，核实前不得镜像。',
   },
+
+  /**
+   * vivo Sans —— 待核实。
+   * vivo 官方字体，需核实官方授权原文中的再分发条款。
+   * 核实前禁止镜像。
+   */
+  'vivo-Sans': {
+    id: 'vivo-Sans',
+    name: 'vivo Sans 字体授权协议',
+    url: 'https://developers.vivo.com/doc/d/314fa33cbaec4a93be351cd44757d9d9',
+    verified: false,
+    redistributable: false,
+    commercialUse: true,
+    requiresLicenseText: true,
+    notes: '授权条款待人工核实，核实前不得镜像。',
+  },
 } satisfies Record<string, LicenseInfo>;
 
 export const ALL_LICENSES: Record<string, LicenseInfo> = {
