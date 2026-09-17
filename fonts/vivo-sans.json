@@ -1,0 +1,31 @@
+{
+  "slug": "vivo-sans",
+  "name": {
+    "en": "vivo Sans"
+  },
+  "vendor": "vivo",
+  "version": "1.05",
+  "license": "vivo-Sans",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://developers.vivo.com/doc/d/314fa33cbaec4a93be351cd44757d9d9",
+  "sha256": "14c02f4bea585cab82c568a3157f99785d6c8ebb89d60648fe20b81a55eee62e",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "vivoSansSCVF-cover.webp",
+  "preview": "vivoSansSCVF-preview.webp",
+  "addedAt": "2026-09-17"
+}
