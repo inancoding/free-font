@@ -146,6 +146,22 @@ export const VENDOR_LICENSES = {
     requiresLicenseText: true,
     notes: '存在「仅限 HarmonyOS 应用内使用」的未经证实说法，风险偏高，核实前不得镜像。',
   },
+
+  /**
+   * OPPO Sans —— 待核实。
+   * OPPO 官方字体，需核实官方授权原文中的再分发条款。
+   * 核实前禁止镜像。
+   */
+  'OPPO-Sans': {
+    id: 'OPPO-Sans',
+    name: 'OPPO Sans 字体授权协议',
+    url: 'https://www.coloros.com/article/A00000074/',
+    verified: false,
+    redistributable: false,
+    commercialUse: true,
+    requiresLicenseText: true,
+    notes: '授权条款待人工核实，核实前不得镜像。',
+  },
 } satisfies Record<string, LicenseInfo>;
 
 export const ALL_LICENSES: Record<string, LicenseInfo> = {
