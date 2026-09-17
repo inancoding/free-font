@@ -1,0 +1,30 @@
+{
+  "slug": "wuhanyingxiongti",
+  "name": {
+    "zh": "武汉英雄体",
+    "en": "WuHanYingXiongTi"
+  },
+  "vendor": "武汉关山觉文化传媒有限公司",
+  "version": "3.100",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://www.uisdc.com/wuhan-hero-font",
+  "sha256": "4f4a71233e20545b7a50d9cb8e58d56105ab6bbcf04fbfc5ff55abd0ba1fdc32",
+  "category": "艺术体",
+  "tags": [
+    "标题"
+  ],
+  "constraints": [],
+  "cover": "武汉英雄体-cover.webp",
+  "preview": "武汉英雄体-preview.webp",
+  "addedAt": "2026-09-17"
+}
