@@ -1,0 +1,37 @@
+{
+  "slug": "gen-shin-gothic",
+  "name": {
+    "zh": "思源真黑体",
+    "en": "Gen Shin Gothic"
+  },
+  "vendor": "自家製フォント工房",
+  "version": "1.002.20150607",
+  "license": "OFL-1.1",
+  "languages": [
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "Heavy"
+  ],
+  "officialUrl": "http://jikasei.me/font/genshin/",
+  "sha256": "2ca349453d3ac1fc30ad94d9539bc55df115844560c4350004eca83767f85940",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "GenShinGothic-Bold-cover.webp",
+  "preview": "GenShinGothic-Bold-preview.webp",
+  "addedAt": "2026-09-17"
+}
