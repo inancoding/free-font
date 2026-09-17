@@ -1,0 +1,38 @@
+{
+  "slug": "noto-serif-sc",
+  "name": {
+    "zh": "思源宋体",
+    "en": "Noto Serif SC"
+  },
+  "vendor": "Adobe",
+  "version": "2.003",
+  "license": "OFL-1.1",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "otf"
+  ],
+  "weights": [
+    "ExtraLight",
+    "Light",
+    "Regular",
+    "Medium",
+    "SemiBold",
+    "Bold",
+    "Black"
+  ],
+  "officialUrl": "https://github.com/notofonts/noto-cjk",
+  "sha256": "74c0277d24f7b6f4f55febee64ff95c6d34529dc7cba7516f039659595ac0ac3",
+  "category": "宋体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "NotoSerifSC-Regular-cover.webp",
+  "preview": "NotoSerifSC-Regular-preview.webp",
+  "addedAt": "2026-09-17"
+}
