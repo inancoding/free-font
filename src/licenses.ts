@@ -68,6 +68,36 @@ export const LICENSES = {
     commercialUse: true,
     requiresLicenseText: true,
   },
+  'Personal-Free': {
+    id: 'Personal-Free',
+    name: '个人免费使用',
+    url: '',
+    verified: false,
+    redistributable: false,
+    commercialUse: false,
+    requiresLicenseText: true,
+    constraints: [
+      '仅限个人非商业用途免费使用',
+      '商业使用需另行获得授权',
+      '再分发需遵循原始授权条款',
+    ],
+    notes: '非标准开源授权，需逐条核对官方授权原文。',
+  },
+  'Free-Personal-Commercial': {
+    id: 'Free-Personal-Commercial',
+    name: '个人及商用免费',
+    url: '',
+    verified: false,
+    redistributable: false,
+    commercialUse: true,
+    requiresLicenseText: true,
+    constraints: [
+      '个人非商业用途免费',
+      '商业使用免费，但需遵循授权条款',
+      '再分发需遵循原始授权条款',
+    ],
+    notes: '非标准开源授权，需逐条核对官方授权原文。',
+  },
   // LPPL 的维护者条款会让再分发义务变得复杂，且中文圈几乎用不到。
   // 保持未核实状态，等真有字体需要时再逐条核对。
   'LPPL-1.3c': {
