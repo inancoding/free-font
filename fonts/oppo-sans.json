@@ -1,0 +1,30 @@
+{
+  "slug": "oppo-sans",
+  "name": {
+    "en": "OPPO Sans 4.0"
+  },
+  "vendor": "OPPO",
+  "version": "1.700",
+  "license": "OPPO-Sans",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://www.coloros.com/article/A00000074/",
+  "sha256": "2f27eeb848f33a584df6d9f0df6b3ce36a0c4475e56c6cfe0866b2530d0b3364",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "OPPO Sans 4.0-cover.webp",
+  "preview": "OPPO Sans 4.0-preview.webp",
+  "addedAt": "2026-09-17"
+}
