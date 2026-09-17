@@ -1,0 +1,31 @@
+{
+  "slug": "alimama-fangyuanti",
+  "name": {
+    "zh": "阿里妈妈方圆体",
+    "en": "Alimama FangYuanTi"
+  },
+  "vendor": "Alibaba Design",
+  "version": "1.004",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Thin"
+  ],
+  "officialUrl": "https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.39cf3a81NRXnb3&cnid=pOvFIr086ADR",
+  "sha256": "0f26ad041ad457f707f3fa5a6bc4aef70e1353cee12152ba9523076391f1e88e",
+  "tags": [
+    "标题",
+    "正文",
+    "可变字体"
+  ],
+  "constraints": [],
+  "cover": "AlimamaFangYuanTiVF-Thin-cover.webp",
+  "preview": "AlimamaFangYuanTiVF-Thin-preview.webp",
+  "addedAt": "2026-09-17"
+}
