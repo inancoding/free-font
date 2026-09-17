@@ -1,0 +1,29 @@
+{
+  "slug": "alimama-shuheiti",
+  "name": {
+    "zh": "阿里妈妈数黑体",
+    "en": "Alimama ShuHeiTi"
+  },
+  "vendor": "Alibaba Design",
+  "version": "1.005",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Bold"
+  ],
+  "officialUrl": "https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.39cf3a81NRXnb3&cnid=a9fXc2HD9n7s",
+  "sha256": "f0e6a19953af50b84608d05edb57f443d9d273aef82999e07b6f0bf4bed97700",
+  "tags": [
+    "标题"
+  ],
+  "constraints": [],
+  "cover": "AlimamaShuHeiTi-Bold-cover.webp",
+  "preview": "AlimamaShuHeiTi-Bold-preview.webp",
+  "addedAt": "2026-09-17"
+}
