@@ -1,0 +1,29 @@
+{
+  "slug": "alimama-agile",
+  "name": {
+    "zh": "阿里妈妈灵动体",
+    "en": "Alimama Agile"
+  },
+  "vendor": "Alibaba Design",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Thin"
+  ],
+  "officialUrl": "https://www.iconfont.cn/fonts/detail?spm=a313x.fonts_index.i1.d9df05512.39cf3a81NRXnb3&cnid=c9ELle7Bb9NC",
+  "sha256": "9787bd8f1a10acb924a3d47e5e575f693ba40e1b8705983cbbd8e6c15c3ad5a6",
+  "category": "英文字体",
+  "tags": [
+    "可变字体"
+  ],
+  "constraints": [],
+  "cover": "AlimamaAgileVF-Thin-cover.webp",
+  "preview": "AlimamaAgileVF-Thin-preview.webp",
+  "addedAt": "2026-09-17"
+}
