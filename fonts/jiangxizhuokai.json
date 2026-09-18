@@ -1,0 +1,31 @@
+{
+  "slug": "jiangxizhuokai",
+  "name": {
+    "zh": "江西拙楷",
+    "en": "jiangxizhuokai"
+  },
+  "vendor": "fontree",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/oJFU4Owhrdcg_fdK1gNrCQ",
+  "sha256": "d31c391e6fecb65b902b8a347e6702959411873ccf09017a2ae10dccbcabbb27",
+  "category": "楷体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "江西拙楷-cover.webp",
+  "preview": "江西拙楷-preview.webp",
+  "addedAt": "2026-09-18"
+}
