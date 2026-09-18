@@ -1,0 +1,30 @@
+{
+  "slug": "yanshifoxiti",
+  "name": {
+    "zh": "演示佛系体",
+    "en": "Slidefu"
+  },
+  "vendor": "Keynoteart x QiuYePPT",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/iWn8SWH5ymBKmsGiHe8Yfw",
+  "sha256": "a67a64cf292f8b5c15c0b4b82dab53d45a7192ec904f8024940cef14393034ea",
+  "category": "手写体",
+  "tags": [
+    "手写"
+  ],
+  "constraints": [],
+  "cover": "演示佛系体-cover.webp",
+  "preview": "演示佛系体-preview.webp",
+  "addedAt": "2026-09-18"
+}
