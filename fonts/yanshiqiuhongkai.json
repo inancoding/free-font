@@ -1,0 +1,31 @@
+{
+  "slug": "yanshiqiuhongkai",
+  "name": {
+    "zh": "演示秋鸿楷",
+    "en": "Slideqiuhong"
+  },
+  "vendor": "Keynoteart",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/CRnRsYu8ymlG9_oK6wmBag",
+  "sha256": "28330bfad1004a9fb1449f7036269490c27aeb2c741d08dd45abbdcb02af1bd5",
+  "category": "楷体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "演示秋鸿楷-cover.webp",
+  "preview": "演示秋鸿楷-preview.webp",
+  "addedAt": "2026-09-18"
+}
