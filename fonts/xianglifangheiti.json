@@ -1,0 +1,31 @@
+{
+  "slug": "xianglifangheiti",
+  "name": {
+    "zh": "乡立方黑体",
+    "en": "xianglifang"
+  },
+  "vendor": "火石品牌",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/cz6kMxi7eb9jHe0RcvxGmw",
+  "sha256": "ed6913b66269e546555ec46fa11ab50c713c97c031ecf7115107f7510a638a00",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "乡立方黑体-cover.webp",
+  "preview": "乡立方黑体-preview.webp",
+  "addedAt": "2026-09-18"
+}
