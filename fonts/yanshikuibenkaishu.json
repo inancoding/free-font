@@ -1,0 +1,29 @@
+{
+  "slug": "yanshikuibenkaishu",
+  "name": {
+    "zh": "演示魁本楷书"
+  },
+  "vendor": "SlideFont",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/ac1GEyLGc4INj4RUSmouCQ",
+  "sha256": "4a88e36cd11027d372292e293896cefa89f3b84d1a1dd17dae4fc59ccfe42825",
+  "category": "楷体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "演示魁本楷书-cover.webp",
+  "preview": "演示魁本楷书-preview.webp",
+  "addedAt": "2026-09-18"
+}
