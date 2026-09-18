@@ -1,0 +1,29 @@
+{
+  "slug": "xiaochenglafengti",
+  "name": {
+    "zh": "小城拉风体"
+  },
+  "vendor": "@小城字库",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/zmJ-OscYNBzVqeA8AkKmHQ",
+  "sha256": "36fd881dc25bbee6556bc63b056cb5c72cf3bf68c2d6c3e24abddd0075ede447",
+  "category": "手写体",
+  "tags": [
+    "手写"
+  ],
+  "constraints": [],
+  "cover": "小城拉风体-cover.webp",
+  "preview": "小城拉风体-preview.webp",
+  "addedAt": "2026-09-18"
+}
