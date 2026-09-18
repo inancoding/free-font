@@ -52,7 +52,7 @@ jobs:
           for file in fonts/*.json; do
             [ -f "$file" ] || continue
             slug=$(basename "$file" .json)
-            version=$(node -e "console.log(require('./$file').version)")
+            version=$(jq -r '.version' "$file")
             tag="${slug}-v${version}"
 
             if echo "$ALL_REMOTE_TAGS" | grep -qx "$tag"; then
