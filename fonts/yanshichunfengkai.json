@@ -1,0 +1,31 @@
+{
+  "slug": "yanshichunfengkai",
+  "name": {
+    "zh": "演示春风楷",
+    "en": "Slidechunfeng"
+  },
+  "vendor": "keynoteart",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/CRnRsYu8ymlG9_oK6wmBag",
+  "sha256": "b408d2144d4eb8d137b2fd3e52c1fe176c6ce121e392792f253ee22ffd2cbcb7",
+  "category": "楷体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "演示春风楷-cover.webp",
+  "preview": "演示春风楷-preview.webp",
+  "addedAt": "2026-09-18"
+}
