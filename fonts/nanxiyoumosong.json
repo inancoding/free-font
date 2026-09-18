@@ -1,0 +1,32 @@
+{
+  "slug": "nanxiyoumosong",
+  "name": {
+    "zh": "南西油墨宋",
+    "en": "NanxiYoumosong"
+  },
+  "vendor": "@松陵南西",
+  "version": "1.000",
+  "license": "OFL-1.1",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/I4iTxJRjeZ1orpAEqB1kEA",
+  "sha256": "485925d8270b0e3785ff93f0ea81e97ce5d12be02cc56996c9363a4287eb2198",
+  "category": "宋体",
+  "tags": [
+    "标题",
+    "正文",
+    "古籍"
+  ],
+  "constraints": [],
+  "cover": "南西油墨宋-cover.webp",
+  "preview": "南西油墨宋-preview.webp",
+  "addedAt": "2026-09-18"
+}
