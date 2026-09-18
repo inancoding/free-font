@@ -40,11 +40,13 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
+          set -e
           git checkout "$SHA"
 
-          # 一次性拉取所有远端 tag，避免循环中反复请求
+          # 一次性拉取所有远端 tag
           git fetch --tags origin
-          ALL_REMOTE_TAGS=$(git tag -l --remote 'origin/*' | sed 's|origin/refs/tags/||')
+          ALL_REMOTE_TAGS=$(git ls-remote --tags origin | awk -F'/' '{print $3}' | sort -u)
+          echo "已有 tag 数量: $(echo "$ALL_REMOTE_TAGS" | wc -l)"
 
           CREATED=0
           SKIPPED=0
@@ -56,6 +58,7 @@ jobs:
             tag="${slug}-v${version}"
 
             if echo "$ALL_REMOTE_TAGS" | grep -qx "$tag"; then
+              echo "跳过 ${tag} (已存在)"
               SKIPPED=$((SKIPPED + 1))
               continue
             fi
