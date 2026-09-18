@@ -1,0 +1,31 @@
+{
+  "slug": "linhailishu",
+  "name": {
+    "zh": "临海隶书",
+    "en": "LinHaiLiShu"
+  },
+  "vendor": "fontree",
+  "version": "1.002",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/dSdyAUOj8iKsb44P1GASXg",
+  "sha256": "7f9d016fed41fc3f6fbe1d5366e32163e24380355514d98d42f661a3bdc062c9",
+  "category": "手写体",
+  "tags": [
+    "标题",
+    "正文",
+    "古籍"
+  ],
+  "constraints": [],
+  "cover": "LinHaiLiShu-cover.webp",
+  "preview": "LinHaiLiShu-preview.webp",
+  "addedAt": "2026-09-18"
+}
