@@ -1,0 +1,30 @@
+{
+  "slug": "zt-yuedonghei",
+  "name": {
+    "zh": "卓特悦动黑",
+    "en": "ZT YueDongHei"
+  },
+  "vendor": "Droit Vision",
+  "version": "1.000",
+  "license": "OFL-1.1",
+  "languages": [
+    "zh-Hans"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://www.droitstock.com/activity/droit-fonts",
+  "sha256": "c4b1b2c46405023dbd47a852b0ddf8a51cc47b2102fc9ba8a919fe2af78d7e37",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "卓特悦动黑-cover.webp",
+  "preview": "卓特悦动黑-preview.webp",
+  "addedAt": "2026-09-18"
+}
