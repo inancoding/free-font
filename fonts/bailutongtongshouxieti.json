@@ -1,0 +1,29 @@
+{
+  "slug": "bailutongtongshouxieti",
+  "name": {
+    "zh": "白路彤彤手写体",
+    "en": "bailutongtongshouxieti"
+  },
+  "vendor": "bailu-font",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://www.zcool.com.cn/work/ZNjkxNjU3MzI=.html",
+  "sha256": "dd7a09b98f36df6e46f71da5dfc05e6d62879f32542e020db62d80d7aeafb402",
+  "category": "手写体",
+  "tags": [
+    "手写"
+  ],
+  "constraints": [],
+  "cover": "白路彤彤手写体-cover.webp",
+  "preview": "白路彤彤手写体-preview.webp",
+  "addedAt": "2026-09-18"
+}
