@@ -1,0 +1,33 @@
+{
+  "slug": "nanxichuxiasong",
+  "name": {
+    "zh": "南西初夏宋",
+    "en": "NanxiChuxiasong"
+  },
+  "vendor": "@松陵南西",
+  "version": "1.000",
+  "license": "OFL-1.1",
+  "languages": [
+    "zh-Hans",
+    "zh-Hant",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/EciB6JEEgQHdfe5SsvfqxQ",
+  "sha256": "df672747a39880b2c03cc10da981eba7f0916f6343ed0aa44a76af4517d5aeb3",
+  "category": "宋体",
+  "tags": [
+    "标题",
+    "正文",
+    "古籍"
+  ],
+  "constraints": [],
+  "cover": "南西初夏宋-简繁-cover.webp",
+  "preview": "南西初夏宋-简繁-preview.webp",
+  "addedAt": "2026-09-18"
+}
