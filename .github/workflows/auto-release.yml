@@ -35,36 +35,28 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - name: 检测变化的字体并创建 Release
+      - name: 检查所有字体并补创建缺失的 Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
           git checkout "$SHA"
 
-          PREV_SHA=$(git rev-parse HEAD~1 2>/dev/null || echo "")
+          # 一次性拉取所有远端 tag，避免循环中反复请求
+          git fetch --tags origin
+          ALL_REMOTE_TAGS=$(git tag -l --remote 'origin/*' | sed 's|origin/refs/tags/||')
 
-          if [ -z "$PREV_SHA" ]; then
-            CHANGED=$(find fonts/ -name '*.json' -type f)
-          else
-            CHANGED=$(git diff --name-only --diff-filter=ACMR "$PREV_SHA" "$SHA" -- 'fonts/*.json' || true)
-          fi
+          CREATED=0
+          SKIPPED=0
 
-          if [ -z "$CHANGED" ]; then
-            echo "没有字体变更，跳过"
-            exit 0
-          fi
-
-          echo "检测到变更的字体文件："
-          echo "$CHANGED"
-
-          for file in $CHANGED; do
+          for file in fonts/*.json; do
+            [ -f "$file" ] || continue
             slug=$(basename "$file" .json)
-            version=$(jq -r '.version' "$file")
+            version=$(node -e "console.log(require('./$file').version)")
             tag="${slug}-v${version}"
 
-            if git ls-remote --tags origin "refs/tags/${tag}" | grep -q .; then
-              echo "Tag ${tag} 已存在，跳过"
+            if echo "$ALL_REMOTE_TAGS" | grep -qx "$tag"; then
+              SKIPPED=$((SKIPPED + 1))
               continue
             fi
 
@@ -76,4 +68,12 @@ jobs:
               --notes-file build/RELEASE_NOTES.md
 
             echo "✓ ${tag} 创建完成"
+            CREATED=$((CREATED + 1))
+
+            # 更新本地 tag 列表，防止同批次重复创建
+            ALL_REMOTE_TAGS="$ALL_REMOTE_TAGS
+          $tag"
           done
+
+          echo ""
+          echo "完成：创建 ${CREATED} 个 Release，跳过 ${SKIPPED} 个已有 tag 的字体"
