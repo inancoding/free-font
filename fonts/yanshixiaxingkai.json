@@ -1,0 +1,32 @@
+{
+  "slug": "yanshixiaxingkai",
+  "name": {
+    "zh": "演示夏行楷",
+    "en": "Slidexiaxing"
+  },
+  "vendor": "keynoteart",
+  "version": "1.000",
+  "license": "Free-Personal-Commercial",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://mp.weixin.qq.com/s/CRnRsYu8ymlG9_oK6wmBag",
+  "sha256": "82b81c4169985d876122119ee6595097fe8947606e500b90b20031f34e81bb1e",
+  "category": "楷体",
+  "tags": [
+    "标题",
+    "正文",
+    "手写"
+  ],
+  "constraints": [],
+  "cover": "演示夏行楷-cover.webp",
+  "preview": "演示夏行楷-preview.webp",
+  "addedAt": "2026-09-18"
+}
