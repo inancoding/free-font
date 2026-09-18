@@ -1,0 +1,31 @@
+{
+  "slug": "zt-qingyati",
+  "name": {
+    "zh": "卓特清雅体",
+    "en": "ZT QingYaTi"
+  },
+  "vendor": "Droit Vision",
+  "version": "1.000",
+  "license": "OFL-1.1",
+  "languages": [
+    "zh-Hans",
+    "en"
+  ],
+  "formats": [
+    "ttf"
+  ],
+  "weights": [
+    "Regular"
+  ],
+  "officialUrl": "https://www.droitstock.com/activity/droit-fonts",
+  "sha256": "6f19b5b269f5883817a16d2c4f4ff3e7b756399d2300bc9b1a51e66a5a12f56b",
+  "category": "黑体",
+  "tags": [
+    "标题",
+    "正文"
+  ],
+  "constraints": [],
+  "cover": "卓特清雅体-cover.webp",
+  "preview": "卓特清雅体-preview.webp",
+  "addedAt": "2026-09-18"
+}
